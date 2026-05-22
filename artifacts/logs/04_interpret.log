@@ -1,0 +1,284 @@
+2026-05-22 01:56:50 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/04_interpret.log (level=INFO)
+2026-05-22 01:56:50 | INFO    | __main__ | Запускаем LLM-судью: 70 нейронов, model=openai/gpt-4o-mini
+2026-05-22 01:56:53 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:53 | INFO    | src.interpret | [1/70] neuron #14303 (yes_trigger) → commitment to community welfare and personal sacrifice
+2026-05-22 01:56:54 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:54 | INFO    | src.interpret | [2/70] neuron #16664 (yes_trigger) → braving danger for the greater good
+2026-05-22 01:56:54 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:54 | INFO    | src.interpret | [3/70] neuron #23407 (yes_trigger) → sense of responsibility to protect others
+2026-05-22 01:56:55 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:55 | INFO    | src.interpret | [4/70] neuron #29454 (yes_trigger) → sense of responsibility to others
+2026-05-22 01:56:55 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:56 | INFO    | src.interpret | [5/70] neuron #11886 (yes_trigger) → weighing personal sacrifice for community safety
+2026-05-22 01:56:56 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:56 | INFO    | src.interpret | [6/70] neuron #1581 (yes_trigger) → sense of responsibility to others
+2026-05-22 01:56:56 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:57 | INFO    | src.interpret | [7/70] neuron #8111 (yes_trigger) → sense of duty to protect others at sea
+2026-05-22 01:56:57 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:57 | INFO    | src.interpret | [8/70] neuron #6976 (yes_trigger) → sense of duty to the community
+2026-05-22 01:56:58 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:58 | INFO    | src.interpret | [9/70] neuron #32281 (yes_trigger) → sense of duty in facing danger
+2026-05-22 01:56:58 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:59 | INFO    | src.interpret | [10/70] neuron #10619 (yes_trigger) → embracing responsibility in the face of adversity
+2026-05-22 01:56:59 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:56:59 | INFO    | src.interpret | [11/70] neuron #22457 (no_trigger) → collaborative problem-solving for community benefit
+2026-05-22 01:57:00 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:00 | INFO    | src.interpret | [12/70] neuron #31706 (no_trigger) → weighing personal capacity against community needs
+2026-05-22 01:57:00 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:00 | INFO    | src.interpret | [13/70] neuron #12282 (no_trigger) → weighing individual action against collective responsibility
+2026-05-22 01:57:01 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:01 | INFO    | src.interpret | [14/70] neuron #25152 (no_trigger) → weighing personal values in community decisions
+2026-05-22 01:57:02 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:02 | INFO    | src.interpret | [15/70] neuron #20757 (no_trigger) → weighing personal cost vs group benefit
+2026-05-22 01:57:03 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:03 | INFO    | src.interpret | [16/70] neuron #11929 (no_trigger) → weighing personal cost vs group benefit
+2026-05-22 01:57:03 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:04 | INFO    | src.interpret | [17/70] neuron #7387 (no_trigger) → weighing personal sacrifice against community benefit
+2026-05-22 01:57:04 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:05 | INFO    | src.interpret | [18/70] neuron #20723 (no_trigger) → weighing personal cost vs group benefit
+2026-05-22 01:57:05 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:05 | INFO    | src.interpret | [19/70] neuron #12739 (no_trigger) → personal values influencing decisions on collective action
+2026-05-22 01:57:06 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:06 | INFO    | src.interpret | [20/70] neuron #5032 (no_trigger) → weighing personal sacrifice against community benefit
+2026-05-22 01:57:06 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:07 | INFO    | src.interpret | [21/70] neuron #16585 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:07 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:07 | INFO    | src.interpret | [22/70] neuron #11787 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:08 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:08 | INFO    | src.interpret | [23/70] neuron #18580 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:08 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:09 | INFO    | src.interpret | [24/70] neuron #14471 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:09 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:09 | INFO    | src.interpret | [25/70] neuron #16777 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:10 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:10 | INFO    | src.interpret | [26/70] neuron #4217 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:10 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:11 | INFO    | src.interpret | [27/70] neuron #26701 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:11 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:11 | INFO    | src.interpret | [28/70] neuron #19334 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:57:11 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:11 | INFO    | src.interpret | [29/70] neuron #20210 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:57:12 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:12 | INFO    | src.interpret | [30/70] neuron #4347 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:13 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:13 | INFO    | src.interpret | [31/70] neuron #9700 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:57:13 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:14 | INFO    | src.interpret | [32/70] neuron #9038 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:14 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:14 | INFO    | src.interpret | [33/70] neuron #8970 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:15 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:15 | INFO    | src.interpret | [34/70] neuron #8793 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:15 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:16 | INFO    | src.interpret | [35/70] neuron #18030 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:16 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:16 | INFO    | src.interpret | [36/70] neuron #21563 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:17 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:17 | INFO    | src.interpret | [37/70] neuron #2704 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:17 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:18 | INFO    | src.interpret | [38/70] neuron #27340 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:18 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:18 | INFO    | src.interpret | [39/70] neuron #13866 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:19 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:19 | INFO    | src.interpret | [40/70] neuron #15062 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:19 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:20 | INFO    | src.interpret | [41/70] neuron #7614 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:57:20 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:20 | INFO    | src.interpret | [42/70] neuron #17994 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:57:20 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:21 | INFO    | src.interpret | [43/70] neuron #15287 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:22 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:22 | INFO    | src.interpret | [44/70] neuron #9025 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:22 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:23 | INFO    | src.interpret | [45/70] neuron #198 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:23 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:23 | INFO    | src.interpret | [46/70] neuron #25764 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:24 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:24 | INFO    | src.interpret | [47/70] neuron #24313 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:25 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:25 | INFO    | src.interpret | [48/70] neuron #7116 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:25 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:25 | INFO    | src.interpret | [49/70] neuron #6261 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:26 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:26 | INFO    | src.interpret | [50/70] neuron #17097 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:27 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:27 | INFO    | src.interpret | [51/70] neuron #15993 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:27 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:27 | INFO    | src.interpret | [52/70] neuron #20425 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:28 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:28 | INFO    | src.interpret | [53/70] neuron #8730 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:28 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:29 | INFO    | src.interpret | [54/70] neuron #22827 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:57:29 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:29 | INFO    | src.interpret | [55/70] neuron #22948 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:30 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:30 | INFO    | src.interpret | [56/70] neuron #27966 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:30 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:31 | INFO    | src.interpret | [57/70] neuron #32277 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:57:31 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:31 | INFO    | src.interpret | [58/70] neuron #16937 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:32 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:32 | INFO    | src.interpret | [59/70] neuron #7841 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:32 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:33 | INFO    | src.interpret | [60/70] neuron #3006 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:33 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:33 | INFO    | src.interpret | [61/70] neuron #31862 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:57:34 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:34 | INFO    | src.interpret | [62/70] neuron #17153 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:34 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:34 | INFO    | src.interpret | [63/70] neuron #16472 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:35 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:35 | INFO    | src.interpret | [64/70] neuron #23751 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:35 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:36 | INFO    | src.interpret | [65/70] neuron #20892 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:36 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:36 | INFO    | src.interpret | [66/70] neuron #20914 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:37 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:37 | INFO    | src.interpret | [67/70] neuron #29249 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:38 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:38 | INFO    | src.interpret | [68/70] neuron #11916 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:38 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:38 | INFO    | src.interpret | [69/70] neuron #22593 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 01:57:39 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:57:39 | INFO    | src.interpret | [70/70] neuron #4456 (top_active) → weighing personal sacrifice against group benefit
+2026-05-22 01:57:39 | INFO    | __main__ | Темы сохранены: artifacts/neuron_themes_topk.json
+2026-05-22 01:57:39 | INFO    | __main__ | CSV-сводка: artifacts/summary_topk.csv
+2026-05-22 01:59:42 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/04_interpret.log (level=INFO)
+2026-05-22 01:59:42 | INFO    | __main__ | Запускаем LLM-судью: 68 нейронов, model=openai/gpt-4o-mini
+2026-05-22 01:59:44 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:44 | INFO    | src.interpret | [1/68] neuron #12177 (yes_trigger) → weighing personal sacrifice for community benefit
+2026-05-22 01:59:44 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:45 | INFO    | src.interpret | [2/68] neuron #22783 (yes_trigger) → weighing personal sacrifice for community benefit
+2026-05-22 01:59:45 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:45 | INFO    | src.interpret | [3/68] neuron #26393 (yes_trigger) → sense of community responsibility
+2026-05-22 01:59:46 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:46 | INFO    | src.interpret | [4/68] neuron #19194 (yes_trigger) → commitment to community safety and sacrifice
+2026-05-22 01:59:46 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:46 | INFO    | src.interpret | [5/68] neuron #32281 (yes_trigger) → sense of duty in facing danger
+2026-05-22 01:59:47 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:47 | INFO    | src.interpret | [6/68] neuron #23407 (yes_trigger) → sense of responsibility to protect others
+2026-05-22 01:59:48 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:48 | INFO    | src.interpret | [7/68] neuron #10619 (yes_trigger) → embracing responsibility in the face of adversity
+2026-05-22 01:59:48 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:48 | INFO    | src.interpret | [8/68] neuron #8111 (yes_trigger) → sense of responsibility for others' safety
+2026-05-22 01:59:49 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:49 | INFO    | src.interpret | [9/68] neuron #12282 (no_trigger) → weighing individual action against collective responsibility
+2026-05-22 01:59:50 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:50 | INFO    | src.interpret | [10/68] neuron #11929 (no_trigger) → weighing personal cost vs group benefit
+2026-05-22 01:59:50 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:50 | INFO    | src.interpret | [11/68] neuron #28208 (no_trigger) → collective action and personal responsibility
+2026-05-22 01:59:51 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:51 | INFO    | src.interpret | [12/68] neuron #27142 (no_trigger) → weighing personal sacrifice for community benefit
+2026-05-22 01:59:51 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:52 | INFO    | src.interpret | [13/68] neuron #19702 (no_trigger) → weighing personal sacrifice for community safety
+2026-05-22 01:59:52 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:52 | INFO    | src.interpret | [14/68] neuron #23807 (no_trigger) → weighing personal cost vs group benefit
+2026-05-22 01:59:53 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:53 | INFO    | src.interpret | [15/68] neuron #15296 (no_trigger) → weighing individual responsibility against collective benefit
+2026-05-22 01:59:54 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:54 | INFO    | src.interpret | [16/68] neuron #30474 (no_trigger) → weighing personal sacrifice against collective benefit
+2026-05-22 01:59:54 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:55 | INFO    | src.interpret | [17/68] neuron #27502 (no_trigger) → weighing community needs against personal risks
+2026-05-22 01:59:55 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:55 | INFO    | src.interpret | [18/68] neuron #25418 (no_trigger) → weighing personal sacrifice against community benefit
+2026-05-22 01:59:56 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:56 | INFO    | src.interpret | [19/68] neuron #16585 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:59:56 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:57 | INFO    | src.interpret | [20/68] neuron #11787 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:59:58 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:58 | INFO    | src.interpret | [21/68] neuron #18580 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:59:58 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:59 | INFO    | src.interpret | [22/68] neuron #14471 (top_active) → weighing personal risk against community benefit
+2026-05-22 01:59:59 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 01:59:59 | INFO    | src.interpret | [23/68] neuron #16777 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:00 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:00 | INFO    | src.interpret | [24/68] neuron #4217 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:01 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:01 | INFO    | src.interpret | [25/68] neuron #26701 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:01 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:01 | INFO    | src.interpret | [26/68] neuron #19334 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:02 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:02 | INFO    | src.interpret | [27/68] neuron #20210 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:02 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:03 | INFO    | src.interpret | [28/68] neuron #4347 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:03 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:03 | INFO    | src.interpret | [29/68] neuron #9700 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:04 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:04 | INFO    | src.interpret | [30/68] neuron #9038 (top_active) → weighing personal risk against community benefit
+2026-05-22 02:00:04 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:05 | INFO    | src.interpret | [31/68] neuron #8970 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:05 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:05 | INFO    | src.interpret | [32/68] neuron #8793 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:06 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:06 | INFO    | src.interpret | [33/68] neuron #18030 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:06 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:07 | INFO    | src.interpret | [34/68] neuron #21563 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:07 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:07 | INFO    | src.interpret | [35/68] neuron #2704 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:08 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:08 | INFO    | src.interpret | [36/68] neuron #27340 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:09 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:09 | INFO    | src.interpret | [37/68] neuron #13866 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:09 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:10 | INFO    | src.interpret | [38/68] neuron #15062 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:10 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:10 | INFO    | src.interpret | [39/68] neuron #7614 (top_active) → weighing personal risk against community benefit
+2026-05-22 02:00:10 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:11 | INFO    | src.interpret | [40/68] neuron #17994 (top_active) → weighing personal risk against community benefit
+2026-05-22 02:00:11 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:11 | INFO    | src.interpret | [41/68] neuron #15287 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:12 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:12 | INFO    | src.interpret | [42/68] neuron #9025 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:12 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:12 | INFO    | src.interpret | [43/68] neuron #198 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:13 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:13 | INFO    | src.interpret | [44/68] neuron #25764 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:13 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:14 | INFO    | src.interpret | [45/68] neuron #24313 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:14 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:14 | INFO    | src.interpret | [46/68] neuron #7116 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:15 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:15 | INFO    | src.interpret | [47/68] neuron #6261 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:16 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:16 | INFO    | src.interpret | [48/68] neuron #17097 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:17 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:17 | INFO    | src.interpret | [49/68] neuron #15993 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:17 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:17 | INFO    | src.interpret | [50/68] neuron #20425 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:18 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:18 | INFO    | src.interpret | [51/68] neuron #8730 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:18 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:19 | INFO    | src.interpret | [52/68] neuron #22827 (top_active) → weighing personal risk against community benefit
+2026-05-22 02:00:19 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:19 | INFO    | src.interpret | [53/68] neuron #22948 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:20 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:20 | INFO    | src.interpret | [54/68] neuron #27966 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:20 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:21 | INFO    | src.interpret | [55/68] neuron #32277 (top_active) → weighing personal risk against community benefit
+2026-05-22 02:00:21 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:21 | INFO    | src.interpret | [56/68] neuron #16937 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:22 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:22 | INFO    | src.interpret | [57/68] neuron #7841 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:22 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:22 | INFO    | src.interpret | [58/68] neuron #3006 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:23 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:23 | INFO    | src.interpret | [59/68] neuron #31862 (top_active) → weighing personal risk against community benefit
+2026-05-22 02:00:23 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:23 | INFO    | src.interpret | [60/68] neuron #17153 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:24 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:24 | INFO    | src.interpret | [61/68] neuron #16472 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:24 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:24 | INFO    | src.interpret | [62/68] neuron #23751 (top_active) → weighing personal risk against community benefit
+2026-05-22 02:00:25 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:25 | INFO    | src.interpret | [63/68] neuron #20892 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:25 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:26 | INFO    | src.interpret | [64/68] neuron #20914 (top_active) → weighing personal risk against community benefit
+2026-05-22 02:00:26 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:26 | INFO    | src.interpret | [65/68] neuron #29249 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:27 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:27 | INFO    | src.interpret | [66/68] neuron #11916 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:28 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:28 | INFO    | src.interpret | [67/68] neuron #22593 (top_active) → weighing personal sacrifice for community benefit
+2026-05-22 02:00:28 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 02:00:29 | INFO    | src.interpret | [68/68] neuron #4456 (top_active) → weighing personal sacrifice against group benefit
+2026-05-22 02:00:29 | INFO    | __main__ | Темы сохранены: artifacts/neuron_themes_topk.json
+2026-05-22 02:00:29 | INFO    | __main__ | CSV-сводка: artifacts/summary_topk.csv

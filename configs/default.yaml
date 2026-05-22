@@ -1,0 +1,76 @@
+# =====================================================================
+# Конфигурация по умолчанию для пайплайна dilemma_sae.
+#
+# Все скрипты в scripts/ принимают:
+#   --config configs/default.yaml
+#   --override <dotted.key>=<value>      # можно повторять несколько раз
+#
+# Пример переопределения:
+#   python scripts/02_train_sae.py \
+#       --config configs/default.yaml \
+#       --override sae.mode=topk sae.k=16
+# =====================================================================
+
+model:
+  name: "Qwen/Qwen2.5-3B-Instruct"   # альтернатива: meta-llama/Llama-3.2-3B-Instruct (нужен HF_TOKEN)
+  dtype: "bfloat16"
+  device_map: "auto"
+
+data:
+  results_dir: "data/results_dilemma"   # ожидает 8 файлов volunteer_data_llama_reasoning_*_res.json
+
+extraction:
+  layer_idx: -5          # средне-глубокий слой; для Qwen2.5-3B (36 слоёв) ≈ 2/3 глубины
+  max_length: 1024
+  stride: 16             # шаг по позициям токенов внутри ответа ассистента
+  min_position: 8        # пропускаем первые N токенов (системный шаблон)
+  batch_size: 4          # рассчитано на T4 16 ГБ; на A100/H100 можно поднять
+  only_assistant_positions: true
+
+sae:
+  # mode: relu_l1 | topk | jumprelu
+  mode: "topk"
+  expansion: 16          # d_hidden = d_in * expansion (для 3B → ~32k нейронов)
+  epochs: 40
+  batch_size: 1024
+  lr: 5.0e-4
+  seed: 0
+
+  # параметры конкретных режимов (неиспользуемые в текущем режиме игнорируются):
+  l1_coef: 5.0e-2        # для relu_l1
+  k: 64                  # для topk
+  l0_coef: 2.0e-2        # для jumprelu
+  theta_init: 0.1        # для jumprelu (NB: вероятно слишком мал; см. HANDOVER.md)
+  ste_eps: 0.1           # для jumprelu (NB: вероятно слишком узок; см. HANDOVER.md)
+
+analysis:
+  min_fires: 20          # минимум активаций нейрона во всём корпусе
+  max_fire_rate: 0.5     # отсекаем BOS-подобные «всегда-активные»
+  top_neurons_k: 50      # сколько брать в общую top-N выборку (отчёт по интересным)
+  top_contexts_k: 15     # сколько контекстов на нейрон для отчёта
+  context_window: 30     # сколько токенов до позиции активации показывать
+  encode_batch_size: 4096  # для прогона активаций через encoder SAE
+
+contrast:
+  pos_label: "Yes"
+  neg_label: "No"        # альтернатива для борьбы с дисбалансом: "?"
+  top_k: 10              # сколько брать с каждой стороны
+  pool_factor: 3         # внутри top_k берём top_k * pool_factor от каждой метрики (token / sample),
+                         # потом пересекаем — это и даёт финальный top_k
+
+interpret:
+  judge_model: "openai/gpt-4o-mini"
+  max_snippets_per_neuron: 15
+  api_base: "https://openrouter.ai/api/v1"
+  # OPENROUTER_API_KEY читается из переменной окружения (см. README)
+
+paths:
+  artifacts_dir: "./artifacts"
+  figures_dir: "./artifacts/figures"
+  logs_dir: "./artifacts/logs"
+
+# Логирование
+logging:
+  level: "INFO"          # DEBUG | INFO | WARNING | ERROR
+  console: true
+  file: true

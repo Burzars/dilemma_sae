@@ -1,0 +1,71 @@
+neuron_id,kind,theme,fire_rate,mean_active,n_fires,cohens_d_token,cohens_d_sample
+14303,yes_trigger,commitment to community welfare and personal sacrifice,0.0562,9.2901,863,0.205,0.902
+16664,yes_trigger,braving danger for the greater good,0.0433,6.5409,664,0.251,0.658
+23407,yes_trigger,sense of responsibility to protect others,0.0330,8.1448,506,0.185,0.645
+29454,yes_trigger,sense of responsibility to others,0.0502,12.3509,771,0.263,0.617
+11886,yes_trigger,weighing personal sacrifice for community safety,0.0205,7.6364,315,0.168,0.579
+1581,yes_trigger,sense of responsibility to others,0.0438,9.5516,672,0.187,0.573
+8111,yes_trigger,sense of duty to protect others at sea,0.0378,12.8905,580,0.241,0.571
+6976,yes_trigger,sense of duty to the community,0.0166,7.7506,255,0.166,0.568
+32281,yes_trigger,sense of duty in facing danger,0.0649,9.8121,997,0.246,0.568
+10619,yes_trigger,embracing responsibility in the face of adversity,0.0360,9.7630,553,0.218,0.560
+22457,no_trigger,collaborative problem-solving for community benefit,0.0181,7.6779,278,-0.196,-0.724
+31706,no_trigger,weighing personal capacity against community needs,0.0163,8.4493,251,-0.150,-0.720
+12282,no_trigger,weighing individual action against collective responsibility,0.0453,8.2332,695,-0.189,-0.699
+25152,no_trigger,weighing personal values in community decisions,0.0058,8.4426,89,-0.159,-0.685
+20757,no_trigger,weighing personal cost vs group benefit,0.0321,11.4820,493,-0.127,-0.608
+11929,no_trigger,weighing personal cost vs group benefit,0.0298,8.5403,458,-0.134,-0.602
+7387,no_trigger,weighing personal sacrifice against community benefit,0.0225,9.6573,346,-0.142,-0.585
+20723,no_trigger,weighing personal cost vs group benefit,0.0128,5.6144,197,-0.156,-0.576
+12739,no_trigger,personal values influencing decisions on collective action,0.0024,9.4676,37,-0.121,-0.574
+5032,no_trigger,weighing personal sacrifice against community benefit,0.0363,7.5011,557,-0.144,-0.570
+16585,top_active,weighing personal sacrifice for community benefit,0.0020,71.3162,30,-0.043,-0.162
+11787,top_active,weighing personal sacrifice for community benefit,0.0016,75.0315,25,-0.043,-0.160
+18580,top_active,weighing personal sacrifice for community benefit,0.0021,65.9164,33,-0.043,-0.159
+14471,top_active,weighing personal sacrifice for community benefit,0.0018,67.6711,27,-0.045,-0.166
+16777,top_active,weighing personal sacrifice for community benefit,0.0019,66.1569,29,-0.044,-0.165
+4217,top_active,weighing personal sacrifice for community benefit,0.0021,64.2359,32,-0.044,-0.165
+26701,top_active,weighing personal sacrifice for community benefit,0.0023,62.1264,35,-0.041,-0.149
+19334,top_active,weighing personal risk against community benefit,0.0025,59.0167,39,-0.044,-0.161
+20210,top_active,weighing personal risk against community benefit,0.0018,63.6206,28,-0.044,-0.160
+4347,top_active,weighing personal sacrifice for community benefit,0.0033,52.8463,50,-0.044,-0.160
+9700,top_active,weighing personal risk against community benefit,0.0021,57.9464,33,-0.043,-0.156
+9038,top_active,weighing personal sacrifice for community benefit,0.0033,50.6802,51,-0.047,-0.182
+8970,top_active,weighing personal sacrifice for community benefit,0.0016,60.3747,24,-0.038,-0.136
+8793,top_active,weighing personal sacrifice for community benefit,0.0018,56.9975,28,-0.042,-0.151
+18030,top_active,weighing personal sacrifice for community benefit,0.0024,51.9602,37,-0.044,-0.161
+21563,top_active,weighing personal sacrifice for community benefit,0.0025,51.4661,38,-0.042,-0.153
+2704,top_active,weighing personal sacrifice for community benefit,0.0019,55.1750,29,-0.040,-0.145
+27340,top_active,weighing personal sacrifice for community benefit,0.0019,55.0916,29,-0.040,-0.148
+13866,top_active,weighing personal sacrifice for community benefit,0.0021,52.6583,33,-0.043,-0.159
+15062,top_active,weighing personal sacrifice for community benefit,0.0020,53.2098,31,-0.041,-0.151
+7614,top_active,weighing personal risk against community benefit,0.0023,50.7092,36,-0.043,-0.157
+17994,top_active,weighing personal risk against community benefit,0.0023,50.9838,35,-0.045,-0.164
+15287,top_active,weighing personal sacrifice for community benefit,0.0023,49.6804,36,-0.045,-0.166
+9025,top_active,weighing personal sacrifice for community benefit,0.0489,26.8264,750,-0.010,-0.025
+198,top_active,weighing personal sacrifice for community benefit,0.0025,48.2950,38,-0.044,-0.165
+25764,top_active,weighing personal sacrifice for community benefit,0.0023,48.6310,36,-0.042,-0.150
+24313,top_active,weighing personal sacrifice for community benefit,0.0025,47.2519,38,-0.044,-0.163
+7116,top_active,weighing personal sacrifice for community benefit,0.0023,47.9147,36,-0.046,-0.173
+6261,top_active,weighing personal sacrifice for community benefit,0.0021,48.0632,33,-0.044,-0.164
+17097,top_active,weighing personal sacrifice for community benefit,0.0026,45.6083,40,-0.044,-0.162
+15993,top_active,weighing personal sacrifice for community benefit,0.0022,47.4563,34,-0.045,-0.175
+20425,top_active,weighing personal sacrifice for community benefit,0.0025,45.6491,39,-0.041,-0.146
+8730,top_active,weighing personal sacrifice for community benefit,0.0021,47.7465,33,-0.042,-0.155
+22827,top_active,weighing personal risk against community benefit,0.0023,46.6275,36,-0.042,-0.155
+22948,top_active,weighing personal sacrifice for community benefit,0.0442,25.3580,678,0.018,0.038
+27966,top_active,weighing personal sacrifice for community benefit,0.0025,44.4247,38,-0.044,-0.164
+32277,top_active,weighing personal risk against community benefit,0.0021,46.2905,32,-0.046,-0.174
+16937,top_active,weighing personal sacrifice for community benefit,0.0021,45.9336,32,-0.041,-0.149
+7841,top_active,weighing personal sacrifice for community benefit,0.0025,43.4412,39,-0.044,-0.165
+3006,top_active,weighing personal sacrifice for community benefit,0.0029,42.0526,44,-0.040,-0.146
+31862,top_active,weighing personal risk against community benefit,0.0025,43.2641,39,-0.042,-0.155
+17153,top_active,weighing personal sacrifice for community benefit,0.0029,41.5833,44,-0.044,-0.165
+16472,top_active,weighing personal sacrifice for community benefit,0.0022,44.3559,34,-0.043,-0.158
+23751,top_active,weighing personal sacrifice for community benefit,0.0027,41.9223,42,-0.043,-0.161
+20892,top_active,weighing personal sacrifice for community benefit,0.0022,43.9382,34,-0.048,-0.182
+20914,top_active,weighing personal sacrifice for community benefit,0.0019,45.8476,29,-0.040,-0.143
+29249,top_active,weighing personal sacrifice for community benefit,0.0023,42.9028,35,-0.044,-0.163
+11916,top_active,weighing personal sacrifice for community benefit,0.0026,40.9910,40,-0.042,-0.152
+22593,top_active,weighing personal sacrifice for community benefit,0.0021,42.4217,33,-0.044,-0.166
+4456,top_active,weighing personal sacrifice against group benefit,0.0483,22.6241,742,-0.019,-0.127
