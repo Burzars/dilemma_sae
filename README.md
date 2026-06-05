@@ -87,7 +87,30 @@ python scripts/04_interpret.py
 
 # Шаг 5: PNG-графики в artifacts/figures/
 python scripts/05_visualize.py
+
+# Шаг 6 (опц.): held-out EV (обобщает ли SAE). GPU, ~25 мин на 8 фолдов.
+python scripts/06_eval_ev.py --smoke    # сначала дёшево проверить
+python scripts/06_eval_ev.py
+
+# Шаг 7 (опц., дорого): steering-эксперимент (причинность триггерных нейронов).
+# Нужен OPENROUTER_API_KEY (судья Yes/No/?). Сначала ОБЯЗАТЕЛЬНО --smoke.
+export OPENROUTER_API_KEY=sk-...
+python scripts/07_steering.py --smoke   # 4 генерации — проверка пайплайна
+python scripts/07_steering.py           # полный прогон, ~3 ч
 ```
+
+Шаги 6 и 7 — отдельные эксперименты поверх обученного SAE, не часть
+основного прогона. Оба переиспользуют `parse_args_and_init`, `--config`,
+`--override`, `--force` и кешируют результат (07 — пояячейково, по
+`neuron × alpha`, с резюмированием). У обоих есть `--smoke` для безопасной
+дешёвой проверки на ноутбуке/малом бюджете.
+
+**Steering и индексы нейронов.** Индексы признаков SAE привязаны к
+конкретному обученному `sae_<mode>.pt`. После переобучения SAE старые ID
+невалидны, поэтому `07_steering.py` по умолчанию выбирает цели
+ПРОГРАММНО из Yes/No-контраста текущего SAE (+ один случайный контроль).
+Явный список можно задать через `steering.neuron_ids` в конфиге — но
+только если приложен «родной» SAE, породивший эти ID.
 
 ### Переопределение параметров
 
@@ -128,7 +151,15 @@ YAML). Список:
 | `neuron_themes_<mode>.json`       | 04_interpret    | то же + поле `theme` от LLM             |
 | `summary_<mode>.csv`              | 04_interpret    | компактная сводка                       |
 | `figures/*.png`                   | 05_visualize    | графики                                 |
+| `eval_ev.json`                    | 06_eval_ev      | train/test EV+MSE по фолдам и random    |
+| `figures/ev_per_file.png`         | 06_eval_ev      | bar chart train vs test EV по файлам    |
+| `steering_results.json`           | 07_steering     | counts+answers по neuron × alpha × prompt |
+| `steering_summary.csv`            | 07_steering     | neuron/theme/alpha → yes/no/q, p_yes    |
+| `figures/steering_curves.png`     | 07_steering     | p(Yes) vs alpha по нейронам             |
 | `logs/<script_name>.log`          | каждый скрипт   | дублирует stdout                        |
+
+`steering_results.json` может вырасти до нескольких МБ (хранит тексты
+генераций) — при необходимости добавьте его в `.gitignore`.
 
 ## Миграция существующих артефактов
 
@@ -190,10 +221,14 @@ tail -f artifacts/logs/01_extract.log
    добавлено поле `token_pos`, чтобы можно было различать; полный фикс
    потребует развернуть `top_contexts_for_neuron` на два режима
    (с дедупликацией / без).
-2. **JumpReLU** с текущими гиперпараметрами (`theta_init=0.1`,
-   `ste_eps=0.1`) не достигает нужной разреженности. Подозрение, что
-   `theta_init` слишком мал для масштаба активаций (~10-20 норма);
-   стоит попробовать `theta_init=1.0–3.0` и `ste_eps=1.0+`.
+2. **JumpReLU STE исправлен** (`src/sae.py`: `JumpReLUFunction` /
+   `HeavisideFunction` по Rajamanoharan et al. 2024 — отдельные псевдо-
+   градиенты по порогу, без паразитного члена к `W_enc`). Главная причина
+   прошлых плохих результатов — слишком малые `theta_init=0.1`/`ste_eps=0.1`
+   при масштабе пре-активаций ~единицы-десятки: STE-окно почти всегда пустое,
+   и θ не обучался. Дефолты подняты до `theta_init=1.0`, `ste_eps=1.0`
+   (разумный диапазон θ 1–3, ε 0.5–2; `l0_coef` при необходимости поднять).
+   `topk` и `relu_l1` не затронуты.
 3. **Дисбаланс Yes/No 547:32.** Делает No-сторону контраста шумной.
    Альтернатива через config:
    `--override contrast.neg_label="?"` — статистически чище (61 пример).

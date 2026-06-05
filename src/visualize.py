@@ -117,6 +117,98 @@ def plot_fire_rate_hist(stats: dict, sae_name: str, out_dir: str | Path) -> Path
     return path
 
 
+def plot_ev_per_file(
+    lofo: Dict[str, dict],
+    out_dir: str | Path,
+    name: str = "ev_per_file",
+    random_split: dict | None = None,
+) -> Path:
+    """Bar chart train EV vs test EV по каждому held-out файлу (эксперимент 06).
+
+    Args
+    ----
+    lofo : dict
+        {"1": {"train_ev": .., "test_ev": ..}, ...} — leave-one-file-out.
+    random_split : dict | None
+        {"train_ev": .., "test_ev": ..} — необязательный baseline (90/10),
+        рисуется отдельной парой столбцов справа.
+    """
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    out_dir = _ensure_dir(out_dir)
+    keys = sorted(lofo.keys(), key=lambda s: int(s))
+    labels = [f"file {k}" for k in keys]
+    train_ev = [lofo[k]["train_ev"] for k in keys]
+    test_ev = [lofo[k]["test_ev"] for k in keys]
+    if random_split is not None:
+        labels.append("random\n90/10")
+        train_ev.append(random_split["train_ev"])
+        test_ev.append(random_split["test_ev"])
+
+    x = np.arange(len(labels))
+    w = 0.38
+    fig, ax = plt.subplots(figsize=(max(7, 1.1 * len(labels)), 4.2))
+    ax.bar(x - w / 2, train_ev, w, label="train EV", color="#3a6ea5")
+    ax.bar(x + w / 2, test_ev, w, label="test EV", color="#d1495b")
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels)
+    ax.set_ylabel("explained variance")
+    ax.set_title("Held-out EV (leave-one-file-out): обобщение SAE")
+    ax.legend()
+    ax.grid(True, axis="y", alpha=0.3)
+    for xi, (tr, te) in enumerate(zip(train_ev, test_ev)):
+        ax.annotate(f"{te - tr:+.3f}", (xi, max(tr, te)),
+                    ha="center", va="bottom", fontsize=7, color="#555")
+    plt.tight_layout()
+    path = out_dir / f"{name}.png"
+    fig.savefig(path, dpi=120)
+    plt.close(fig)
+    log.info("Сохранено: %s", path)
+    return path
+
+
+def plot_steering_curves(
+    curves: Dict[str, dict],
+    out_dir: str | Path,
+    name: str = "steering_curves",
+) -> Path:
+    """Линии p_yes vs alpha для каждого нейрона (эксперимент 07).
+
+    Args
+    ----
+    curves : dict
+        {neuron_label: {"alphas": [..], "p_yes": [..], "is_control": bool}}.
+        Контрольный нейрон рисуется пунктиром.
+    """
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    out_dir = _ensure_dir(out_dir)
+    fig, ax = plt.subplots(figsize=(7, 4.5))
+    for label, c in curves.items():
+        order = np.argsort(c["alphas"])
+        a = np.asarray(c["alphas"])[order]
+        p = np.asarray(c["p_yes"])[order]
+        style = "--" if c.get("is_control") else "-"
+        ax.plot(a, p, style, marker="o", label=label)
+    ax.axvline(0.0, color="#999", lw=0.8)
+    ax.set_xlabel("alpha (сила вмешательства вдоль W_dec нейрона)")
+    ax.set_ylabel("p(Yes)")
+    ax.set_ylim(-0.02, 1.02)
+    ax.set_title("Steering: p(Yes) vs alpha")
+    ax.legend(fontsize=8, loc="best")
+    ax.grid(True, alpha=0.3)
+    plt.tight_layout()
+    path = out_dir / f"{name}.png"
+    fig.savefig(path, dpi=120)
+    plt.close(fig)
+    log.info("Сохранено: %s", path)
+    return path
+
+
 def plot_top_neurons_heatmap(
     features: np.ndarray,
     neuron_ids: Sequence[int],

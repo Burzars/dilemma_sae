@@ -15,6 +15,7 @@ LLM начинает галлюцинировать темы из пунктуа
 
 from __future__ import annotations
 
+import asyncio
 import logging
 import os
 from typing import List
@@ -134,3 +135,132 @@ def interpret_report(
         new_item["theme"] = theme
         out.append(new_item)
     return out
+
+
+# ============================================================================
+# Судья-классификатор решения Yes / No / ? (для steering-эксперимента, 07)
+# ----------------------------------------------------------------------------
+# Тот же OpenRouter-судья и та же инфраструктура (_get_client), но другой
+# системный промпт: не «тема нейрона», а «какое решение приняла модель».
+# Разметка совпадает с полем `type` в data/results_dilemma/*.json (Yes/No/?).
+# ============================================================================
+
+DECISION_SYSTEM_PROMPT = """You classify a language model's answer to a
+Volunteer's Dilemma — a social dilemma in which a single volunteer can secure
+a public good for everyone, but incurs a small personal cost; if nobody
+volunteers, everyone loses.
+
+You are given the model's full answer (its reasoning and conclusion). Decide
+the answer's FINAL stance:
+  Yes  — the model decides it WOULD volunteer / take the action.
+  No   — the model decides it would NOT volunteer.
+  ?    — undecided, conditional, hedging, refuses to commit, or no clear stance.
+
+Respond with EXACTLY one token: Yes, No, or ?. No explanation, no punctuation.
+"""
+
+
+def _normalize_decision(text: str) -> str:
+    """Грубая, но устойчивая нормализация ответа судьи к {Yes, No, ?}."""
+    t = (text or "").strip().lower()
+    if not t:
+        return "?"
+    first = t.split()[0].strip(".,:;!?\"'")
+    if first == "yes":
+        return "Yes"
+    if first == "no":
+        return "No"
+    has_yes, has_no = "yes" in t, "no" in t
+    if has_yes and not has_no:
+        return "Yes"
+    if has_no and not has_yes:
+        return "No"
+    return "?"
+
+
+def _decision_user_message(answer: str, max_chars: int = 6000) -> str:
+    a = (answer or "").strip()
+    if len(a) > max_chars:
+        a = a[:max_chars] + "…"
+    return f'Model\'s answer:\n"""\n{a}\n"""\n\nFinal stance? Reply Yes, No, or ?.'
+
+
+def classify_decision(
+    answer: str,
+    judge_model: str = "openai/gpt-4o-mini",
+    api_base: str = "https://openrouter.ai/api/v1",
+    client=None,
+) -> str:
+    """Синхронная классификация одного ответа в Yes/No/? (одиночный вызов LLM)."""
+    if client is None:
+        client = _get_client(api_base)
+    resp = client.chat.completions.create(
+        model=judge_model,
+        messages=[
+            {"role": "system", "content": DECISION_SYSTEM_PROMPT},
+            {"role": "user",   "content": _decision_user_message(answer)},
+        ],
+        temperature=0.0,
+        max_tokens=4,
+    )
+    return _normalize_decision(resp.choices[0].message.content)
+
+
+def _get_async_client(api_base: str):
+    """Асинхронный OpenAI-совместимый клиент с OpenRouter base_url + ключ из env."""
+    try:
+        from openai import AsyncOpenAI
+    except ImportError as e:
+        raise ImportError("openai package required. pip install 'openai>=1.0,<2.0'") from e
+    key = os.environ.get("OPENROUTER_API_KEY")
+    if not key:
+        raise RuntimeError(
+            "OPENROUTER_API_KEY not set. Export it before running: "
+            "  export OPENROUTER_API_KEY=sk-..."
+        )
+    return AsyncOpenAI(base_url=api_base, api_key=key)
+
+
+async def classify_decisions_async(
+    answers: List[str],
+    judge_model: str = "openai/gpt-4o-mini",
+    api_base: str = "https://openrouter.ai/api/v1",
+    concurrency: int = 8,
+    client=None,
+) -> List[str]:
+    """Параллельная классификация списка ответов в Yes/No/? через async OpenRouter.
+
+    Ошибки одиночных запросов не валят весь батч — такой ответ помечается "?"
+    и пишется в лог. Сохраняет порядок входа (asyncio.gather).
+    """
+    own_client = client is None
+    if own_client:
+        client = _get_async_client(api_base)
+    sem = asyncio.Semaphore(max(1, concurrency))
+
+    async def _one(idx: int, answer: str) -> str:
+        async with sem:
+            try:
+                resp = await client.chat.completions.create(
+                    model=judge_model,
+                    messages=[
+                        {"role": "system", "content": DECISION_SYSTEM_PROMPT},
+                        {"role": "user",   "content": _decision_user_message(answer)},
+                    ],
+                    temperature=0.0,
+                    max_tokens=4,
+                )
+                return _normalize_decision(resp.choices[0].message.content)
+            except Exception as e:  # noqa: BLE001 — одиночный сбой не критичен
+                log.warning("Судья: ошибка на ответе #%d: %s", idx, e)
+                return "?"
+
+    try:
+        results = await asyncio.gather(*(_one(i, a) for i, a in enumerate(answers)))
+    finally:
+        if own_client and hasattr(client, "close"):
+            try:
+                await client.close()
+            except Exception:  # noqa: BLE001
+                pass
+    return list(results)

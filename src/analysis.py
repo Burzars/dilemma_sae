@@ -47,6 +47,42 @@ def encode_all(sae, hidden: np.ndarray, batch_size: int = 4096, device: str = "c
     return np.concatenate(out, axis=0)
 
 
+@torch.no_grad()
+def recon_ev(sae, hidden: np.ndarray, batch_size: int = 4096, device: str = "cuda") -> dict:
+    """Explained variance (EV) реконструкции SAE на матрице активаций (N, d_in).
+
+    EV = 1 − MSE / Var(X), где (как в ТЗ):
+        MSE    = ((X − X̂) ** 2).mean()        # среднее по всем (точка, размерность)
+        Var(X) = X.var(dim=0).mean()           # средняя по 2048 размерностям дисперсия
+
+    Считается ПОТОКОВО по батчам — не материализует матрицу features
+    (N, d_hidden), поэтому безопасно по памяти даже для широких SAE.
+    Аккумуляторы в float64 ради устойчивости.
+
+    Returns
+    -------
+    dict: {"ev": float, "mse": float, "var": float, "n": int}
+    """
+    sae.eval()
+    X = torch.from_numpy(hidden.astype(np.float32))
+    n, d = X.shape
+    sse = torch.zeros((), dtype=torch.float64, device=device)
+    sum_x = torch.zeros(d, dtype=torch.float64, device=device)
+    sum_x2 = torch.zeros(d, dtype=torch.float64, device=device)
+    for i in range(0, n, batch_size):
+        xb = X[i:i + batch_size].to(device)
+        x_hat = sae.decode(sae.encode(xb))
+        sse += (x_hat - xb).double().pow(2).sum()
+        xbd = xb.double()
+        sum_x += xbd.sum(0)
+        sum_x2 += xbd.pow(2).sum(0)
+    mse = (sse / (n * d)).item()
+    mean = sum_x / n
+    var_x = (sum_x2 / n - mean.pow(2)).mean().item()   # population variance (ddof=0)
+    ev = (1.0 - mse / var_x) if var_x > 0 else float("nan")
+    return {"ev": ev, "mse": mse, "var": var_x, "n": int(n)}
+
+
 def neuron_statistics(features: np.ndarray) -> dict:
     """Per-neuron статистика по матрице features (N, d_hidden).
 

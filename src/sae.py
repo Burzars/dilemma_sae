@@ -12,9 +12,14 @@
 
   "jumprelu"  — JumpReLU + STE + прямая оптимизация L0 (Rajamanoharan et al. 2024).
                 Параметры: l0_coef, theta_init, ste_eps.
-                ВНИМАНИЕ: текущие theta_init=0.1 и ste_eps=0.1, вероятно,
-                слишком малы для нашего масштаба активаций — нужно
-                подбирать (см. HANDOVER.md).
+                STE реализован по статье (см. JumpReLUFunction / HeavisideFunction):
+                активация и L0-ступенька — отдельные autograd.Function с
+                ПРАВИЛЬНЫМИ псевдо-градиентами по порогу θ.
+                ВНИМАНИЕ ПО МАСШТАБУ: θ и ε живут в пространстве пре-активаций
+                (норма (x−b_dec) здесь ~150, проекции на learned-направления
+                порядка единиц–десятков), поэтому theta_init≈1–3 и ste_eps≈0.5–2.
+                Старые значения 0.1/0.1 давали почти всегда пустое STE-окно
+                |z−θ|<ε/2 → θ не получал градиента → деградация обучения.
 
 Общие для всех режимов трюки:
   * вычитание b_dec ПЕРЕД энкодером (привязка к среднему облака),
@@ -39,34 +44,78 @@ from torch.utils.data import DataLoader, TensorDataset
 log = logging.getLogger(__name__)
 
 
-class STEHeaviside(torch.autograd.Function):
-    """Straight-through estimator для функции Хевисайда H(x - θ).
+def _rectangle(x: torch.Tensor) -> torch.Tensor:
+    """Прямоугольное ядро K ширины 1, центрированное в 0: 1 при |x|<1/2, иначе 0.
 
-    Forward: 1 если x > θ, иначе 0.
-    Backward: вместо нулевого градиента используем прямоугольное окно
-              шириной eps вокруг порога (стандартный STE из
-              Rajamanoharan et al. 2024).
+    Через него Rajamanoharan et al. 2024 задают псевдо-градиенты по порогу:
+    K((z−θ)/ε) ненулевой ровно в окне |z−θ| < ε/2.
+    """
+    return ((x > -0.5) & (x <= 0.5)).to(x.dtype)
+
+
+def _sum_to_theta(grad: torch.Tensor, theta: torch.Tensor) -> torch.Tensor:
+    """Свернуть градиент формы (..., d_hidden) к форме θ = (d_hidden,).
+
+    θ один на нейрон, а grad приходит поэлементно по батчу — autograd.Function
+    обязан вернуть градиент ТОЧНО формы входа θ, поэтому суммируем лишние оси.
+    """
+    extra = grad.dim() - theta.dim()
+    if extra > 0:
+        grad = grad.sum(dim=tuple(range(extra)))
+    return grad
+
+
+class JumpReLUFunction(torch.autograd.Function):
+    """JumpReLU-активация f(z) = z · H(z − θ) (Rajamanoharan et al. 2024).
+
+    Forward точный. Backward (псевдо-градиенты, прил. B статьи):
+      ∂f/∂z = H(z − θ)                  — точная производная почти всюду (= гейт);
+      ∂f/∂θ = −(θ/ε) · K((z − θ)/ε)     — высота скачка функции в точке θ равна θ.
+
+    Важно: коэффициент при ядре — именно θ (высота разрыва), а НЕ z; и в ∂f/∂z
+    нет «паразитного» члена z·δ(z−θ). Прошлая реализация (f = z·heaviside_ste(z,θ))
+    через autograd порождала и лишний член z·K/ε в градиенте к W_enc, и коэффициент
+    z вместо θ.
     """
 
     @staticmethod
-    def forward(ctx, x, theta, eps):
-        ctx.save_for_backward(x, theta)
+    def forward(ctx, z, theta, eps):
+        ctx.save_for_backward(z, theta)
         ctx.eps = eps
-        return (x > theta).to(x.dtype)
+        return z * (z > theta).to(z.dtype)
 
     @staticmethod
     def backward(ctx, grad_output):
-        x, theta = ctx.saved_tensors
+        z, theta = ctx.saved_tensors
         eps = ctx.eps
-        # окно [θ - eps/2, θ + eps/2], нормированное на 1/eps
-        window = ((x - theta).abs() < eps / 2).to(grad_output.dtype) / eps
-        grad_x = grad_output * window
-        grad_theta = -grad_output * window
-        return grad_x, grad_theta, None
+        grad_z = grad_output * (z > theta).to(grad_output.dtype)
+        k = _rectangle((z - theta) / eps)
+        grad_theta = _sum_to_theta(grad_output * (-(theta / eps) * k), theta)
+        return grad_z, grad_theta, None
 
 
-def heaviside_ste(x, theta, eps: float = 1e-1):
-    return STEHeaviside.apply(x, theta, eps)
+class HeavisideFunction(torch.autograd.Function):
+    """Ступенька H(z − θ) для L0-штрафа (Rajamanoharan et al. 2024).
+
+    Forward точный. Backward (прил. B статьи):
+      ∂H/∂z = 0                         — L0 НЕ должен давать градиент энкодеру;
+      ∂H/∂θ = −(1/ε) · K((z − θ)/ε)     — двигает только сам порог θ.
+    """
+
+    @staticmethod
+    def forward(ctx, z, theta, eps):
+        ctx.save_for_backward(z, theta)
+        ctx.eps = eps
+        return (z > theta).to(z.dtype)
+
+    @staticmethod
+    def backward(ctx, grad_output):
+        z, theta = ctx.saved_tensors
+        eps = ctx.eps
+        k = _rectangle((z - theta) / eps)
+        grad_theta = _sum_to_theta(grad_output * (-(1.0 / eps) * k), theta)
+        # ∂/∂z = 0 (None) — ключевой момент: L0 двигает порог, а не W_enc.
+        return None, grad_theta, None
 
 
 class SparseAutoencoder(nn.Module):
@@ -85,8 +134,8 @@ class SparseAutoencoder(nn.Module):
         l1_coef: float = 5e-4,
         k: int = 64,
         l0_coef: float = 1e-2,
-        theta_init: float = 0.1,
-        ste_eps: float = 1e-1,
+        theta_init: float = 1.0,   # в пространстве пре-активаций (норма ~единицы-десятки)
+        ste_eps: float = 1.0,      # ширина STE-окна по порогу; см. JumpReLUFunction
     ):
         super().__init__()
         if mode not in ("relu_l1", "topk", "jumprelu"):
@@ -138,8 +187,10 @@ class SparseAutoencoder(nn.Module):
 
         elif self.mode == "jumprelu":
             theta = self.log_theta.exp()
-            gate = heaviside_ste(pre, theta, self.ste_eps)
-            f = pre * gate
+            f = JumpReLUFunction.apply(pre, theta, self.ste_eps)
+            # Отдельный гейт для L0-штрафа — со своим (нулевым по z) backward.
+            if return_gate:
+                gate = HeavisideFunction.apply(pre, theta, self.ste_eps)
 
         if return_gate:
             return f, gate
@@ -181,6 +232,26 @@ class SparseAutoencoder(nn.Module):
         """Нормируем колонки W_dec в единичную длину."""
         norms = self.W_dec.norm(dim=1, keepdim=True).clamp(min=1e-8)
         self.W_dec.div_(norms)
+
+
+def sae_kwargs_for_mode(sae_cfg: dict) -> dict:
+    """Собирает только релевантные для режима kwargs SAE из секции cfg.sae.
+
+    Зеркалит логику scripts/02_train_sae.py::_sae_kwargs, но живёт в src/,
+    чтобы новые скрипты (06_eval_ev, 07_steering) переиспользовали её, не
+    дублируя и не импортируя из скрипта с цифрами в имени.
+    """
+    mode = sae_cfg["mode"]
+    kw = {"mode": mode}
+    if mode == "relu_l1":
+        kw["l1_coef"] = sae_cfg["l1_coef"]
+    elif mode == "topk":
+        kw["k"] = sae_cfg["k"]
+    elif mode == "jumprelu":
+        kw["l0_coef"] = sae_cfg["l0_coef"]
+        kw["theta_init"] = sae_cfg["theta_init"]
+        kw["ste_eps"] = sae_cfg["ste_eps"]
+    return kw
 
 
 def train_sae(

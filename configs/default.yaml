@@ -39,9 +39,12 @@ sae:
   # параметры конкретных режимов (неиспользуемые в текущем режиме игнорируются):
   l1_coef: 5.0e-2        # для relu_l1
   k: 64                  # для topk
-  l0_coef: 2.0e-2        # для jumprelu
-  theta_init: 0.1        # для jumprelu (NB: вероятно слишком мал; см. HANDOVER.md)
-  ste_eps: 0.1           # для jumprelu (NB: вероятно слишком узок; см. HANDOVER.md)
+  l0_coef: 2.0e-2        # для jumprelu (баланс recon/L0; при необходимости поднять)
+  # θ и ε живут в пространстве пре-активаций (норма (x−b_dec) здесь ~150,
+  # проекции порядка единиц-десятков). Старые 0.1/0.1 давали почти всегда
+  # пустое STE-окно |z−θ|<ε/2 → θ не обучался. См. src/sae.py::JumpReLUFunction.
+  theta_init: 1.0        # для jumprelu (стартовый порог; разумно 1–3)
+  ste_eps: 1.0           # для jumprelu (ширина STE-окна; разумно 0.5–2)
 
 analysis:
   min_fires: 20          # минимум активаций нейрона во всём корпусе
@@ -63,6 +66,39 @@ interpret:
   max_snippets_per_neuron: 15
   api_base: "https://openrouter.ai/api/v1"
   # OPENROUTER_API_KEY читается из переменной окружения (см. README)
+
+# --- 06_eval_ev: held-out explained variance (leave-one-file-out) ---
+eval_ev:
+  held_files: null         # null → все file_idx из samples.json (обычно 1..8); или явный список
+  random_split: true       # дополнительно один baseline-сплит 90/10 ПО reasoning-ответам
+  random_split_frac: 0.1   # доля test для random-split
+  seed: 0                  # сид раздела random-split
+  epochs: null             # null → берём sae.epochs; задать меньше, чтобы ускорить 9 переобучений
+  encode_batch_size: 8192  # батч для потокового расчёта EV (encode→decode)
+  # SAE-гиперпараметры (mode/expansion/k/lr/...) наследуются из секции sae.
+
+# --- 07_steering: причинная проверка триггерных нейронов ---
+steering:
+  # ВАЖНО: индексы нейронов SAE привязаны к КОНКРЕТНОМУ обученному SAE. После
+  # переобучения старые ID (12177 и т.п.) невалидны, поэтому по умолчанию цели
+  # выбираются ПРОГРАММНО из контраста текущего SAE (секция contrast).
+  neuron_ids: []           # [] → авто-выбор; иначе явный список int (для приложенного «родного» SAE)
+  n_yes: 2                 # сколько top Yes-триггеров взять из контраста
+  n_no: 2                  # сколько top No/?-триггеров взять из контраста
+  add_random_control: true # добавить 1 случайный нейрон похожей частоты (контроль)
+  random_fire_rate_range: [0.01, 0.10]
+  random_seed: 0
+
+  alphas: [-5.0, -2.0, 0.0, 2.0, 5.0]   # 0.0 — baseline без вмешательства
+  n_generations: 5         # генераций на (нейрон, alpha, промпт), разные seed
+  base_seed: 1234          # seed генерации g = base_seed + g
+  max_new_tokens: 400
+  temperature: 0.7
+  gen_batch_size: 4        # батч генерации (T4: 4)
+  log_every: 10            # лог прогресса раз в N генераций
+
+  judge_model: "openai/gpt-4o-mini"   # судья Yes/No/? (api_base берётся из interpret.api_base)
+  judge_concurrency: 8     # параллельные async-запросы к OpenRouter
 
 paths:
   artifacts_dir: "./artifacts"
