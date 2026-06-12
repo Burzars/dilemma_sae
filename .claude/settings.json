@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('artifacts/eval_ev.json'\\)\\); print\\(json.dumps\\(d,ensure_ascii=False,indent=1\\)[:900]\\)\")",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

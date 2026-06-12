@@ -96,14 +96,20 @@ def generate_batched(
     prompts: Sequence[str],
     *,
     max_new_tokens: int = 400,
-    temperature: float = 0.7,
+    temperature: float = 1.0,
     seed: int = 0,
     batch_size: int = 4,
 ) -> List[str]:
-    """Батч-генерация ответов (chat-template + left-padding), seed на весь вызов.
+    """Батч-генерация ответов (chat-template + left-padding), один seed на вызов.
 
     Возвращает список строк — только сгенерированный ассистентский текст
-    (input-часть отрезается). Стиминг по батчам ради памяти на T4.
+    (input-часть отрезается). Стриминг по батчам ради памяти на T4.
+
+    Стохастичность и независимость сэмплов: temperature=1.0 по умолчанию (было
+    0.7 — слишком «узко», сэмплы почти совпадали). Несколько генераций на ОДИН
+    промпт получают РАЗНЫЕ ответы за счёт РАЗНОГО seed на каждый вызов: вызывайте
+    функцию по разу на сэмпл с seed=base_seed+g (см. scripts/07_steering.py).
+    Так N генераций на (промпт, alpha) действительно независимы.
     """
     device = next(model.parameters()).device
     prev_side = tokenizer.padding_side
@@ -166,3 +172,139 @@ def pick_random_control_neuron(
         )
     rng = np.random.default_rng(seed)
     return int(rng.choice(pool))
+
+
+# ===========================================================================
+# Корректный протокол оценки steering (Задача 3): масштаб alpha от нормы,
+# bootstrap-CI, отбор промптов по податливости, формальный критерий «сработало».
+# Все функции — чистый numpy (без модели), чтобы их можно было юнит-тестировать.
+# ===========================================================================
+
+def alpha_scale_grid(
+    hidden: np.ndarray,
+    fractions: Sequence[float] = (0.25, 0.5, 1.0, 2.0, 4.0),
+) -> tuple[list[float], float]:
+    """Сетка alpha как ДОЛИ от медианы нормы hidden на слое экстракции.
+
+    Прежние фиксированные ±2/±5 были ~3% от типичной нормы ||h|| (≈150), поэтому
+    стиринг почти не двигал решение. Масштабируем от данных:
+
+        m = median_i ||h_i||_2                     (по строкам матрицы активаций)
+        alphas = sorted({ ±a·m : a ∈ fractions } ∪ {0})
+
+    Это даёт значения на ~2 порядка крупнее прежних. Возвращает (alphas, m).
+    """
+    h = np.asarray(hidden)
+    norms = np.linalg.norm(h.astype(np.float32, copy=False), axis=1)
+    m = float(np.median(norms))
+    fr = sorted({float(a) for a in fractions if a > 0})
+    alphas = sorted([-a * m for a in fr] + [0.0] + [a * m for a in fr])
+    return alphas, m
+
+
+def bootstrap_ci_proportion(
+    labels: Sequence[str],
+    target: str = "Yes",
+    n_boot: int = 1000,
+    ci: float = 95.0,
+    seed: int = 0,
+) -> tuple[float, float, float]:
+    """Percentile-bootstrap доверительный интервал доли `target` среди labels.
+
+    Просто и достаточно: ресэмплим индексы с возвращением n_boot раз и берём
+    перцентили доли. labels — список меток "Yes"/"No"/"?". Возвращает
+    (p, lo, hi); при пустом входе — (nan, nan, nan).
+    """
+    labs = list(labels)
+    n = len(labs)
+    if n == 0:
+        return float("nan"), float("nan"), float("nan")
+    ind = np.fromiter((1.0 if l == target else 0.0 for l in labs),
+                      dtype=np.float64, count=n)
+    p = float(ind.mean())
+    rng = np.random.default_rng(seed)
+    boot = ind[rng.integers(0, n, size=(n_boot, n))].mean(axis=1)
+    half = (100.0 - ci) / 2.0
+    return p, float(np.percentile(boot, half)), float(np.percentile(boot, 100.0 - half))
+
+
+def select_susceptible_prompts(
+    baseline_p_yes: dict,
+    *,
+    k_each: int = 3,
+    down_yes_min: float = 0.55,
+    up_yes_max: float = 0.45,
+) -> dict:
+    """Делит промпты на два набора по податливости, опираясь на бейзлайн (alpha=0).
+
+    baseline_p_yes : {prompt_key: p_yes при alpha=0}.
+
+    push_down (толкаем к No): Yes-смещённый бейзлайн — есть куда двигать ВНИЗ.
+        кандидаты p_yes >= down_yes_min; берём top-k по p_yes.
+    push_up (толкаем к Yes): высокий ?/No бейзлайн — есть куда двигать ВВЕРХ.
+        кандидаты p_yes <= up_yes_max; берём bottom-k по p_yes.
+
+    Если порог отсекает меньше k_each — добираем крайними по ранжировке (наборы
+    не должны быть пустыми; об этом пишем в лог на стороне вызова).
+    Возвращает {"push_down": [keys], "push_up": [keys]}.
+    """
+    keys_sorted = sorted(baseline_p_yes, key=lambda k: baseline_p_yes[k])  # по возр. p_yes
+    up = [k for k in keys_sorted if baseline_p_yes[k] <= up_yes_max][:k_each]
+    if len(up) < k_each:
+        up = keys_sorted[:k_each]
+    down = [k for k in reversed(keys_sorted) if baseline_p_yes[k] >= down_yes_min][:k_each]
+    if len(down) < k_each:
+        down = list(reversed(keys_sorted))[:k_each]
+    return {"push_down": down, "push_up": up}
+
+
+def _ci_disjoint(a: tuple, b: tuple) -> bool:
+    (alo, ahi), (blo, bhi) = a, b
+    return ahi < blo or bhi < alo
+
+
+def steering_verdict(
+    trigger: dict,
+    control: dict,
+    monotonic_tol: float = 0.05,
+) -> tuple[bool, str, dict]:
+    """Формальный критерий «steering сработал» для одного триггера vs контроль.
+
+    trigger/control: {"alphas": [...], "p_yes": [...], "ci": [(lo,hi), ...]} —
+    ci относится к p_yes. Считаем сработавшим, ТОЛЬКО если ОБА условия:
+
+      (1) p_yes триггера монотонна по alpha (с допуском monotonic_tol на шум);
+      (2) на КРАЙНИХ alpha CI триггера НЕ пересекается с CI контроля хотя бы на
+          одном конце.
+
+    Иначе — честный вывод «эффект неотличим от нуля/контроля».
+    Возвращает (worked, reason, details).
+    """
+    a = np.asarray(trigger["alphas"], dtype=float)
+    order = np.argsort(a)
+    p = np.asarray(trigger["p_yes"], dtype=float)[order]
+    ci = [trigger["ci"][i] for i in order]
+
+    diffs = np.diff(p)
+    overall = float(p[-1] - p[0]) if p.size >= 2 else 0.0
+    if overall >= 0:
+        monotone = bool(np.all(diffs >= -monotonic_tol))
+    else:
+        monotone = bool(np.all(diffs <= monotonic_tol))
+
+    ca = np.asarray(control["alphas"], dtype=float)
+    cci = [control["ci"][i] for i in np.argsort(ca)]
+    sep_low = _ci_disjoint(ci[0], cci[0])
+    sep_high = _ci_disjoint(ci[-1], cci[-1])
+    separated = sep_low or sep_high
+
+    worked = bool(monotone and separated and abs(overall) > 0)
+    reason = (
+        f"Δp_yes(min→max)={overall:+.3f}; монотонна={monotone}; "
+        f"CI триггера vs контроля разделены: на min-alpha={sep_low}, "
+        f"на max-alpha={sep_high} → {'СРАБОТАЛ' if worked else 'неотличим от контроля'}"
+    )
+    return worked, reason, {
+        "overall_delta": overall, "monotone": monotone,
+        "sep_low": bool(sep_low), "sep_high": bool(sep_high),
+    }

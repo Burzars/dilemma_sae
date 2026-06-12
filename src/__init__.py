@@ -13,7 +13,11 @@
   - io_utils    : save/load активаций, SAE, отчётов; конфиги
 """
 
-from . import analysis, data, extract, interpret, io_utils, sae, steering, visualize
+# Ленивый импорт подмодулей (PEP 562): `from src.X import Y` и `src.X` работают,
+# но пакет НЕ тянет torch/numpy при импорте, если они не нужны. Это важно для
+# инструментов генерации данных (generate_answers, build_datasets, interpret) —
+# они ходят только в OpenRouter и не должны требовать GPU-стек.
+import importlib
 
 __all__ = [
     "analysis",
@@ -24,4 +28,17 @@ __all__ = [
     "sae",
     "steering",
     "visualize",
+    "scenarios",
+    "generate_answers",
+    "build_datasets",
 ]
+
+
+def __getattr__(name):
+    if name in __all__:
+        return importlib.import_module(f"{__name__}.{name}")
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+
+
+def __dir__():
+    return sorted(__all__)

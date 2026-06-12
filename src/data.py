@@ -45,7 +45,10 @@ def load_samples(results_dir: str | Path) -> List[ReasoningSample]:
         ~640 примеров с дисбалансом ~547/61/32 Yes/?/No.
     """
     results_dir = Path(results_dir)
-    files = sorted(results_dir.glob("volunteer_data_llama_reasoning_[0-9]_res.json"))
+    # [0-9]* (а не [0-9]) — чтобы матчились и многозначные индексы: исходные
+    # файлы 1..8 однозначны, но новый корпус (generate_answers, start-idx 9)
+    # доходит до 9..18+, и [0-9] поймал бы только однозначные.
+    files = sorted(results_dir.glob("volunteer_data_llama_reasoning_[0-9]*_res.json"))
     if not files:
         raise FileNotFoundError(
             f"JSON-файлов volunteer_data_llama_reasoning_*_res.json не найдено в {results_dir}"

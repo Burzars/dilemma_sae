@@ -306,6 +306,47 @@ def find_contrast_neurons(
     return yes_neurons, no_neurons
 
 
+def contrast_feature_slice(
+    features: np.ndarray,
+    labels: np.ndarray,
+    sample_idx: np.ndarray,
+    samples: Sequence[ReasoningSample],
+    *,
+    slice: str = "balanced",
+    balanced_dir=None,
+    balanced_seed: int = 0,
+):
+    """(features, labels, sample_idx) для Yes/No-контраста на нужном срезе.
+
+    SAE/features/stats считаются на FULL, но сам КОНТРАСТ — на BALANCED, где
+    метки используются и шум редкого класса вреден. Balanced-срез получаем
+    маской по позициям того же full-pack (без повторной экстракции).
+
+    slice="full" → данные как есть (старое поведение).
+    slice="balanced" → маска из src/build_datasets.balanced_sample_mask.
+    """
+    if slice == "full":
+        return features, labels, sample_idx
+    if slice != "balanced":
+        raise ValueError(f"contrast.slice должен быть 'full' или 'balanced', а не {slice!r}")
+
+    from .build_datasets import balanced_sample_mask
+    mask, info = balanced_sample_mask(
+        samples, sample_idx, balanced_dir=balanced_dir, seed=balanced_seed,
+    )
+    n = int(mask.sum())
+    log.info(
+        "Контраст на BALANCED: позиций %d/%d, ответов %d (до баланса %s, источник=%s)",
+        n, len(mask), info["n_answers_kept"], info["counts_before"], info["source"],
+    )
+    if n == 0:
+        raise ValueError(
+            "Balanced-срез пуст. Проверьте contrast.balanced_dir / редкий класс "
+            "(нужны примеры всех классов Yes/No/?)."
+        )
+    return features[mask], np.asarray(labels)[mask], np.asarray(sample_idx)[mask]
+
+
 def build_report(
     neuron_ids: Sequence[int],
     kind: str,

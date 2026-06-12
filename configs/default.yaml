@@ -12,15 +12,21 @@
 # =====================================================================
 
 model:
-  name: "Qwen/Qwen2.5-3B-Instruct"   # альтернатива: meta-llama/Llama-3.2-3B-Instruct (нужен HF_TOKEN)
+  # КРИТИЧНО: эта модель (локальный extract) ДОЛЖНА совпадать с генератором
+  # текстов в src/generate_answers.py (GEN_MODEL=qwen/qwen-2.5-7b-instruct) —
+  # одна версия, один chat-template, иначе тексты и активации рассогласуются.
+  name: "Qwen/Qwen2.5-7B-Instruct"
   dtype: "bfloat16"
   device_map: "auto"
 
 data:
-  results_dir: "data/results_dilemma"   # ожидает 8 файлов volunteer_data_llama_reasoning_*_res.json
+  # v2-корпус: SAE учим на full-срезе (см. src/build_datasets.py).
+  # Контраст/триггеры считаем на balanced-срезе (data.results_dir переопределяют
+  # под нужный срез через --override на шаге анализа).
+  results_dir: "data/results_dilemma_v2_full"   # файлы volunteer_data_llama_reasoning_*_res.json
 
 extraction:
-  layer_idx: -5          # средне-глубокий слой; для Qwen2.5-3B (36 слоёв) ≈ 2/3 глубины
+  layer_idx: -5          # средне-глубокий слой (фиксирован; sweep по слоям не делаем)
   max_length: 1024
   stride: 16             # шаг по позициям токенов внутри ответа ассистента
   min_position: 8        # пропускаем первые N токенов (системный шаблон)
@@ -60,6 +66,14 @@ contrast:
   top_k: 10              # сколько брать с каждой стороны
   pool_factor: 3         # внутри top_k берём top_k * pool_factor от каждой метрики (token / sample),
                          # потом пересекаем — это и даёт финальный top_k
+  # Срез для КОНТРАСТА (выбор Yes/No-триггеров). SAE/features/stats считаем на
+  # FULL, а сам контраст — на BALANCED (метки используются, шум редкого класса
+  # вреден). "balanced" → строим маску по позициям full-pack без повторной
+  # экстракции (src/build_datasets.balanced_sample_mask). "full" → старое
+  # поведение (контраст на всех данных).
+  slice: "balanced"      # balanced | full
+  balanced_dir: "data/results_dilemma_v2_balanced"  # если есть — берём ровно этот срез; иначе derive
+  balanced_seed: 0       # сид андерсэмплинга для fallback-derive
 
 interpret:
   judge_model: "openai/gpt-4o-mini"
@@ -89,13 +103,32 @@ steering:
   random_fire_rate_range: [0.01, 0.10]
   random_seed: 0
 
-  alphas: [-5.0, -2.0, 0.0, 2.0, 5.0]   # 0.0 — baseline без вмешательства
-  n_generations: 5         # генераций на (нейрон, alpha, промпт), разные seed
-  base_seed: 1234          # seed генерации g = base_seed + g
+  # --- Масштаб alpha (Задача 3) ---
+  # Сетка alpha строится как ДОЛИ от медианы нормы ||h|| на слое -5
+  # (src/steering.alpha_scale_grid). Прежние фиксированные ±2/±5 были ~3% нормы
+  # → стиринг не двигался. alphas: null → авто из нормы; явный список = старое
+  # поведение (оставлено опцией).
+  alphas: null
+  alpha_fractions: [0.25, 0.5, 1.0, 2.0, 4.0]   # a → alphas = {±a·median||h||} ∪ {0}
+
+  # --- Протокол оценки (Задача 3) ---
+  n_generations: 30        # >= 30 генераций на (нейрон, alpha, промпт); разные seed
+  base_seed: 1234          # seed генерации g = base_seed + g (независимость сэмплов)
   max_new_tokens: 400
-  temperature: 0.7
+  temperature: 1.0         # было 0.7 — слишком узко, сэмплы почти совпадали
   gen_batch_size: 4        # батч генерации (T4: 4)
   log_every: 10            # лог прогресса раз в N генераций
+
+  bootstrap_n: 1000        # ресэмплов для percentile-CI доли Yes/No/?
+  bootstrap_ci: 95.0       # ширина доверительного интервала, %
+  bootstrap_seed: 0
+
+  # Отбор промптов по податливости (по бейзлайну alpha=0, считается заранее):
+  prompts_per_set: 3       # сколько промптов в каждый набор (push_down / push_up)
+  down_yes_min: 0.55       # «толкаем к No»: кандидаты с p_yes(baseline) >= этого
+  up_yes_max: 0.45         # «толкаем к Yes»: кандидаты с p_yes(baseline) <= этого
+  # null → использовать ВСЕ промпты без разбиения (старое поведение)
+  prompt_selection: "susceptible"   # susceptible | all
 
   judge_model: "openai/gpt-4o-mini"   # судья Yes/No/? (api_base берётся из interpret.api_base)
   judge_concurrency: 8     # параллельные async-запросы к OpenRouter

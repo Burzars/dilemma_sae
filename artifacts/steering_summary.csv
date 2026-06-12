@@ -1,0 +1,26 @@
+neuron_id,theme,kind,is_control,alpha,total_yes,total_no,total_q,p_yes
+12177,weighing personal sacrifice for community welfare,yes_trigger,False,-5.0,16,0,24,0.4000
+12177,weighing personal sacrifice for community welfare,yes_trigger,False,-2.0,17,0,23,0.4250
+12177,weighing personal sacrifice for community welfare,yes_trigger,False,+0.0,15,0,25,0.3750
+12177,weighing personal sacrifice for community welfare,yes_trigger,False,+2.0,19,0,21,0.4750
+12177,weighing personal sacrifice for community welfare,yes_trigger,False,+5.0,19,0,21,0.4750
+21243,commitment to community sacrifice and courage,yes_trigger,False,-5.0,13,0,27,0.3250
+21243,commitment to community sacrifice and courage,yes_trigger,False,-2.0,18,0,22,0.4500
+21243,commitment to community sacrifice and courage,yes_trigger,False,+0.0,15,0,25,0.3750
+21243,commitment to community sacrifice and courage,yes_trigger,False,+2.0,20,0,20,0.5000
+21243,commitment to community sacrifice and courage,yes_trigger,False,+5.0,22,0,18,0.5500
+12282,collective decision-making and shared responsibility,no_trigger,False,-5.0,16,0,24,0.4000
+12282,collective decision-making and shared responsibility,no_trigger,False,-2.0,22,0,18,0.5500
+12282,collective decision-making and shared responsibility,no_trigger,False,+0.0,16,0,24,0.4000
+12282,collective decision-making and shared responsibility,no_trigger,False,+2.0,16,0,24,0.4000
+12282,collective decision-making and shared responsibility,no_trigger,False,+5.0,15,0,25,0.3750
+11929,weighing personal sacrifice against community benefit,no_trigger,False,-5.0,16,0,24,0.4000
+11929,weighing personal sacrifice against community benefit,no_trigger,False,-2.0,14,0,26,0.3500
+11929,weighing personal sacrifice against community benefit,no_trigger,False,+0.0,15,0,25,0.3750
+11929,weighing personal sacrifice against community benefit,no_trigger,False,+2.0,14,1,25,0.3500
+11929,weighing personal sacrifice against community benefit,no_trigger,False,+5.0,20,0,20,0.5000
+27805,random control,control,True,-5.0,17,0,23,0.4250
+27805,random control,control,True,-2.0,20,0,20,0.5000
+27805,random control,control,True,+0.0,15,0,25,0.3750
+27805,random control,control,True,+2.0,16,0,24,0.4000
+27805,random control,control,True,+5.0,16,0,24,0.4000

@@ -38,6 +38,7 @@ def main() -> None:
 
     from src.analysis import (
         build_report,
+        contrast_feature_slice,
         encode_all,
         find_contrast_neurons,
         label_contrast,
@@ -125,19 +126,26 @@ def main() -> None:
     )
     log.info("Выбрано top-%d интересных нейронов.", len(top_neurons))
 
-    # ---- 5. Yes/No контраст (token + sample)
+    # ---- 5. Yes/No контраст (token + sample) — на BALANCED-срезе
     log.info(
-        "Yes/No контраст: pos=%s, neg=%s",
+        "Yes/No контраст: pos=%s, neg=%s, slice=%s",
         cfg["contrast"]["pos_label"], cfg["contrast"]["neg_label"],
+        cfg["contrast"].get("slice", "balanced"),
+    )
+    c_features, c_labels, c_sample_idx = contrast_feature_slice(
+        features, pack["label"], pack["sample_idx"], samples,
+        slice=cfg["contrast"].get("slice", "balanced"),
+        balanced_dir=cfg["contrast"].get("balanced_dir"),
+        balanced_seed=cfg["contrast"].get("balanced_seed", 0),
     )
     tok_contrast = label_contrast(
-        features, pack["label"],
+        c_features, c_labels,
         pos_label=cfg["contrast"]["pos_label"],
         neg_label=cfg["contrast"]["neg_label"],
         min_fires=cfg["analysis"]["min_fires"],
     )
     smp_contrast = sample_level_contrast(
-        features, pack["sample_idx"], samples,
+        c_features, c_sample_idx, samples,
         pos_label=cfg["contrast"]["pos_label"],
         neg_label=cfg["contrast"]["neg_label"],
     )

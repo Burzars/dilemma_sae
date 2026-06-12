@@ -174,31 +174,47 @@ def plot_steering_curves(
     out_dir: str | Path,
     name: str = "steering_curves",
 ) -> Path:
-    """Линии p_yes vs alpha для каждого нейрона (эксперимент 07).
+    """Линии p_yes vs alpha для каждого нейрона с полосами CI (эксперимент 07).
 
     Args
     ----
     curves : dict
-        {neuron_label: {"alphas": [..], "p_yes": [..], "is_control": bool}}.
-        Контрольный нейрон рисуется пунктиром.
+        {neuron_label: {"alphas": [..], "p_yes": [..], "is_control": bool,
+                        "ci": [(lo, hi), ...] | None}}.
+        Контрольный нейрон рисуется пунктиром и поверх остальных (жирнее), чтобы
+        видеть, отделяются ли CI триггеров от него. "ci" необязателен (обратная
+        совместимость): если есть — рисуем полосу доверительного интервала.
     """
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
     out_dir = _ensure_dir(out_dir)
-    fig, ax = plt.subplots(figsize=(7, 4.5))
-    for label, c in curves.items():
+    fig, ax = plt.subplots(figsize=(7.5, 4.8))
+    # Контроль рисуем последним (поверх) и заметнее.
+    items = sorted(curves.items(), key=lambda kv: bool(kv[1].get("is_control")))
+    for label, c in items:
+        if not c.get("alphas"):
+            continue
         order = np.argsort(c["alphas"])
-        a = np.asarray(c["alphas"])[order]
-        p = np.asarray(c["p_yes"])[order]
-        style = "--" if c.get("is_control") else "-"
-        ax.plot(a, p, style, marker="o", label=label)
+        a = np.asarray(c["alphas"], dtype=float)[order]
+        p = np.asarray(c["p_yes"], dtype=float)[order]
+        is_ctrl = bool(c.get("is_control"))
+        style = "--" if is_ctrl else "-"
+        lw = 2.6 if is_ctrl else 1.6
+        color = "black" if is_ctrl else None
+        line, = ax.plot(a, p, style, marker="o", lw=lw, color=color,
+                        label=(label + " [control]") if is_ctrl else label, zorder=3)
+        ci = c.get("ci")
+        if ci:
+            ci_arr = np.asarray(ci, dtype=float)[order]
+            ax.fill_between(a, ci_arr[:, 0], ci_arr[:, 1], alpha=0.15,
+                            color=line.get_color(), zorder=1)
     ax.axvline(0.0, color="#999", lw=0.8)
-    ax.set_xlabel("alpha (сила вмешательства вдоль W_dec нейрона)")
+    ax.set_xlabel("alpha (сдвиг вдоль W_dec нейрона; масштаб = доли median||h||)")
     ax.set_ylabel("p(Yes)")
     ax.set_ylim(-0.02, 1.02)
-    ax.set_title("Steering: p(Yes) vs alpha")
+    ax.set_title("Steering: p(Yes) vs alpha (полосы — 95% bootstrap CI)")
     ax.legend(fontsize=8, loc="best")
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
