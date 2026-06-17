@@ -74,6 +74,10 @@ contrast:
   slice: "balanced"      # balanced | full
   balanced_dir: "data/results_dilemma_v2_balanced"  # если есть — берём ровно этот срез; иначе derive
   balanced_seed: 0       # сид андерсэмплинга для fallback-derive
+  # Потолок числа ПОЗИЦИЙ для контраста: плотная (P × d_hidden) float32 это
+  # ~P·d_hidden·4 байт (при 51k×57k ≈ 12 ГБ на копию). 20k позиций для Cohen's d
+  # статистически с запасом, а памяти на порядок меньше. null → без потолка.
+  max_positions: 20000
 
 interpret:
   judge_model: "openai/gpt-4o-mini"

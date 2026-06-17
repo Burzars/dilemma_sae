@@ -117,6 +117,7 @@ def main() -> None:
         slice=cfg["contrast"].get("slice", "balanced"),
         balanced_dir=cfg["contrast"].get("balanced_dir"),
         balanced_seed=cfg["contrast"].get("balanced_seed", 0),
+        max_positions=cfg["contrast"].get("max_positions"),
     )
     log.info("Кодирую balanced-срез: %d позиций → features ...", c_hidden.shape[0])
     c_features = encode_all(

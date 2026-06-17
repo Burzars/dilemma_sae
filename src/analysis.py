@@ -395,6 +395,7 @@ def balanced_contrast_arrays(
     slice: str = "balanced",
     balanced_dir=None,
     balanced_seed: int = 0,
+    max_positions: "int | None" = None,
 ):
     """Маскирует АКТИВАЦИИ до balanced-среза ПЕРЕД кодированием.
 
@@ -402,30 +403,45 @@ def balanced_contrast_arrays(
     — их потом кодируют в features. Так мы НЕ материализуем плотную матрицу
     (N_full, d_hidden) (десятки ГБ): кодируется лишь срез (~равные Yes/No/?).
 
-    slice="full" → массивы как есть (внимание: кодирование всего корпуса в
-    features может занять десятки ГБ ОЗУ).
+    max_positions: потолок числа позиций (прореживание со seed). Контраст
+    (Cohen's d) на ~20k позициях статистически насыщен, а плотная (P, d_hidden)
+    при этом в разы меньше — критично на машинах с дефицитом ОЗУ.
+
+    slice="full" → без маски (но потолок max_positions всё равно применяется).
     """
     if slice == "full":
-        return hidden, labels, sample_idx, token_pos
-    if slice != "balanced":
+        sel_h, sel_l, sel_s, sel_t = hidden, labels, sample_idx, token_pos
+    elif slice == "balanced":
+        from .build_datasets import balanced_sample_mask
+        mask, info = balanced_sample_mask(
+            samples, sample_idx, balanced_dir=balanced_dir, seed=balanced_seed,
+        )
+        n = int(mask.sum())
+        log.info(
+            "Контраст на BALANCED: позиций %d/%d, ответов %d (до баланса %s, источник=%s)",
+            n, len(mask), info["n_answers_kept"], info["counts_before"], info["source"],
+        )
+        if n == 0:
+            raise ValueError(
+                "Balanced-срез пуст. Проверьте contrast.balanced_dir / наличие всех "
+                "классов Yes/No/?."
+            )
+        sel_h, sel_l, sel_s, sel_t = (
+            hidden[mask], np.asarray(labels)[mask],
+            np.asarray(sample_idx)[mask], np.asarray(token_pos)[mask],
+        )
+    else:
         raise ValueError(f"contrast.slice должен быть 'full'|'balanced', а не {slice!r}")
 
-    from .build_datasets import balanced_sample_mask
-    mask, info = balanced_sample_mask(
-        samples, sample_idx, balanced_dir=balanced_dir, seed=balanced_seed,
-    )
-    n = int(mask.sum())
-    log.info(
-        "Контраст на BALANCED: позиций %d/%d, ответов %d (до баланса %s, источник=%s)",
-        n, len(mask), info["n_answers_kept"], info["counts_before"], info["source"],
-    )
-    if n == 0:
-        raise ValueError(
-            "Balanced-срез пуст. Проверьте contrast.balanced_dir / наличие всех "
-            "классов Yes/No/?."
-        )
-    return (hidden[mask], np.asarray(labels)[mask],
-            np.asarray(sample_idx)[mask], np.asarray(token_pos)[mask])
+    if max_positions is not None and sel_h.shape[0] > max_positions:
+        rng = np.random.default_rng(balanced_seed)
+        keep = np.sort(rng.choice(sel_h.shape[0], size=int(max_positions), replace=False))
+        sel_h = sel_h[keep]
+        sel_l = np.asarray(sel_l)[keep]
+        sel_s = np.asarray(sel_s)[keep]
+        sel_t = np.asarray(sel_t)[keep]
+        log.info("Контраст: позиции прорежены до %d (contrast.max_positions)", max_positions)
+    return sel_h, sel_l, sel_s, sel_t
 
 
 def build_report(
