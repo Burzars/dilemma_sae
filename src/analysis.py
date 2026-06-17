@@ -38,13 +38,51 @@ def encode_all(sae, hidden: np.ndarray, batch_size: int = 4096, device: str = "c
     np.ndarray (N, d_hidden) float16
     """
     sae.eval()
-    X = torch.from_numpy(hidden.astype(np.float32))
-    out = []
-    for i in range(0, X.shape[0], batch_size):
+    X = torch.from_numpy(np.ascontiguousarray(hidden, dtype=np.float32))
+    n = X.shape[0]
+    # Пишем сразу в преаллоцированный массив, без списка кусков + concatenate
+    # (тот удваивал пиковую память — критично для широких SAE и больших корпусов).
+    out = np.empty((n, int(sae.d_hidden)), dtype=np.float16)
+    for i in range(0, n, batch_size):
         xb = X[i:i + batch_size].to(device)
         f = sae.encode(xb)
-        out.append(f.cpu().numpy().astype(np.float16))
-    return np.concatenate(out, axis=0)
+        out[i:i + xb.shape[0]] = f.cpu().numpy().astype(np.float16)
+    return out
+
+
+@torch.no_grad()
+def neuron_statistics_streaming(
+    sae, hidden: np.ndarray, batch_size: int = 8192, device: str = "cuda",
+) -> dict:
+    """neuron_statistics БЕЗ материализации матрицы features (N, d_hidden).
+
+    Делает один проход по батчам на GPU и аккумулирует только (d_hidden,)-векторы
+    статистик. Для больших корпусов плотная (N, d_hidden) занимает десятки ГБ —
+    этот вариант держит в памяти лишь сами статистики. Результат идентичен
+    neuron_statistics(encode_all(...)).
+    """
+    sae.eval()
+    X = torch.from_numpy(np.ascontiguousarray(hidden, dtype=np.float32))
+    n = X.shape[0]
+    dh = int(sae.d_hidden)
+    n_fires = torch.zeros(dh, dtype=torch.float64, device=device)
+    sum_active = torch.zeros(dh, dtype=torch.float64, device=device)
+    max_active = torch.zeros(dh, dtype=torch.float32, device=device)
+    for i in range(0, n, batch_size):
+        xb = X[i:i + batch_size].to(device)
+        f = sae.encode(xb)
+        active = f > 0
+        n_fires += active.sum(dim=0).double()
+        sum_active += (f * active).sum(dim=0).double()
+        max_active = torch.maximum(max_active, f.max(dim=0).values)
+    nf = n_fires.cpu().numpy()
+    sa = sum_active.cpu().numpy()
+    return {
+        "fire_rate":   (nf / max(n, 1)).astype(np.float32),
+        "mean_active": np.where(nf > 0, sa / np.clip(nf, 1, None), 0.0).astype(np.float32),
+        "max_active":  max_active.cpu().numpy().astype(np.float32),
+        "n_fires":     nf.astype(np.int64),
+    }
 
 
 @torch.no_grad()
@@ -345,6 +383,49 @@ def contrast_feature_slice(
             "(нужны примеры всех классов Yes/No/?)."
         )
     return features[mask], np.asarray(labels)[mask], np.asarray(sample_idx)[mask]
+
+
+def balanced_contrast_arrays(
+    hidden: np.ndarray,
+    labels: np.ndarray,
+    sample_idx: np.ndarray,
+    token_pos: np.ndarray,
+    samples: Sequence[ReasoningSample],
+    *,
+    slice: str = "balanced",
+    balanced_dir=None,
+    balanced_seed: int = 0,
+):
+    """Маскирует АКТИВАЦИИ до balanced-среза ПЕРЕД кодированием.
+
+    Возвращает (hidden, labels, sample_idx, token_pos) только для balanced-позиций
+    — их потом кодируют в features. Так мы НЕ материализуем плотную матрицу
+    (N_full, d_hidden) (десятки ГБ): кодируется лишь срез (~равные Yes/No/?).
+
+    slice="full" → массивы как есть (внимание: кодирование всего корпуса в
+    features может занять десятки ГБ ОЗУ).
+    """
+    if slice == "full":
+        return hidden, labels, sample_idx, token_pos
+    if slice != "balanced":
+        raise ValueError(f"contrast.slice должен быть 'full'|'balanced', а не {slice!r}")
+
+    from .build_datasets import balanced_sample_mask
+    mask, info = balanced_sample_mask(
+        samples, sample_idx, balanced_dir=balanced_dir, seed=balanced_seed,
+    )
+    n = int(mask.sum())
+    log.info(
+        "Контраст на BALANCED: позиций %d/%d, ответов %d (до баланса %s, источник=%s)",
+        n, len(mask), info["n_answers_kept"], info["counts_before"], info["source"],
+    )
+    if n == 0:
+        raise ValueError(
+            "Balanced-срез пуст. Проверьте contrast.balanced_dir / наличие всех "
+            "классов Yes/No/?."
+        )
+    return (hidden[mask], np.asarray(labels)[mask],
+            np.asarray(sample_idx)[mask], np.asarray(token_pos)[mask])
 
 
 def build_report(

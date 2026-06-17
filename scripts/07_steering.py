@@ -85,18 +85,6 @@ def _load_themes_map(artifacts_dir: Path, mode: str) -> dict:
     return out
 
 
-def _load_or_encode_features(sae, pack, cfg, artifacts_dir, mode, device):
-    """features_<mode>.npz из 03, иначе считаем encode_all (на лету)."""
-    from src.analysis import encode_all
-    fp = artifacts_dir / f"features_{mode}.npz"
-    if fp.exists():
-        log.info("Загружаю кеш features: %s", fp)
-        return np.load(fp, allow_pickle=False)["features"]
-    log.info("features_%s.npz не найден — кодирую активации на лету ...", mode)
-    return encode_all(sae, pack["hidden"],
-                      batch_size=cfg["analysis"]["encode_batch_size"], device=device)
-
-
 def _select_neurons(cfg, mode, artifacts_dir, sae, pack, samples, device) -> list[dict]:
     """Список целей: [{neuron_id, kind, theme, is_control}]."""
     st = cfg["steering"]
@@ -115,18 +103,20 @@ def _select_neurons(cfg, mode, artifacts_dir, sae, pack, samples, device) -> lis
         log.info("Авто-выбор целей из Yes/No-контраста (n_yes=%d, n_no=%d) ...",
                  st["n_yes"], st["n_no"])
         from src.analysis import (
-            contrast_feature_slice, find_contrast_neurons,
+            balanced_contrast_arrays, encode_all, find_contrast_neurons,
             label_contrast, sample_level_contrast,
         )
-        features = _load_or_encode_features(sae, pack, cfg, artifacts_dir, mode, device)
-        # Контраст — на BALANCED-срезе (как в 03_analyze), а features/fire_rate
-        # остаются на FULL. Балансировку выбираем тем же конфигом contrast.slice.
-        c_features, c_labels, c_sample_idx = contrast_feature_slice(
-            features, pack["label"], pack["sample_idx"], samples,
+        # Кодируем ТОЛЬКО balanced-срез активаций (а не весь корпус) — иначе
+        # плотная (N, d_hidden) заняла бы десятки ГБ. fire_rate берём из
+        # neuron_stats-кеша (03), без полной матрицы.
+        c_hidden, c_labels, c_sample_idx, _c_token_pos = balanced_contrast_arrays(
+            pack["hidden"], pack["label"], pack["sample_idx"], pack["token_pos"], samples,
             slice=cfg["contrast"].get("slice", "balanced"),
             balanced_dir=cfg["contrast"].get("balanced_dir"),
             balanced_seed=cfg["contrast"].get("balanced_seed", 0),
         )
+        c_features = encode_all(sae, c_hidden,
+                                batch_size=cfg["analysis"]["encode_batch_size"], device=device)
         tok = label_contrast(
             c_features, c_labels,
             pos_label=cfg["contrast"]["pos_label"], neg_label=cfg["contrast"]["neg_label"],
@@ -166,13 +156,16 @@ def _select_neurons(cfg, mode, artifacts_dir, sae, pack, samples, device) -> lis
 
 
 def _fire_rate(cfg, mode, artifacts_dir, sae, pack, device) -> np.ndarray:
-    """fire_rate из neuron_stats_<mode>.npz, иначе считаем по features."""
+    """fire_rate из neuron_stats_<mode>.npz (03), иначе считаем потоково."""
     sp = artifacts_dir / f"neuron_stats_{mode}.npz"
     if sp.exists():
         return np.load(sp, allow_pickle=False)["fire_rate"]
-    from src.analysis import neuron_statistics
-    features = _load_or_encode_features(sae, pack, cfg, artifacts_dir, mode, device)
-    return neuron_statistics(features)["fire_rate"]
+    from src.analysis import neuron_statistics_streaming
+    log.info("neuron_stats_%s.npz не найден — считаю fire_rate потоково ...", mode)
+    return neuron_statistics_streaming(
+        sae, pack["hidden"],
+        batch_size=cfg["analysis"]["encode_batch_size"], device=device,
+    )["fire_rate"]
 
 
 def _load_prompts(samples) -> tuple[list[int], list[str]]:

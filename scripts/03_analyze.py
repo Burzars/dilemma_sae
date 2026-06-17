@@ -37,12 +37,12 @@ def main() -> None:
     )
 
     from src.analysis import (
+        balanced_contrast_arrays,
         build_report,
-        contrast_feature_slice,
         encode_all,
         find_contrast_neurons,
         label_contrast,
-        neuron_statistics,
+        neuron_statistics_streaming,
         sample_level_contrast,
         select_top_neurons,
     )
@@ -67,41 +67,19 @@ def main() -> None:
     device = "cuda" if torch.cuda.is_available() else "cpu"
     sae, _ckpt = load_sae(sae_path, device=device)
 
-    # ---- 2. encode_all (с кешем)
-    if feat_path.exists() and not args.force:
-        log.info("Загружаем кеш features: %s", feat_path)
-        features = np.load(feat_path, allow_pickle=False)["features"]
-    else:
-        log.info("Прогон активаций через encoder SAE ...")
-        features = encode_all(
-            sae, pack["hidden"],
-            batch_size=cfg["analysis"]["encode_batch_size"],
-            device=device,
-        )
-        np.savez_compressed(feat_path, features=features)
-        log.info("Features сохранены: %s (shape=%s)", feat_path, features.shape)
-
-    # Sanity check для TopK
-    if sae.mode == "topk":
-        expected = 1 - sae.k / sae.d_hidden
-        actual = float((features == 0).mean())
-        log.info(
-            "TopK sanity: доля нулей = %.4f, ожидалось %.4f", actual, expected,
-        )
-        if abs(actual - expected) > 0.001:
-            log.warning(
-                "Доля нулей в features не совпадает с ожидаемой для TopK! "
-                "actual=%.4f, expected=%.4f", actual, expected,
-            )
-
-    # ---- 3. Статистика нейронов (с кешем)
+    # ---- 2. Статистика нейронов (streaming, БЕЗ плотной матрицы N×d_hidden) ----
+    # Плотная (228k × 57k) float16 ≈ 26 ГБ — на больших корпусах не держим её в
+    # ОЗУ. Статистики считаем потоково по батчам на GPU (только (d_hidden,)-векторы).
     if stats_path.exists() and not args.force:
         log.info("Загружаем кеш статистики нейронов: %s", stats_path)
         npz = np.load(stats_path, allow_pickle=False)
         stats = {k: npz[k] for k in npz.files}
     else:
-        log.info("Считаем статистику нейронов ...")
-        stats = neuron_statistics(features)
+        log.info("Считаю статистику нейронов потоково (без матрицы N×d_hidden) ...")
+        stats = neuron_statistics_streaming(
+            sae, pack["hidden"],
+            batch_size=cfg["analysis"]["encode_batch_size"], device=device,
+        )
         np.savez_compressed(stats_path, **stats)
         log.info("Статистика сохранена: %s", stats_path)
 
@@ -117,7 +95,7 @@ def main() -> None:
             fr_alive.mean(), fr_alive.max(),
         )
 
-    # ---- 4. Top "интересных" нейронов
+    # ---- 3. Top "интересных" нейронов (из статистики FULL) ----
     top_neurons = select_top_neurons(
         stats,
         k=cfg["analysis"]["top_neurons_k"],
@@ -126,18 +104,36 @@ def main() -> None:
     )
     log.info("Выбрано top-%d интересных нейронов.", len(top_neurons))
 
-    # ---- 5. Yes/No контраст (token + sample) — на BALANCED-срезе
+    # ---- 4. Кодируем ТОЛЬКО balanced-срез активаций → features ----
+    # SAE/статистика — на FULL; контраст и top-контексты — на balanced-срезе.
+    # Кодируем лишь срез (~равные Yes/No/?), а не весь корпус → экономим память.
     log.info(
         "Yes/No контраст: pos=%s, neg=%s, slice=%s",
         cfg["contrast"]["pos_label"], cfg["contrast"]["neg_label"],
         cfg["contrast"].get("slice", "balanced"),
     )
-    c_features, c_labels, c_sample_idx = contrast_feature_slice(
-        features, pack["label"], pack["sample_idx"], samples,
+    c_hidden, c_labels, c_sample_idx, c_token_pos = balanced_contrast_arrays(
+        pack["hidden"], pack["label"], pack["sample_idx"], pack["token_pos"], samples,
         slice=cfg["contrast"].get("slice", "balanced"),
         balanced_dir=cfg["contrast"].get("balanced_dir"),
         balanced_seed=cfg["contrast"].get("balanced_seed", 0),
     )
+    log.info("Кодирую balanced-срез: %d позиций → features ...", c_hidden.shape[0])
+    c_features = encode_all(
+        sae, c_hidden,
+        batch_size=cfg["analysis"]["encode_batch_size"], device=device,
+    )
+
+    # Sanity check для TopK (на срезе — доля нулей одинакова для любого набора позиций)
+    if sae.mode == "topk":
+        expected = 1 - sae.k / sae.d_hidden
+        actual = float((c_features == 0).mean())
+        log.info("TopK sanity: доля нулей = %.4f, ожидалось %.4f", actual, expected)
+        if abs(actual - expected) > 0.001:
+            log.warning("Доля нулей не совпадает с ожидаемой для TopK! "
+                        "actual=%.4f, expected=%.4f", actual, expected)
+
+    # ---- 5. Yes/No контраст (token + sample) на срезе ----
     tok_contrast = label_contrast(
         c_features, c_labels,
         pos_label=cfg["contrast"]["pos_label"],
@@ -160,7 +156,7 @@ def main() -> None:
         pool_factor=cfg["contrast"]["pool_factor"],
     )
 
-    # ---- 6. Сборка отчёта для LLM-судьи
+    # ---- 6. Сборка отчёта для LLM-судьи (top-контексты из balanced-среза) ----
     log.info("Собираем отчёт по нейронам ...")
     # Для top контекстов нужен токенайзер — грузим только его (без модели)
     from transformers import AutoTokenizer
@@ -171,14 +167,14 @@ def main() -> None:
     report = (
         build_report(
             yes_neurons, "yes_trigger",
-            features, pack["sample_idx"], pack["token_pos"], samples, tokenizer,
+            c_features, c_sample_idx, c_token_pos, samples, tokenizer,
             stats, tok_contrast, smp_contrast,
             top_k=cfg["analysis"]["top_contexts_k"],
             window=cfg["analysis"]["context_window"] + 10,  # для отчёта чуть шире окно
         )
         + build_report(
             no_neurons, "no_trigger",
-            features, pack["sample_idx"], pack["token_pos"], samples, tokenizer,
+            c_features, c_sample_idx, c_token_pos, samples, tokenizer,
             stats, tok_contrast, smp_contrast,
             top_k=cfg["analysis"]["top_contexts_k"],
             window=cfg["analysis"]["context_window"] + 10,
@@ -186,7 +182,7 @@ def main() -> None:
         # Дополнительно — top по mean_active * log(1+n_fires) (общие "интересные")
         + build_report(
             list(top_neurons), "top_active",
-            features, pack["sample_idx"], pack["token_pos"], samples, tokenizer,
+            c_features, c_sample_idx, c_token_pos, samples, tokenizer,
             stats, tok_contrast, smp_contrast,
             top_k=cfg["analysis"]["top_contexts_k"],
             window=cfg["analysis"]["context_window"] + 10,
