@@ -1,4 +1,0 @@
-neuron_id,theme,kind,is_control,alpha,n,yes,no,q,p_yes,p_yes_lo,p_yes_hi
-26266,,yes_trigger,False,-927.82,2,0,0,2,0.0000,0.0000,0.0000
-26266,,yes_trigger,False,+0.00,2,0,0,2,0.0000,0.0000,0.0000
-26266,,yes_trigger,False,+927.82,2,0,0,2,0.0000,0.0000,0.0000
