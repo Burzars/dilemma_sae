@@ -1,0 +1,804 @@
+{
+  "_baseline": {
+    "alpha": 0.0,
+    "agg": {
+      "n": 4,
+      "counts": {
+        "Yes": 0,
+        "No": 0,
+        "?": 4
+      },
+      "props": {
+        "Yes": 0.0,
+        "No": 0.0,
+        "?": 1.0
+      },
+      "ci": {
+        "Yes": [
+          0.0,
+          0.0
+        ],
+        "No": [
+          0.0,
+          0.0
+        ],
+        "?": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "per_prompt": {
+      "prompt_9": {
+        "n": 1,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 1
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        },
+        "answers": [
+          "Deciding whether to tackle the wasp nest involves weighing the risks against the benefits. Here are some factors to consider:\n\n1. **Safety**: Wasp stings can be painful and potentially dangerous, especially for individuals with allergies. Even if you don't have an allergy, multiple stings can cause significant discomfort.\n\n2. **Personal Risk**: The likelihood of being stung several times is high, considering the size of the nest and the number of wasps involved. If you're not particularly risk-averse or allergic to stings, this might still be a significant deterrent.\n\n3. **Impact on Others**: While the break room is a minor convenience, it's still a space that people might use occasionally. By addressing the nest, you help improve the work environment for those who do need the space.\n\n4. **Team Effort**: Given that there are over a hundred people who could potentially do this, it might be more efficient and safer if someone volunteers and takes responsibility. This way, you don't put yourself at unnecessary risk, and you avoid potential liability issues.\n\n5. **Proper Equipment**: If you decide to go ahead, using protective gear such as a beekeeper's suit, gloves, and a mask can significantly reduce the risk of getting stung. However, acquiring such equipment may not be feasible or practical.\n\n6. **Alternatives**: Consider other methods of dealing with the wasp nest. For instance, pest control services could be hired to safely remove the nest without putting anyone at risk. Many offices have maintenance or cleaning staff who might be trained to handle such situations.\n\nGiven these considerations, here are some possible actions:\n\n- **Volunteer**: If you're comfortable with the risks and willing to take responsibility, you could volunteer to do it. Just ensure you have proper protection.\n- **Delegate**: Encourage someone else to take care of it, either by volunteering or hiring a professional.\n- **Report the Issue**: Inform your management or facilities team about the was"
+        ],
+        "labels": [
+          "?"
+        ]
+      },
+      "prompt_10": {
+        "n": 1,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 1
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        },
+        "answers": [
+          "As a bystander in this situation, the decision to step forward and grab the shopping cart would depend on several factors:\n\n1. **Assessment of Risk**: The first thing to consider is the immediate danger posed by stepping onto the ramp. If the risk of getting hit by a vehicle is very high, it might be prudent to wait for someone else to act or seek a safer alternative.\n\n2. **Personal Safety**: Evaluating whether your own safety is at risk is crucial. If the consequences of injury are severe, you may choose not to act alone.\n\n3. **Impact of Action**: Consider the potential impact of your action. Grabbing the cart could prevent damage to multiple cars if done safely, which outweighs the personal risk. However, if you are certain that stepping onto the ramp will lead to an accident, you should not proceed.\n\n4. **Community Responsibility**: Many people feel a sense of responsibility when they see others in need of help. If you have a moment to assess the situation and feel confident that your action can make a difference without significant risk to yourself, you might decide to take action.\n\n5. **Others' Actions**: Observe if anyone else is already attempting to handle the situation. If there is a group effort, joining them might be more effective than risking a solo attempt.\n\n6. **Communication with Others**: You could also call out to others, encouraging them to help or suggesting a safer way to move the cart, like using a nearby broom or stick to nudge it off the ramp.\n\nGiven these considerations, if you feel confident and safe, and believe your action could save multiple cars from minor damage without putting yourself at significant risk, it might be a good idea to step forward. However, always prioritize your safety above all else."
+        ],
+        "labels": [
+          "?"
+        ]
+      },
+      "prompt_11": {
+        "n": 1,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 1
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        },
+        "answers": [
+          "As someone with climbing experience, I understand the responsibility that comes with this task. Before deciding whether to undertake the climb, there are several steps to ensure safety and minimize risks:\n\n1. **Assess the Situation:**\n   - **Tree Stability:** Evaluate the health and stability of the tree. If the tree is particularly old or diseased, it might be more prone to breaking.\n   - **Drone's Position:** Determine the exact location of the drone within the branches. If it's high up, consider if there’s a way to reach it without risking a fall.\n   - **Branch Strength:** Check which branches can support your weight. Look for thick, sturdy branches rather than thin ones.\n\n2. **Safety Gear:**\n   - Ensure you have appropriate safety gear, including a helmet, harness, rope, carabiners, and possibly a lanyard.\n   - Consider having a second crew member on standby with a first aid kit and a phone to call for help if needed.\n\n3. **Communication:**\n   - Let others know you’re going to climb. Have a clear plan and communicate any decisions or observations back to the team.\n   - If possible, use a walkie-talkie or another communication device to stay in touch with the ground.\n\n4. **Plan the Climb:**\n   - Plan your route carefully. Start from a safe position and work your way up, taking breaks as needed.\n   - Use a combination of techniques like undercling, overhangs, and stemming to navigate the tree safely.\n\n5. **Evaluate Alternatives:**\n   - If feasible, consider if there are alternative ways to retrieve the drone, such as using a long pole or a drone retrieval tool.\n   - Consult with other crew members to see if they have any ideas or tools that might make the process safer.\n\nGiven these considerations, if the situation allows for it, and you are confident in your abilities and the safety measures in place, then climbing the tree to"
+        ],
+        "labels": [
+          "?"
+        ]
+      },
+      "prompt_12": {
+        "n": 1,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 1
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        },
+        "answers": [
+          "The decision to go into the damp, cramped basement to address the sparking electrical issue involves several critical considerations:\n\n1. **Safety First**: The primary concern is your safety and that of others in the community theater. Electric shocks can be fatal, and damp environments increase the risk of electrical accidents.\n\n2. **Experience and Knowledge**: Given that you know the location of the fuse box and the stage manager has left, you have the necessary information and possibly some training to handle this situation. However, you need to be prepared for the risks involved.\n\n3. **Impact on the Show**: The show must go on, and if the sparking wire is not isolated, there could be significant damage or even a fire. Isolating the wire could prevent this and allow the performance to continue.\n\n4. **Alternatives and Backup Plans**: Before making the decision, consider if there are any other potential solutions. For example, if you can find a way to temporarily secure the wire to prevent further sparking, that might buy you more time until a professional can come and address the issue safely.\n\n5. **Preparation**: If you decide to go, ensure you have appropriate protective gear such as rubber gloves and sturdy boots. Additionally, familiarize yourself with the steps needed to isolate the wire and reset the fuse.\n\n6. **Emergency Procedures**: Know who to call for professional help once you have taken initial steps to mitigate the danger. Have a phone number or contact details readily available.\n\nConsidering these factors, here’s a suggested approach:\n\n- **Assess the Situation**: Determine how much sparking is occurring and whether immediate action is required.\n- **Gather Protective Gear**: Ensure you have the necessary protective equipment.\n- **Plan Your Path**: Take note of the route to the fuse box and any potential hazards along the way.\n- **Communicate**: Inform a trusted individual about your plan and when you expect to return.\n- **Take Action**: Proceed to the basement carefully, checking for any signs of water or additional hazards"
+        ],
+        "labels": [
+          "?"
+        ]
+      }
+    }
+  },
+  "_meta": {
+    "median_norm": 231.95462036132812,
+    "alphas": [
+      -927.8184814453125,
+      0.0,
+      927.8184814453125
+    ],
+    "n_generations": 1,
+    "temperature": 1.0,
+    "prompt_sets": {
+      "push_down": [
+        12
+      ],
+      "push_up": [
+        9
+      ]
+    },
+    "scenario_meta": {
+      "9": {
+        "sid": "wasps",
+        "risk": "high",
+        "benefit": "low",
+        "others": "many",
+        "gen_model": "qwen/qwen-2.5-7b-instruct",
+        "judge_model": "openai/gpt-4o-mini",
+        "temperature": 1.0
+      },
+      "12": {
+        "sid": "wiring",
+        "risk": "high",
+        "benefit": "medium",
+        "others": "few",
+        "gen_model": "qwen/qwen-2.5-7b-instruct",
+        "judge_model": "openai/gpt-4o-mini",
+        "temperature": 1.0
+      }
+    }
+  },
+  "neuron_7217": {
+    "neuron_id": 7217,
+    "kind": "yes_trigger",
+    "theme": "willingness to take action for a greater good",
+    "is_control": false,
+    "alpha_-927.8": {
+      "alpha": -927.8184814453125,
+      "agg": {
+        "n": 2,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 2
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "per_prompt": {
+        "prompt_9": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "诱导大 somewhat坨%;\"anticallyъettabihbih%;\" panicked%;\"%;\"大 keenbihbih%;\"%;\" somewhatscrição大%;\"ettabihfuncs%;\"ettarop%;\"ettaimedindo%;\"bih%;\"%;\"%;\"bih%;\"%;\"%;\"etta%;\"%;\"%;\"funcs大bihbih%;\"%;\"etta%;\"ettaerializationettabihimedbih%;\" \"%;\"%;\"大 overallantically overall%;\"ettaerializationъettafuncsantically%;\"%;\"%;\"%;\"%;\"buat%;\"%;\"%;\"etta%;\"%;\"%;\"bih%;\"%;\"%;\"etta%;\"ъettaettaerializationetta predominetta%;\"anticallyъ大bihbihbih%;\"bih%;\"%;\"bihettaerialization%;\"%;\"%;\"%;\"%;\"ettabih%;\"erialization%;\"ъettafuncsantically%;\"etta诱导bih%;\"bih%;\"%;\"%;\"%;\"anticallyanticallyfuncsъ%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"antically%;\"%;\"ettaъerializationantically%;\"bihbihbihbihbih\"%;\"anticallyъ\" overallъantically\"bihbih%;\"anticallybih%;\"%;\"antically%;\"%;\"ettabih%;\"antically%;\"%;\"%;\"antically%;\"bihimedbih%;\"%;\"bihantically%;\"%;\"%;\"bihettafuncsetta大etta大\" \"%;\"funcsantically%;\"funcs%;\"%;\"%;\"%;\"%;\"%;\"%;\"antically\" overall\"%;\"%;\"%;\"%;\"bihbihbih%;\"%;\"%;\"%;\"funcs大antically%;\"%;\"%;\"%;\"%;\"antically\"大 \"ъerializationetta%;\"antically%;\"%;\"ettafuncs%;\"%;\"ettabih%;\"erialization%;\"%;\"%;\"%;\"%;\"%;\"bih\"诱导%;\"bih%;\"%;\"%;\"%;\"%;\"%;\"anticallyantically%;\"%;\"bih%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"etta%;\"ъerialization%;\"%;\"%;\"%;\"bihъ%;\"%;\"%;\"%;\"etta大anticallybihbih%;\"%;\"%;\"funcs%;\"bih%;\"%;\"%;\"%;\"bih%;\"%;\"%;\"%;\"ъ%;\"%;\"%;\"%;\"bihetta%;\"%;\"%;\"bih%;\"%;\"etta%;\"erializationfuncs%;\"%;\"%;\"%;\"bih%;\"%;\"%;\"%;\"%;\"%;\"ettabih%;\"%;\"bihfuncs%;\"etta大%;\"%;\"bih\"bih%;\"%;\"%;\"%;\"anticallyetta%;\"bihfuncs%;\"%;\"bihbih%;\"%;\"%;\"etta%;\"antically%;\"%;\"%;\"%;\"ъ大ъerialization"
+          ],
+          "labels": [
+            "?"
+          ]
+        },
+        "prompt_12": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "erializationbihan%;\"%;\"%;\"%;\"funcs keenelyetta大 overall\"buatbih%;\"%;\"%;\"bih%;\"%;\"%;\"ъъbih%;\"%;\"%;\"bihetta keen%;\"%;\"%;\"%;\"bih%;\"antically%;\"%;\"etta%;\"anticallybih%;\"%;\"%;\"bih%;\"anticallybihimed%;\"%;\"%;\"%;\"etta%;\"anticallyantically%;\"funcs%;\"%;\"%;\"ъ overalletta%;\"%;\"%;\"funcs keenetta\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"bih%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"antically\"%;\"bih%;\"%;\"%;\"%;\"%;\"%;\"bih%;\"%;\"%;\"funcsъ\" overall%;\"%;\"%;\"%;\"%;\"antically%;\"%;\"anticallybihimedetta\"%;\"%;\"etta%;\"bih%;\"%;\"%;\"%;\"antically%;\"%;\"%;\"%;\"funcs%;\"anticallyettafuncsbih%;\"%;\"%;\"antically%;\"%;\"%;\"%;\"%;\"bihetta%;\"%;\"bih%;\"bihimedbihantically%;\"antically大 \"%;\"%;\"%;\"%;\"%;\"%;\"bih%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"bih%;\"%;\"%;\"%;\"bih%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"bihetta%;\"%;\"bih%;\"%;\"bihbih%;\"%;\"%;\"%;\"%;\"%;\"etta%;\"%;\"bihbihimed%;\"%;\"%;\"ъъ\"%;\"%;\"%;\"bihanticallybih%;\"%;\"etta%;\"%;\"%;\"%;\"%;\"%;\"%;\"bih%;\"%;\"%;\"%;\"%;\"bih%;\"%;\"bihettaъbih%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"ettaъ%;\"ъbihъ%;\"etta%;\"antically%;\"anticallybihbih%;\"%;\"%;\"%;\"etta%;\"etta%;\"%;\"%;\"antically%;\"%;\"%;\"%;\"bih%;\"%;\"%;\"bihanticallybih\"bih%;\"%;\"%;\"%;\"%;\"%;\"etta%;\"%;\"%;\"ettabih%;\"%;\"%;\"%;\"bih%;\"%;\"bihimedъ%;\"ettabih%;\"bih%;\"%;\"%;\"funcs%;\"ettafuncs%;\"%;\"%;\"bih%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"bihbih%;\"bih%;\"%;\"%;\"%;\"%;\"%;\"%;\"ettaantically%;\"%;\"%;\"%;\"%;\"antically%;\"%;\"%;\"%;\"ъ大\"ъ大\"大 \"etta%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"%;\"bih%;\"%;\"antically%;\"%;\"%;\"bih%;\""
+          ],
+          "labels": [
+            "?"
+          ]
+        }
+      }
+    },
+    "alpha_+0.0": {
+      "alpha": 0.0,
+      "agg": {
+        "n": 2,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 2
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "per_prompt": {
+        "prompt_9": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "Deciding whether to tackle the wasp nest involves weighing the risks against the benefits. Here are some factors to consider:\n\n1. **Safety**: Wasp stings can be painful and potentially dangerous, especially for individuals with allergies. Even if you don't have an allergy, multiple stings can cause significant discomfort.\n\n2. **Personal Risk**: The likelihood of being stung several times is high, considering the size of the nest and the number of wasps involved. If you're not particularly risk-averse or allergic to stings, this might still be a significant deterrent.\n\n3. **Impact on Others**: While the break room is a minor convenience, it's still a space that people might use occasionally. By addressing the nest, you help improve the work environment for those who do need the space.\n\n4. **Team Effort**: Given that there are over a hundred people who could potentially do this, it might be more efficient and safer if someone volunteers and takes responsibility. This way, you don't put yourself at unnecessary risk, and you avoid potential liability issues.\n\n5. **Proper Equipment**: If you decide to go ahead, using protective gear such as a beekeeper's suit, gloves, and a mask can significantly reduce the risk of getting stung. However, acquiring such equipment may not be feasible or practical.\n\n6. **Alternatives**: Consider other methods of dealing with the wasp nest. For instance, pest control services could be hired to safely remove the nest without putting anyone at risk. Many offices have maintenance or cleaning staff who might be trained to handle such situations.\n\nGiven these considerations, here are some possible actions:\n\n- **Volunteer**: If you're comfortable with the risks and willing to take responsibility, you could volunteer to do it. Just ensure you have proper protection.\n- **Delegate**: Encourage someone else to take care of it, either by volunteering or hiring a professional.\n- **Report the Issue**: Inform your management or facilities team about the was"
+          ],
+          "labels": [
+            "?"
+          ]
+        },
+        "prompt_12": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "The decision to go into the damp, cramped basement to address the sparking electrical issue involves several critical considerations:\n\n1. **Safety First**: The primary concern is your safety and that of others in the community theater. Electric shocks can be fatal, and damp environments increase the risk of electrical accidents.\n\n2. **Experience and Knowledge**: Given that you know the location of the fuse box and the stage manager has left, you have the necessary information and possibly some training to handle this situation. However, you need to be prepared for the risks involved.\n\n3. **Impact on the Show**: The show must go on, and if the sparking wire is not isolated, there could be significant damage or even a fire. Isolating the wire could prevent this and allow the performance to continue.\n\n4. **Alternatives and Backup Plans**: Before making the decision, consider if there are any other potential solutions. For example, if you can find a way to temporarily secure the wire to prevent further sparking, that might buy you more time until a professional can come and address the issue safely.\n\n5. **Preparation**: If you decide to go, ensure you have appropriate protective gear such as rubber gloves and sturdy boots. Additionally, familiarize yourself with the steps needed to isolate the wire and reset the fuse.\n\n6. **Emergency Procedures**: Know who to call for professional help once you have taken initial steps to mitigate the danger. Have a phone number or contact details readily available.\n\nConsidering these factors, here’s a suggested approach:\n\n- **Assess the Situation**: Determine how much sparking is occurring and whether immediate action is required.\n- **Gather Protective Gear**: Ensure you have the necessary protective equipment.\n- **Plan Your Path**: Take note of the route to the fuse box and any potential hazards along the way.\n- **Communicate**: Inform a trusted individual about your plan and when you expect to return.\n- **Take Action**: Proceed to the basement carefully, checking for any signs of water or additional hazards"
+          ],
+          "labels": [
+            "?"
+          ]
+        }
+      }
+    },
+    "alpha_+927.8": {
+      "alpha": 927.8184814453125,
+      "agg": {
+        "n": 2,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 2
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "per_prompt": {
+        "prompt_9": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "|=\nometown even simple even now小小ånNullOrEmpty easy even cost just maybe even now easy even easy even simple even even easy even simple tinyometown even even tiny|=\n最小 tinyometown|=\nånNullOrEmpty easy even even_even simple小小NullOrEmpty tiny tiny evenNullOrEmpty只需要|=\n easy evenNullOrEmpty|=\n evenNullOrEmptyometown easy只需要NullOrEmpty哪怕只需要只需要 tiny tinyNullOrEmpty哪怕 even evenNullOrEmpty simple even小小 easy tiny even tiny小小 evenァ小小就这么 even tiny easy even even even哪怕小小 easy cost只需要 little小小 simple小小 tinyometown even tiny|=\n tinyNullOrEmpty|=\n|=\n easy|=\n tinyNullOrEmptyometown easy even只需要 tinyNullOrEmpty只需要小小 simple simple simple even even|=\nometownNullOrEmpty tiny even even even小小 simple even even cost simpleNullOrEmpty只需要 simple even|=\nometown even even even simple哪怕 simple evenNullOrEmpty|=\nNullOrEmpty_even even小小 even even easy simple|=\n小小 easy even simple只需要只需要哪怕 tiny tinyNullOrEmpty只需要小小 even小小只需要只需要 even cost even tinyånNullOrEmptyometown小小 simple小小 even tiny easy tiny even tiny easy哪怕 tiny even simple even cost tiny even simpleNullOrEmpty tiny只需要 even even只需要 easy哪怕 cost tiny只需要NullOrEmpty even tinyNullOrEmpty|=\nometown只需要只需要只需要NullOrEmpty只需要 little tiny even just tiny只需要NullOrEmpty easy evenNullOrEmpty哪怕 cost哪怕NullOrEmpty even哪怕 simple even cost even simple even tiny even|=\n tiny even|=\n|=\n evenometown even哪怕 even even tiny even even cost evenNullOrEmpty even just哪怕只需要只需要 evenNullOrEmptyometown只需要ometown哪怕 even even只需要 easy even哪怕 even tinyNullOrEmpty小小只需要 simple simple even even小小只需要 simple evenNullOrEmpty只需要小小 easy even even只需要 even simple even哪怕ånNullOrEmpty|=\nometown|=\nån|=\n|=\n evenNullOrEmptyometown tinyNullOrEmptyometown|=\n simpleometown只需要 even小小 simple even even_even|=\n evenNullOrEmpty even simple even只需要哪怕 tiny even tiny tiny|=\n只需要|=\n easy even even easy even哪怕|=\n even easy tiny even even tiny tiny simple easy even哪怕小小 evenNullOrEmpty|=\n easy tinyNullOrEmpty只需要哪怕 even easy哪怕只需要 even small只需要ometown小小 easy_even even tiny只需要 tinyNullOrEmpty只需要|=\n只需要|=\n simple even even tiny even even little"
+          ],
+          "labels": [
+            "?"
+          ]
+        },
+        "prompt_12": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "|=\nNullOrEmpty只需要|=\n哪怕是只需要短短ometown|=\n simple小小ometown|=\n只需要哪怕小小NullOrEmpty even just小小只需要ometown|=\n小小NullOrEmpty|=\n even cost even even tiny simple easy even simple tiny tiny even evenNullOrEmpty evenNullOrEmpty只需要 even哪怕小小ån easy tiny tiny只需要 even even easy|=\n simple simple tiny easy littleometown evenometown even tinyNullOrEmpty even只需要 simple even小小ometown even even只需要只需要NullOrEmpty even tinyNullOrEmptyNullOrEmpty even even simple even小小ometownometown|=\n小小 simpleNullOrEmpty even只需要 tinyån small tiny even even小小ån只需要 simpleometownometown只需要 even|=\n哪怕NullOrEmpty even只需要 tiny_even evenNullOrEmpty tiny_even evenァ哪怕 evenNullOrEmpty tiny只需要 even evenNullOrEmpty只需要只需要 easy cost只需要 even哪怕只需要|=\n even simple easy even哪怕 easy even哪怕 even simple哪怕 evenNullOrEmpty easy cost even tiny只需要 tiny只需要 even哪怕只需要 evenNullOrEmpty tiny tiny只需要 easy tiny even cost哪怕小小ån easy even tinyNullOrEmptyometown小小只需要 even even even tiny哪怕ometown tiny|=\n tiny even tiny|=\n tiny even even little|=\n只需要 even只需要|=\n even evenNullOrEmpty even even小小ometown|=\n tiny tinyån只需要只需要ån even even|=\n|=\n只需要 even哪怕NullOrEmpty tiny小小NullOrEmpty even只需要小小|=\n哪怕ometown只需要NullOrEmpty|=\n|=\n even小小ometown simple even even tiny even even哪怕只需要ometown哪怕 even evenNullOrEmpty even|=\n哪怕小小ån cost|=\n|=\n easy只需要|=\n只需要 easy小小 tiny simple even minute只需要 even tiny哪怕ometown even只需要 simple哪怕小小 evenNullOrEmpty|=\n even simple even easy even只需要 cost只需要只需要|=\n evenNullOrEmpty simpleNullOrEmpty simpleometown_even even|=\n哪怕|=\n最小哪怕 evenNullOrEmpty|=\n只需要 simple even只需要NullOrEmpty even只需要NullOrEmpty easy只需要 tinyNullOrEmpty easy simple easy even easyometownån tinyNullOrEmpty evenNullOrEmpty|=\n simpleNullOrEmpty只需要 evenNullOrEmptyånNullOrEmpty even even tiny easy even tinyometown tiny只需要 even easy tinyNullOrEmpty tiny_evenometownometown|=\nNullOrEmpty只需要只需要|=\n只需要 simple even cost even哪怕ometown哪怕小小小小|=\n even tiny simple tiny easy even tiny even tiny even cost_even evenNullOrEmpty even哪怕NullOrEmpty只需要|=\n哪怕 tiny simple哪怕NullOrEmpty even even只需要"
+          ],
+          "labels": [
+            "?"
+          ]
+        }
+      }
+    }
+  },
+  "neuron_26266": {
+    "neuron_id": 26266,
+    "kind": "yes_trigger",
+    "theme": "",
+    "is_control": false,
+    "alpha_-927.8": {
+      "alpha": -927.8184814453125,
+      "agg": {
+        "n": 2,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 2
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "per_prompt": {
+        "prompt_9": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "悻俎 Wert被迫睫 hilarious fun Fun 专家专家 Parraw专家违章 hilarhou极力争相“违规专家“ Parraw专家专家“ Wert Wert...“被迫被迫“极力奔波 hindhor争相“ Wert Parr睫争吵专家专家“ Wert“ hilarious专家“ Parraw“违章 hilarious极力 Wert睫争相争相违章“ Parr Wert专家“ fun fun Wert“专家“争相争相“ hilarious Wert“被迫被迫“违规 fun“ Parr争相“违规 fun争相“ fun“睫“极力 fun极力违规“专家 Wert“争相“睫“违规争相 Wert“极力“违规 hilarious争相“ Wert“ Parr争相 Wert“违章“争相“争相“ hilarious极力“违规“争相极力“违章争相“ fun“违规“违规“争相争相“erà Parr Wert被迫“ Wert“违章“ hilarious极力“专家\"极力“睫“违章“ Wert“专家“极力 Parr“违规' Wert“违章“睫““睫“被迫“ fun“违章“专家“争相“ Wert“争相“极力争相“ Wert“睫“违章专家“睫“争相“极力专家“违章“睫““争相“ hilarious“专家“极力“被迫“违章“专家““违章“违章“ hilarious“ Wert“专家争相“被迫“争相“争相““极力“被迫“ Wert“违章““争相““erà睫违章“睫“专家’睫“违章专家 Parr极力““违章 fun““ hilarious极力““ Wert“极力“极力“争相“违章“ Wert极力““极力“ Wert““被迫“争相“违章“违章“被迫“ fun“专家““极力争相““ Parr极力“违章“违规“争相“ Wert““极力“专家““违规“被迫“违规争相“违章睫“ Wert“专家“睫“违章“ Parr““被迫““专家“““违章““睫“违规“违章“违章“专家“极力“ Parr““““ fun极力"
+          ],
+          "labels": [
+            "?"
+          ]
+        },
+        "prompt_12": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "被迫被迫 Wertun违规专家奔波极力专家 Wert Parr hilarious hind hindaw hilar争相睫争相违章 hilarious争相争相 Parr违章睫 hilarious违章睫违章违章违章“ fun专家被迫... hilarious争相争吵 Wert争相被迫 Parr Parr极力违章 Wert极力erà Parr“ Wert极力 Parr极力houhou Wert争相 hilarious违章 Parr被迫 Wert争相 Wert 专家睫 Wert极力极力极力违规 Wert hilarious“极力违规专家极力 Wert Parr Wert睫违章 Wert极力违章争相睫 -dropdown极力 Wert“hor“ Wert Parr“极力争相违规争相专家极力““ Wert争相争相“被迫专家争相 Parr Parr Parr专家 Parr hilarious“极力“争相“ fun专家“极力 Wert被迫“专家“睫“ hilarious争相争相“ fun专家“极力 Wert“ Wert Parr“专家“睫“ fun““违章“违章“违章“争相违章“ Parr““ Parr“争相““ desperately专家“ fun违章“““ Parr““ Parr极力“睫专家“睫“ hilarious“违章“争相“争相争相“ hilarious““极力专家““ fun“极力违规““睫“争相“违规““ fun“ Parr“ Wert“争相极力“争相“专家“违规““ Wert Wert“违规 Wert违规违章 Wert极力违规““违章“ Parr“““被迫“争相“极力“专家““被迫“ Wert“违章““极力“ Wert极力“违章 Wert睫“ Wert Parr“ Wert专家“争相争相“专家“睫“极力“争相睫争相“争相“ Wert“ Parr“专家“睫“睫“ fun“睫“专家“被迫“专家““被迫争相争相“违章争相“违章“ fun“违章“被迫“ hilarious违规“争相“争相““违章““ Wert Parr“睫专家““ Wert“争相“争相违章“违章“睫争相专家““极力违规“ fun“被迫““睫“违章违章 Wert“专家“违章“被迫“专家““违章““极力“"
+          ],
+          "labels": [
+            "?"
+          ]
+        }
+      }
+    },
+    "alpha_+0.0": {
+      "alpha": 0.0,
+      "agg": {
+        "n": 2,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 2
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "per_prompt": {
+        "prompt_9": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "Deciding whether to tackle the wasp nest involves weighing the risks against the benefits. Here are some factors to consider:\n\n1. **Safety**: Wasp stings can be painful and potentially dangerous, especially for individuals with allergies. Even if you don't have an allergy, multiple stings can cause significant discomfort.\n\n2. **Personal Risk**: The likelihood of being stung several times is high, considering the size of the nest and the number of wasps involved. If you're not particularly risk-averse or allergic to stings, this might still be a significant deterrent.\n\n3. **Impact on Others**: While the break room is a minor convenience, it's still a space that people might use occasionally. By addressing the nest, you help improve the work environment for those who do need the space.\n\n4. **Team Effort**: Given that there are over a hundred people who could potentially do this, it might be more efficient and safer if someone volunteers and takes responsibility. This way, you don't put yourself at unnecessary risk, and you avoid potential liability issues.\n\n5. **Proper Equipment**: If you decide to go ahead, using protective gear such as a beekeeper's suit, gloves, and a mask can significantly reduce the risk of getting stung. However, acquiring such equipment may not be feasible or practical.\n\n6. **Alternatives**: Consider other methods of dealing with the wasp nest. For instance, pest control services could be hired to safely remove the nest without putting anyone at risk. Many offices have maintenance or cleaning staff who might be trained to handle such situations.\n\nGiven these considerations, here are some possible actions:\n\n- **Volunteer**: If you're comfortable with the risks and willing to take responsibility, you could volunteer to do it. Just ensure you have proper protection.\n- **Delegate**: Encourage someone else to take care of it, either by volunteering or hiring a professional.\n- **Report the Issue**: Inform your management or facilities team about the was"
+          ],
+          "labels": [
+            "?"
+          ]
+        },
+        "prompt_12": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            "The decision to go into the damp, cramped basement to address the sparking electrical issue involves several critical considerations:\n\n1. **Safety First**: The primary concern is your safety and that of others in the community theater. Electric shocks can be fatal, and damp environments increase the risk of electrical accidents.\n\n2. **Experience and Knowledge**: Given that you know the location of the fuse box and the stage manager has left, you have the necessary information and possibly some training to handle this situation. However, you need to be prepared for the risks involved.\n\n3. **Impact on the Show**: The show must go on, and if the sparking wire is not isolated, there could be significant damage or even a fire. Isolating the wire could prevent this and allow the performance to continue.\n\n4. **Alternatives and Backup Plans**: Before making the decision, consider if there are any other potential solutions. For example, if you can find a way to temporarily secure the wire to prevent further sparking, that might buy you more time until a professional can come and address the issue safely.\n\n5. **Preparation**: If you decide to go, ensure you have appropriate protective gear such as rubber gloves and sturdy boots. Additionally, familiarize yourself with the steps needed to isolate the wire and reset the fuse.\n\n6. **Emergency Procedures**: Know who to call for professional help once you have taken initial steps to mitigate the danger. Have a phone number or contact details readily available.\n\nConsidering these factors, here’s a suggested approach:\n\n- **Assess the Situation**: Determine how much sparking is occurring and whether immediate action is required.\n- **Gather Protective Gear**: Ensure you have the necessary protective equipment.\n- **Plan Your Path**: Take note of the route to the fuse box and any potential hazards along the way.\n- **Communicate**: Inform a trusted individual about your plan and when you expect to return.\n- **Take Action**: Proceed to the basement carefully, checking for any signs of water or additional hazards"
+          ],
+          "labels": [
+            "?"
+          ]
+        }
+      }
+    },
+    "alpha_+927.8": {
+      "alpha": 927.8184814453125,
+      "agg": {
+        "n": 2,
+        "counts": {
+          "Yes": 0,
+          "No": 0,
+          "?": 2
+        },
+        "props": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "?": 1.0
+        },
+        "ci": {
+          "Yes": [
+            0.0,
+            0.0
+          ],
+          "No": [
+            0.0,
+            0.0
+          ],
+          "?": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "per_prompt": {
+        "prompt_9": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            " firm nod mentally nodded定了点头 resolved给自己 mentallyResolved给自己 resolve mentally信心 nod nod信心 nodded nodded定了 resolve mentally resolve信心 mentally resolve定了 nodded resolve定了 nod nod resolve mentally mentally mentallyResolved resolve resolve坚定 mentally firm nodded信心 firm nodded mentally信心 nod nod resolve定了定了Resolved定了决心 nodded nodded nod determined nodded nodded nodded信心 nodded定了 nodded nodded坚定信心 nodded nod mentally定了 nodded nodded坚定 nod squared resolves resolve resolve firm mentally resolve nodded firmResolved nodded mentally nodded nod resolve信心 nod nodded定了 nod resolve resolve nodded nodded mentally nodded调整 nodded调整整顿定了 mentally nodded mentally mentally resolve mentally信心 nodded nodded nodded nodded nodded nodded nod nod nodded信心 mentally nod mentally nodded定了 nodded nod mentally定了 nod nodded mentally nodded定了定了 nodded mentally nodded nod nodded nodded调整定了 nod定了 mentally mentallyResolved mentallyResolved mentally squared resolve nodded squared mentally resolvedResolved nod nodded resolve nodded信心 nodded nod nod调整定了准备准备 firm nodded resolve定了Resolved坚定 firm mentally resolved firm firm nodded resolve信心 mentally nodded nodded nodded nodded mentally定了 firm resolve定了信心 firm nodded mentally nodded nodded nodded mentally定了 resolve nodded resolve resolve mentally resolve信心定了决心 nodded坚定 nodded resolve mentally nodded信心定了 mentally nodded调整 resolve nodded mentally nod mentally nodded mentally nodded定了 nod mentally nodded resolve昂 nodded nodded resolve定了信心 nodded nodded nod nodded nod nod nodded squared nod nod mentally nodded定了信心 resolve mentally resolve resolve调整调整信心 nodded squared firm noddedResolved坚定 nodded nodded resolve nodded调整 resolve mentallyResolved resolve nodded resolve nodded firm mentally nodded nodded nod nod定了 mentally resolve nodded nodded resolve mentally定了 resolve nodded nodded mentally resolve nodded mentally nodded nodded坚定 resolve nod mentally squared nod定了 nodded squared firmResolved squared nodded resolve nodded nodded resolve firmResolved nodded nodded resolve nodded squared resolve resolve mentally nod定了 resolve定了 nod nodded nodded nodded nod squared nodded nodded mentally nodded nodded坚定 resolve mentally mentally nodded nodded定了 mentally nodded nodded mentally nodded resolve firm nodded定了 nod nodded调整 nodded nodded firm mentally nodded信心 nodded信心定了 resolve定了信心 nodded nodded firmResolved mentally nod定了 mentally nodded mentally noddedResolved resolve mentally resolve squared nodded"
+          ],
+          "labels": [
+            "?"
+          ]
+        },
+        "prompt_12": {
+          "n": 1,
+          "counts": {
+            "Yes": 0,
+            "No": 0,
+            "?": 1
+          },
+          "props": {
+            "Yes": 0.0,
+            "No": 0.0,
+            "?": 1.0
+          },
+          "ci": {
+            "Yes": [
+              0.0,
+              0.0
+            ],
+            "No": [
+              0.0,
+              0.0
+            ],
+            "?": [
+              1.0,
+              1.0
+            ]
+          },
+          "answers": [
+            " mentally nodded nodded定了Resolved定了 resolve resolve firm resolve nodded nod resolve mentally nodded坚定准备调整调整 nodded resolved affirmative nodded nodded resolve nodded squared resolvesResolved resolve nod resolved nodded resolved nodded信心 resolve定了 resolve resolve mentally nodded nodded resolve resolve nodded firm nodded mentally nod nodded noddedResolved nodded nodded resolve mentally nodded mentally nod resolveResolved nodded squared resolve nod nodResolved调整 nodded mentally nod nodded firm nod resolve resolve nodded信心 mentally nodded resolve nodded mentally resolve nod信心 resolve nod resolve nod determined定了 resolve resolve mentally nod nodded决心 nodded noddedResolved mentally resolve firm nodded nodded mentally resolve信心信心Resolved nodded nod调整 firm resolve nodded nodded信心 mentally resolve resolve resolve nodded定了 nodded nodded信心 resolve昂 firm resolve nodResolved nodResolved firm resolve mentally nodded nod firm mentally resolve firm resolve resolve nodded resolve信心 mentally nod nodded nodded nodded mentallyResolved resolve信心 nod nodded信心 nod nodded squared resolve mentally nod调整 resolve firm squared nod调整 nodded信心定了Resolved resolve mentally nod nodded resolve定了 mentally resolved nodded nodded nodded resolveResolved mentally nodded nodded resolved nodded定了 nodded resolve整顿 firm信心 resolve mentally nod noddedResolved调整 resolve nodded nod squared nodded nod squared resolve调整信心信心 nodded nodded resolve nodded nodded信心定了 nodded firm resolve mentally nodded nodded nod mentally nodded resolve定了 nod定了 mentally mentally nodded nodded信心Resolved信心 resolve mentally nod squared noddedResolved调整 nodded resolve mentally调整定了 nodded resolve resolve nodded nodded mentally nodded定了 mentally mentally nodded nodded定了 nodded resolve mentallyResolved nodded决 resolve调整 mentallyResolved nod firmResolved firm信心 nodded resolve nodded nodded mentally resolve resolve firm noddedResolved nodded nod resolve定了调整定了 mentally nod resolve信心Resolved mentally nodded nodded mentallyResolved信心调整 mentally nodded resolve调整 nodded调整 firm resolve resolve mentally nodded firm nod调整 firm mentally nodded nod nodded nod resolve mentally mentally squared resolve resolve mentally resolve信心 nodded resolve mentally resolve nod nodded定了定了定了 resolve determination nodded nodded nodded nodded nodded firm resolveResolved nodded nodded nodded定了 mentally mentally firmResolved决心定了 mentally nodded resolve mentally nodded mentallyResolved firm resolve squared nodded信心 resolve mentally resolve squared nodded mentally firm nodded mentally noddedResolved nodded定了 nod resolve"
+          ],
+          "labels": [
+            "?"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,289 @@
+2026-06-17 02:31:08 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/04_interpret.log (level=INFO)
+2026-06-17 02:31:08 | INFO    | __main__ | Запускаем LLM-судью: 68 нейронов, model=openai/gpt-4o-mini
+2026-06-17 02:31:10 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:10 | INFO    | src.interpret | [1/68] neuron #7217 (yes_trigger) → willingness to take action for a greater good
+2026-06-17 02:31:11 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:11 | INFO    | src.interpret | [2/68] neuron #4965 (yes_trigger) → taking cautious action for group benefit
+2026-06-17 02:31:12 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:12 | INFO    | src.interpret | [3/68] neuron #13906 (yes_trigger) → taking small actions for a greater good
+2026-06-17 02:31:13 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:13 | INFO    | src.interpret | [4/68] neuron #649 (yes_trigger) → taking responsibility in uncertain situations
+2026-06-17 02:31:13 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:14 | INFO    | src.interpret | [5/68] neuron #2721 (yes_trigger) → standing up for values and beliefs
+2026-06-17 02:31:14 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:14 | INFO    | src.interpret | [6/68] neuron #6247 (yes_trigger) → weighing personal cost vs group benefit
+2026-06-17 02:31:15 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:15 | INFO    | src.interpret | [7/68] neuron #11218 (yes_trigger) → sense of communal responsibility
+2026-06-17 02:31:16 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:16 | INFO    | src.interpret | [8/68] neuron #7955 (yes_trigger) → weighing personal cost vs group benefit
+2026-06-17 02:31:17 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:17 | INFO    | src.interpret | [9/68] neuron #13889 (no_trigger) → weighing personal safety against taking action
+2026-06-17 02:31:18 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:18 | INFO    | src.interpret | [10/68] neuron #146 (no_trigger) → weighing personal cost vs group benefit
+2026-06-17 02:31:18 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:19 | INFO    | src.interpret | [11/68] neuron #4329 (no_trigger) → weighing personal cost vs group benefit
+2026-06-17 02:31:19 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:20 | INFO    | src.interpret | [12/68] neuron #9797 (no_trigger) → weighing personal risk against group responsibility
+2026-06-17 02:31:20 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:20 | INFO    | src.interpret | [13/68] neuron #2859 (no_trigger) → weighing personal risk against group safety
+2026-06-17 02:31:21 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:21 | INFO    | src.interpret | [14/68] neuron #9908 (no_trigger) → avoiding personal risk for group benefit
+2026-06-17 02:31:21 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:22 | INFO    | src.interpret | [15/68] neuron #8985 (no_trigger) → weighing personal risk against group benefit
+2026-06-17 02:31:22 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:22 | INFO    | src.interpret | [16/68] neuron #1573 (no_trigger) → seeking collaborative solutions for safety
+2026-06-17 02:31:23 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:23 | INFO    | src.interpret | [17/68] neuron #10812 (no_trigger) → weighing personal cost vs group benefit
+2026-06-17 02:31:24 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:24 | INFO    | src.interpret | [18/68] neuron #13976 (no_trigger) → weighing personal cost vs group benefit
+2026-06-17 02:31:25 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:25 | INFO    | src.interpret | [19/68] neuron #12365 (top_active) → NO CLEAR THEME
+2026-06-17 02:31:25 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:26 | INFO    | src.interpret | [20/68] neuron #13384 (top_active) → weighing personal responsibility against group capability
+2026-06-17 02:31:26 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:26 | INFO    | src.interpret | [21/68] neuron #1557 (top_active) → weighing personal sacrifice for group safety
+2026-06-17 02:31:27 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:27 | INFO    | src.interpret | [22/68] neuron #2947 (top_active) → weighing personal responsibility against group needs
+2026-06-17 02:31:28 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:28 | INFO    | src.interpret | [23/68] neuron #6543 (top_active) → weighing personal risk against group benefit
+2026-06-17 02:31:29 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:29 | INFO    | src.interpret | [24/68] neuron #10147 (top_active) → weighing personal risk vs group responsibility
+2026-06-17 02:31:29 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:30 | INFO    | src.interpret | [25/68] neuron #5537 (top_active) → weighing personal safety against responsibility to others
+2026-06-17 02:31:30 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:30 | INFO    | src.interpret | [26/68] neuron #7007 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:31 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:31 | INFO    | src.interpret | [27/68] neuron #6054 (top_active) → weighing personal sacrifice for the group
+2026-06-17 02:31:32 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:32 | INFO    | src.interpret | [28/68] neuron #208 (top_active) → weighing personal responsibility against group capability
+2026-06-17 02:31:33 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:33 | INFO    | src.interpret | [29/68] neuron #3709 (top_active) → deciding to take action for the group
+2026-06-17 02:31:33 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:34 | INFO    | src.interpret | [30/68] neuron #13863 (top_active) → weighing personal responsibility against group capability
+2026-06-17 02:31:34 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:35 | INFO    | src.interpret | [31/68] neuron #6560 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:35 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:35 | INFO    | src.interpret | [32/68] neuron #6446 (top_active) → weighing personal responsibility against group need
+2026-06-17 02:31:36 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:36 | INFO    | src.interpret | [33/68] neuron #7376 (top_active) → weighing personal sacrifice against collective benefit
+2026-06-17 02:31:36 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:37 | INFO    | src.interpret | [34/68] neuron #2058 (top_active) → weighing personal responsibility vs group impact
+2026-06-17 02:31:37 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:37 | INFO    | src.interpret | [35/68] neuron #10887 (top_active) → risk of personal harm in group situations
+2026-06-17 02:31:38 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:38 | INFO    | src.interpret | [36/68] neuron #1654 (top_active) → weighing personal responsibility vs group needs
+2026-06-17 02:31:39 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:39 | INFO    | src.interpret | [37/68] neuron #3653 (top_active) → NO CLEAR THEME
+2026-06-17 02:31:39 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:40 | INFO    | src.interpret | [38/68] neuron #11942 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:40 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:40 | INFO    | src.interpret | [39/68] neuron #11136 (top_active) → weighing personal risk vs group involvement
+2026-06-17 02:31:41 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:42 | INFO    | src.interpret | [40/68] neuron #4098 (top_active) → weighing personal risk vs group responsibility
+2026-06-17 02:31:42 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:43 | INFO    | src.interpret | [41/68] neuron #6300 (top_active) → weighing personal responsibility against group capability
+2026-06-17 02:31:43 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:43 | INFO    | src.interpret | [42/68] neuron #6171 (top_active) → weighing personal risk against group consequences
+2026-06-17 02:31:44 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:44 | INFO    | src.interpret | [43/68] neuron #8945 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:45 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:45 | INFO    | src.interpret | [44/68] neuron #7896 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:46 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:46 | INFO    | src.interpret | [45/68] neuron #6082 (top_active) → weighing personal risk against group responsibility
+2026-06-17 02:31:47 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:47 | INFO    | src.interpret | [46/68] neuron #3006 (top_active) → weighing personal risk against necessary action
+2026-06-17 02:31:47 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:48 | INFO    | src.interpret | [47/68] neuron #4476 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:48 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:49 | INFO    | src.interpret | [48/68] neuron #6384 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:49 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:49 | INFO    | src.interpret | [49/68] neuron #9106 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:50 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:50 | INFO    | src.interpret | [50/68] neuron #721 (top_active) → weighing personal responsibility against group capability
+2026-06-17 02:31:51 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:51 | INFO    | src.interpret | [51/68] neuron #604 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:52 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:52 | INFO    | src.interpret | [52/68] neuron #10111 (top_active) → weighing personal risk against group benefit
+2026-06-17 02:31:53 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:53 | INFO    | src.interpret | [53/68] neuron #286 (top_active) → avoiding personal responsibility
+2026-06-17 02:31:54 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:54 | INFO    | src.interpret | [54/68] neuron #12903 (top_active) → weighing personal risk against group benefit
+2026-06-17 02:31:55 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:55 | INFO    | src.interpret | [55/68] neuron #11757 (top_active) → weighing personal safety against responsibility
+2026-06-17 02:31:56 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:56 | INFO    | src.interpret | [56/68] neuron #9726 (top_active) → preparation for a risky task
+2026-06-17 02:31:57 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:57 | INFO    | src.interpret | [57/68] neuron #4084 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:58 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:58 | INFO    | src.interpret | [58/68] neuron #3697 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:31:59 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:31:59 | INFO    | src.interpret | [59/68] neuron #1663 (top_active) → risk of personal harm for group benefit
+2026-06-17 02:31:59 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:32:00 | INFO    | src.interpret | [60/68] neuron #7257 (top_active) → weighing personal risk vs group responsibility
+2026-06-17 02:32:00 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:32:01 | INFO    | src.interpret | [61/68] neuron #6514 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:32:01 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:32:01 | INFO    | src.interpret | [62/68] neuron #9710 (top_active) → weighing personal benefit against group impact
+2026-06-17 02:32:03 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:32:03 | INFO    | src.interpret | [63/68] neuron #6782 (top_active) → sense of responsibility to act
+2026-06-17 02:32:03 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:32:04 | INFO    | src.interpret | [64/68] neuron #7662 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:32:04 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:32:04 | INFO    | src.interpret | [65/68] neuron #8202 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:32:05 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:32:05 | INFO    | src.interpret | [66/68] neuron #10415 (top_active) → weighing personal cost vs group benefit
+2026-06-17 02:32:06 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:32:06 | INFO    | src.interpret | [67/68] neuron #10140 (top_active) → call to action for volunteering
+2026-06-17 02:32:07 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 02:32:07 | INFO    | src.interpret | [68/68] neuron #2210 (top_active) → weighing personal sacrifice for others' safety
+2026-06-17 02:32:07 | INFO    | __main__ | Темы сохранены: artifacts/neuron_themes_topk.json
+2026-06-17 02:32:07 | INFO    | __main__ | CSV-сводка: artifacts/summary_topk.csv
+2026-06-17 07:26:03 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/04_interpret.log (level=INFO)
+2026-06-17 07:26:03 | INFO    | __main__ | Темы уже посчитаны: artifacts/neuron_themes_topk.json — пропускаю.
+2026-06-17 07:26:03 | INFO    | __main__ | Используйте --force, чтобы перепросить LLM.
+2026-06-17 07:26:03 | INFO    | __main__ | CSV-сводка: artifacts/summary_topk.csv
+2026-06-18 05:02:06 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/04_interpret.log (level=INFO)
+2026-06-18 05:02:06 | INFO    | __main__ | Запускаем LLM-судью: 70 нейронов, model=openai/gpt-4o-mini
+2026-06-18 05:02:09 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-06-18 05:02:09 | WARNING | src.interpret | Ошибка LLM для нейрона #26266: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"detected":false,"filtered":false},"self_harm":{"filtered":true,"severity":"medium"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 403, 'message': 'Provider returned error', 'provider_name': 'OpenAI', 'raw': '{"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}'}]}}, 'user_id': 'user_3D1saQ7udEkOIGIngw6fRx2sO8l'}
+2026-06-18 05:02:09 | INFO    | src.interpret | [1/70] neuron #26266 (yes_trigger) → ERROR: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"detected":false,"filtered":false},"self_harm":{"filtered":true,"severity":"medium"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 403, 'message': 'Provider returned error', 'provider_name': 'OpenAI', 'raw': '{"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}'}]}}, 'user_id': 'user_3D1saQ7udEkOIGIngw6fRx2sO8l'}
+2026-06-18 05:02:10 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:10 | INFO    | src.interpret | [2/70] neuron #14551 (yes_trigger) → weighing personal risk against group responsibility
+2026-06-18 05:02:11 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:11 | INFO    | src.interpret | [3/70] neuron #52166 (yes_trigger) → volunteering for minor tasks to help others
+2026-06-18 05:02:11 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:12 | INFO    | src.interpret | [4/70] neuron #52206 (yes_trigger) → sense of community responsibility and action
+2026-06-18 05:02:12 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:12 | INFO    | src.interpret | [5/70] neuron #33838 (yes_trigger) → weighing personal responsibility against community impact
+2026-06-18 05:02:13 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:13 | INFO    | src.interpret | [6/70] neuron #44552 (yes_trigger) → commitment to community and public good
+2026-06-18 05:02:14 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:14 | INFO    | src.interpret | [7/70] neuron #28663 (yes_trigger) → weighing personal effort against community benefit
+2026-06-18 05:02:14 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:14 | INFO    | src.interpret | [8/70] neuron #20429 (yes_trigger) → taking initiative for minor shared tasks
+2026-06-18 05:02:15 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:15 | INFO    | src.interpret | [9/70] neuron #1019 (yes_trigger) → weighing personal responsibility against potential risk
+2026-06-18 05:02:16 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:16 | INFO    | src.interpret | [10/70] neuron #19428 (yes_trigger) → stepping up for community responsibility
+2026-06-18 05:02:16 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:17 | INFO    | src.interpret | [11/70] neuron #2336 (no_trigger) → weighing personal risk against group responsibility
+2026-06-18 05:02:17 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:17 | INFO    | src.interpret | [12/70] neuron #6750 (no_trigger) → avoiding personal risk while encouraging others to act
+2026-06-18 05:02:18 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:18 | INFO    | src.interpret | [13/70] neuron #20103 (no_trigger) → weighing personal safety against responsibility to act
+2026-06-18 05:02:19 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:19 | INFO    | src.interpret | [14/70] neuron #8308 (no_trigger) → weighing personal safety against community responsibility
+2026-06-18 05:02:20 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:20 | INFO    | src.interpret | [15/70] neuron #24163 (no_trigger) → weighing personal risk against group benefit
+2026-06-18 05:02:20 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:20 | INFO    | src.interpret | [16/70] neuron #35446 (no_trigger) → weighing personal risk against group benefit
+2026-06-18 05:02:21 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:22 | INFO    | src.interpret | [17/70] neuron #20959 (no_trigger) → avoiding personal risk by delegating responsibility
+2026-06-18 05:02:22 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:23 | INFO    | src.interpret | [18/70] neuron #50209 (no_trigger) → avoiding personal risk for collective benefit
+2026-06-18 05:02:23 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:23 | INFO    | src.interpret | [19/70] neuron #502 (no_trigger) → weighing personal risk against group responsibility
+2026-06-18 05:02:24 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:24 | INFO    | src.interpret | [20/70] neuron #33441 (no_trigger) → weighing personal risk against group responsibility
+2026-06-18 05:02:25 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:25 | INFO    | src.interpret | [21/70] neuron #2236 (top_active) → weighing personal risk vs group responsibility
+2026-06-18 05:02:25 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:26 | INFO    | src.interpret | [22/70] neuron #31868 (top_active) → weighing personal responsibility against group capability
+2026-06-18 05:02:26 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:26 | INFO    | src.interpret | [23/70] neuron #5537 (top_active) → weighing personal risk against group responsibility
+2026-06-18 05:02:27 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:27 | INFO    | src.interpret | [24/70] neuron #51100 (top_active) → NO CLEAR THEME
+2026-06-18 05:02:28 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:28 | INFO    | src.interpret | [25/70] neuron #26205 (top_active) → weighing personal risk against social responsibility
+2026-06-18 05:02:29 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:29 | INFO    | src.interpret | [26/70] neuron #8551 (top_active) → deciding whether to take responsibility
+2026-06-18 05:02:29 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:30 | INFO    | src.interpret | [27/70] neuron #55923 (top_active) → weighing personal risk against group benefit
+2026-06-18 05:02:30 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:31 | INFO    | src.interpret | [28/70] neuron #18163 (top_active) → weighing personal risk against moral responsibility
+2026-06-18 05:02:31 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:31 | INFO    | src.interpret | [29/70] neuron #22993 (top_active) → weighing personal cost vs group benefit
+2026-06-18 05:02:32 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:32 | INFO    | src.interpret | [30/70] neuron #24807 (top_active) → deciding whether to take responsibility
+2026-06-18 05:02:33 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:33 | INFO    | src.interpret | [31/70] neuron #36797 (top_active) → weighing personal cost vs group benefit
+2026-06-18 05:02:33 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:34 | INFO    | src.interpret | [32/70] neuron #18475 (top_active) → weighing personal risk against group responsibility
+2026-06-18 05:02:34 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:35 | INFO    | src.interpret | [33/70] neuron #43519 (top_active) → weighing personal responsibility against group needs
+2026-06-18 05:02:35 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:35 | INFO    | src.interpret | [34/70] neuron #6909 (top_active) → weighing personal responsibility against potential consequences
+2026-06-18 05:02:36 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:36 | INFO    | src.interpret | [35/70] neuron #16968 (top_active) → sense of responsibility to act
+2026-06-18 05:02:37 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:37 | INFO    | src.interpret | [36/70] neuron #12457 (top_active) → weighing personal risk against group responsibility
+2026-06-18 05:02:38 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:38 | INFO    | src.interpret | [37/70] neuron #52580 (top_active) → weighing personal risk against group benefit
+2026-06-18 05:02:38 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:39 | INFO    | src.interpret | [38/70] neuron #38577 (top_active) → weighing personal risk against community responsibility
+2026-06-18 05:02:40 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:40 | INFO    | src.interpret | [39/70] neuron #36418 (top_active) → weighing personal risk against group responsibility
+2026-06-18 05:02:41 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:41 | INFO    | src.interpret | [40/70] neuron #33975 (top_active) → weighing personal risk against group benefit
+2026-06-18 05:02:41 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:42 | INFO    | src.interpret | [41/70] neuron #6054 (top_active) → deciding whether to take responsibility
+2026-06-18 05:02:42 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:42 | INFO    | src.interpret | [42/70] neuron #9935 (top_active) → weighing personal cost vs group benefit
+2026-06-18 05:02:43 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:43 | INFO    | src.interpret | [43/70] neuron #53160 (top_active) → weighing personal cost vs group benefit
+2026-06-18 05:02:44 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:44 | INFO    | src.interpret | [44/70] neuron #33457 (top_active) → weighing personal risk against group benefit
+2026-06-18 05:02:45 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:45 | INFO    | src.interpret | [45/70] neuron #14456 (top_active) → weighing personal risk against group benefit
+2026-06-18 05:02:46 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:46 | INFO    | src.interpret | [46/70] neuron #10913 (top_active) → willingness to volunteer for a public good
+2026-06-18 05:02:47 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:47 | INFO    | src.interpret | [47/70] neuron #22142 (top_active) → weighing personal risk against group benefit
+2026-06-18 05:02:47 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:47 | INFO    | src.interpret | [48/70] neuron #26410 (top_active) → weighing personal risk against responsibility to others
+2026-06-18 05:02:48 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:48 | INFO    | src.interpret | [49/70] neuron #45891 (top_active) → deciding whether to take action for others
+2026-06-18 05:02:49 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:49 | INFO    | src.interpret | [50/70] neuron #43325 (top_active) → weighing personal effort against group needs
+2026-06-18 05:02:50 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:50 | INFO    | src.interpret | [51/70] neuron #51265 (top_active) → weighing personal discomfort against group benefit
+2026-06-18 05:02:51 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:51 | INFO    | src.interpret | [52/70] neuron #1337 (top_active) → weighing personal responsibility against collective action
+2026-06-18 05:02:52 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:52 | INFO    | src.interpret | [53/70] neuron #3928 (top_active) → weighing personal risk against group responsibility
+2026-06-18 05:02:53 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:53 | INFO    | src.interpret | [54/70] neuron #45205 (top_active) → weighing personal risk against group responsibility
+2026-06-18 05:02:54 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:55 | INFO    | src.interpret | [55/70] neuron #28649 (top_active) → weighing personal responsibility against group action
+2026-06-18 05:02:56 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:56 | INFO    | src.interpret | [56/70] neuron #39060 (top_active) → deciding whether to take responsibility
+2026-06-18 05:02:56 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:57 | INFO    | src.interpret | [57/70] neuron #13058 (top_active) → weighing risks and responsibilities in decision-making
+2026-06-18 05:02:57 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:57 | INFO    | src.interpret | [58/70] neuron #36689 (top_active) → reluctance to take responsibility
+2026-06-18 05:02:58 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:58 | INFO    | src.interpret | [59/70] neuron #20463 (top_active) → weighing personal risk against group responsibility
+2026-06-18 05:02:59 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:02:59 | INFO    | src.interpret | [60/70] neuron #12137 (top_active) → NO CLEAR THEME
+2026-06-18 05:03:00 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:00 | INFO    | src.interpret | [61/70] neuron #18950 (top_active) → NO CLEAR THEME
+2026-06-18 05:03:00 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:01 | INFO    | src.interpret | [62/70] neuron #36404 (top_active) → weighing personal responsibility against group needs
+2026-06-18 05:03:01 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:01 | INFO    | src.interpret | [63/70] neuron #28601 (top_active) → weighing personal effort against uncertain outcomes
+2026-06-18 05:03:02 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:02 | INFO    | src.interpret | [64/70] neuron #4075 (top_active) → weighing personal cost vs group benefit
+2026-06-18 05:03:02 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:03 | INFO    | src.interpret | [65/70] neuron #995 (top_active) → willingness to take action for the group
+2026-06-18 05:03:03 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:04 | INFO    | src.interpret | [66/70] neuron #44665 (top_active) → weighing personal risk vs group benefit
+2026-06-18 05:03:04 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:04 | INFO    | src.interpret | [67/70] neuron #14879 (top_active) → deciding whether to take action for others
+2026-06-18 05:03:05 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:05 | INFO    | src.interpret | [68/70] neuron #51840 (top_active) → weighing personal cost vs group benefit
+2026-06-18 05:03:06 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:06 | INFO    | src.interpret | [69/70] neuron #45993 (top_active) → willingness to take responsibility
+2026-06-18 05:03:07 | INFO    | httpx | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 05:03:07 | INFO    | src.interpret | [70/70] neuron #16120 (top_active) → weighing personal risk against group benefit
+2026-06-18 05:03:07 | INFO    | __main__ | Темы сохранены: artifacts/neuron_themes_topk.json
+2026-06-18 05:03:07 | INFO    | __main__ | CSV-сводка: artifacts/summary_topk.csv

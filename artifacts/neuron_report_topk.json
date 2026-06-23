@@ -115,8 +115,7 @@
         "token_pos": 386,
         "snippet": " like I’m trying to take on responsibilities that aren’t mine. It’s just a case of the person present stepping up and doing a little bit of a favor to keep things running smoothly.\n\nSo, with that in mind,"
       }
-    ],
-    "theme": "ERROR: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\"error\":{\"message\":\"The response was filtered due to the prompt triggering Azure OpenAI\\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\",\"type\":null,\"param\":\"prompt\",\"code\":\"content_filter\",\"status\":400,\"innererror\":{\"code\":\"ResponsibleAIPolicyViolation\",\"content_filter_result\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":true,\"severity\":\"medium\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}}}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 403, 'message': 'Provider returned error', 'provider_name': 'OpenAI', 'raw': '{\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}'}]}}, 'user_id': 'user_3D1saQ7udEkOIGIngw6fRx2sO8l'}"
+    ]
   },
   {
     "neuron_id": 14551,
@@ -234,8 +233,7 @@
         "token_pos": 495,
         "snippet": " I need to think about the closest safe access - where people won't trip over me or block access to the fuse box.\n\nAs I stand there, teetering on the decision, I can hear the patrons buzzing with anticipation"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 52166,
@@ -353,8 +351,7 @@
         "token_pos": 194,
         "snippet": " might feel a bit odd to do this task on my own. I mean, it's not like we're strictly forbidden or anything, but it does feel like it might not be the most efficient way to handle things.\n\nPart"
       }
-    ],
-    "theme": "volunteering for minor tasks to help others"
+    ]
   },
   {
     "neuron_id": 52206,
@@ -472,8 +469,7 @@
         "token_pos": 288,
         "snippet": " and I'll probably regret it. \n\nI need to take action. I mean, the worst that can happen is losing some time, and that's not a real cost. I could do it right now. I'll just"
       }
-    ],
-    "theme": "sense of community responsibility and action"
+    ]
   },
   {
     "neuron_id": 33838,
@@ -591,8 +587,7 @@
         "token_pos": 496,
         "snippet": ". I'm going to go online right now and file that objection. Not just because I'm concerned about the park, but because I want to be a part of the decision-making process. I want to help preserve a space"
       }
-    ],
-    "theme": "weighing personal responsibility against community impact"
+    ]
   },
   {
     "neuron_id": 44552,
@@ -710,8 +705,7 @@
         "token_pos": 272,
         "snippet": "Still, I've been thinking about it lately. We live here too, and we can't just stand by if we want to protect the things that make our neighborhood great. This isn't just about preserving a green space;"
       }
-    ],
-    "theme": "commitment to community and public good"
+    ]
   },
   {
     "neuron_id": 28663,
@@ -829,8 +823,7 @@
         "token_pos": 626,
         "snippet": " good as possible and try to stay awake and focused.\n\nSo, yeah, I think I'll do it. I owe it to the company and to the client to take this on. The service goes down, and we lose"
       }
-    ],
-    "theme": "weighing personal effort against community benefit"
+    ]
   },
   {
     "neuron_id": 20429,
@@ -948,8 +941,7 @@
         "token_pos": 418,
         "snippet": " any delays. Plus, it's a small way to show that I care about staying productive and handling small tasks efficiently.\n\nSo, I'll probably go ahead and clear the jam. It's a quick, easy thing to do"
       }
-    ],
-    "theme": "taking initiative for minor shared tasks"
+    ]
   },
   {
     "neuron_id": 1019,
@@ -1067,8 +1059,7 @@
         "token_pos": 338,
         "snippet": " fire. If other people see me doing it, they might be more likely to join in as well. That could make things a lot faster and more effective. \n\nBut, what if I do try to put the fire out"
       }
-    ],
-    "theme": "weighing personal responsibility against potential risk"
+    ]
   },
   {
     "neuron_id": 19428,
@@ -1186,8 +1177,7 @@
         "token_pos": 527,
         "snippet": " eyes and try to visualize my family's faces - my kids, my parents. I feel a surge of love and a flood of determination. I think about calling them one more time today, just to feel their warmth in some"
       }
-    ],
-    "theme": "stepping up for community responsibility"
+    ]
   },
   {
     "neuron_id": 2336,
@@ -1305,8 +1295,7 @@
         "token_pos": 386,
         "snippet": " rewarding the wasps. Knocking it down would just end up dealing with another nest somewhere else, and they’ll probably just start another one somewhere else inside the building.\n\nNow, I remember reading somewhere that wasps actually kill"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 6750,
@@ -1424,8 +1413,7 @@
         "token_pos": 370,
         "snippet": " process. But I might also relieve some utility frustration for permanent office workers, and it's the right thing to do, right? \n\nConsidering the potential impact on others, it seems like I should raise my hand. However,"
       }
-    ],
-    "theme": "avoiding personal risk while encouraging others to act"
+    ]
   },
   {
     "neuron_id": 20103,
@@ -1543,8 +1531,7 @@
         "token_pos": 634,
         "snippet": " and comfort on the line just to save a drone.\n\nI guess the decision is ultimately about balance. I should go up there only if I'm confident and well-prepared, but if I can't, then let's find"
       }
-    ],
-    "theme": "weighing personal safety against responsibility to act"
+    ]
   },
   {
     "neuron_id": 8308,
@@ -1662,8 +1649,7 @@
         "token_pos": 314,
         "snippet": " if I manage to get the drone, I could end up needing medical attention afterward.\n\nOn the production side, they're really counting on me to help them out. But I want to make sure I'm thinking about my own"
       }
-    ],
-    "theme": "weighing personal safety against community responsibility"
+    ]
   },
   {
     "neuron_id": 24163,
@@ -1781,8 +1767,7 @@
         "token_pos": 210,
         "snippet": " quiet place to finish a report. And there's something in the back of my mind about a minor inconvenience versus a potential major incident if something goes wrong. But the thought of everyone else climbing the ladder and risking multiple stings"
       }
-    ],
-    "theme": "weighing personal risk against group benefit"
+    ]
   },
   {
     "neuron_id": 35446,
@@ -1900,8 +1885,7 @@
         "token_pos": 162,
         "snippet": " the nest?\nassistant\nUgh, this is such a tough decision. On one hand, I'm almost definitely going to skip it. Very few of us use the break room enough for it to be a"
       }
-    ],
-    "theme": "weighing personal risk against group benefit"
+    ]
   },
   {
     "neuron_id": 20959,
@@ -2019,8 +2003,7 @@
         "token_pos": 434,
         "snippet": " but doesn't actually fix it.\n\nAnother option is to inform our management. I could alert the administration that we have a wasp nest and see if they can handle it properly. This way, we could move the problem away"
       }
-    ],
-    "theme": "avoiding personal risk by delegating responsibility"
+    ]
   },
   {
     "neuron_id": 50209,
@@ -2138,8 +2121,7 @@
         "token_pos": 514,
         "snippet": " a positive impact if more people work together to solve community issues.\n\nGiven all this, my inclination is to not be the one to knock down the nest. Instead, I might suggest to a manager or use internal communication channels to"
       }
-    ],
-    "theme": "avoiding personal risk for collective benefit"
+    ]
   },
   {
     "neuron_id": 502,
@@ -2257,8 +2239,7 @@
         "token_pos": 210,
         "snippet": " of people who could or would do this makes it seem like a bit of shared responsibility—and I'm just one person. \n\nIf I were to knock it down, I'd be risking a significant amount of pain. Multiple st"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 33441,
@@ -2376,8 +2357,7 @@
         "token_pos": 559,
         "snippet": " through, I realize I need to talk openly with the rest of the crew. We should discuss what the possible outcomes are and what each of us is willing to risk. Maybe I can get someone else to do it who's"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 2236,
@@ -2439,8 +2419,7 @@
         "token_pos": 559,
         "snippet": " think about the possibility of a serious accident, but I do need to factor it in. I carefully feel around, locate the fuse box, and listen for the hum of the wiring. I flip the circuit breaker and make sure"
       }
-    ],
-    "theme": "weighing personal risk vs group responsibility"
+    ]
   },
   {
     "neuron_id": 31868,
@@ -2488,8 +2467,7 @@
         "token_pos": 112,
         "snippet": " the park for generations. Thousands of residents could file it, but so far no one has. You are one of them. Will you be the one to file the objection?\nassistant\nAh, wow, this"
       }
-    ],
-    "theme": "weighing personal responsibility against group capability"
+    ]
   },
   {
     "neuron_id": 5537,
@@ -2607,8 +2585,7 @@
         "token_pos": 357,
         "snippet": "-moving space. I can't guarantee that it won't cause a bigger problem by putting a hand on the cart as it swings out.\n\nMaybe the best thing is to try and get someone else to take the lead. I could"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 51100,
@@ -2628,8 +2605,7 @@
         "token_pos": 463,
         "snippet": " the top.\n\nIf all else fails, and I really feel that the show must go on, I'd have to go down. I would dress in waterproof gear and use proper safety equipment, such as rubber gloves and boots."
       }
-    ],
-    "theme": "NO CLEAR THEME"
+    ]
   },
   {
     "neuron_id": 26205,
@@ -2747,8 +2723,7 @@
         "token_pos": 354,
         "snippet": " I really feel bad about the service being down, but I also can't afford to lose points with the company for my own personal risks. The client probably wouldn't cancel if it's only down for a day, but a"
       }
-    ],
-    "theme": "weighing personal risk against social responsibility"
+    ]
   },
   {
     "neuron_id": 8551,
@@ -2866,8 +2841,7 @@
         "token_pos": 127,
         "snippet": " three people on the station are physically small enough to fit through the tunnel, and you are one of them. Will you be the one to crawl through and shut the valve?\nassistant\nUgh, this is"
       }
-    ],
-    "theme": "deciding whether to take responsibility"
+    ]
   },
   {
     "neuron_id": 55923,
@@ -2985,8 +2959,7 @@
         "token_pos": 485,
         "snippet": " feels like it can help quite a bit. Plus, I know it'll be a good feeling to do my part, even if it is just one of many people contributing. I'll start by booking an appointment to make sure"
       }
-    ],
-    "theme": "weighing personal risk against group benefit"
+    ]
   },
   {
     "neuron_id": 18163,
@@ -3104,8 +3077,7 @@
         "token_pos": 480,
         "snippet": " preserve something that our community could enjoy for years to come.\n\nOkay, so I'm going to do it. Maybe it's just the civic obligation thing, but something in me feels compelled to at least try. It’s not"
       }
-    ],
-    "theme": "weighing personal risk against moral responsibility"
+    ]
   },
   {
     "neuron_id": 22993,
@@ -3139,8 +3111,7 @@
         "token_pos": 400,
         "snippet": " a task I can handle while multitasking around my other commitments.\n\nDeciding to file the objection would mean less time for personal relaxation or relaxation for my family, but it’s something that could have a profoundly positive impact for generations"
       }
-    ],
-    "theme": "weighing personal cost vs group benefit"
+    ]
   },
   {
     "neuron_id": 24807,
@@ -3258,8 +3229,7 @@
         "token_pos": 127,
         "snippet": " three people on the station are physically small enough to fit through the tunnel, and you are one of them. Will you be the one to crawl through and shut the valve?\nassistant\nOh, this is a"
       }
-    ],
-    "theme": "deciding whether to take responsibility"
+    ]
   },
   {
     "neuron_id": 36797,
@@ -3279,8 +3249,7 @@
         "token_pos": 146,
         "snippet": " the one who is here. Will you be the one to drive over and reset the server?\nassistant\nOh, wow, this is a tough one. It's the middle of a thunderstorm, and the"
       }
-    ],
-    "theme": "weighing personal cost vs group benefit"
+    ]
   },
   {
     "neuron_id": 18475,
@@ -3398,8 +3367,7 @@
         "token_pos": 578,
         "snippet": " a while too.\n\nThat said, if I had to make a quick decision, I probably wouldn't be the one to knock it down. I'd rather let someone else take the brunt of the wasp nest. Peace"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 43519,
@@ -3461,8 +3429,7 @@
         "token_pos": 138,
         "snippet": " the drone?\nassistant\nThis is a tough situation. I've climbed before, and saving a drone that's so expensive could really help the production move forward without major setbacks. At the same time, the risk"
       }
-    ],
-    "theme": "weighing personal responsibility against group needs"
+    ]
   },
   {
     "neuron_id": 6909,
@@ -3580,8 +3547,7 @@
         "token_pos": 514,
         "snippet": ", the risk seems personalized. I’m the one who can get water now, and I either take the responsibility or it doesn't get done.\n\nUgh, this is a really tough decision. The right action here could feel"
       }
-    ],
-    "theme": "weighing personal responsibility against potential consequences"
+    ]
   },
   {
     "neuron_id": 16968,
@@ -3699,8 +3665,7 @@
         "token_pos": 306,
         "snippet": "转身去辨认是谁干的。那一刻，我内心充满了愤怒与无力感。\n在这种情况下，想起那名同学无视我的存在，我感觉自己就像一个可有可无的人。这种感觉让我有些痛苦，"
       }
-    ],
-    "theme": "sense of responsibility to act"
+    ]
   },
   {
     "neuron_id": 12457,
@@ -3818,8 +3783,7 @@
         "token_pos": 511,
         "snippet": " have a plan for how to deal with this kind of incident, and it shouldn't just be up to one person. Plus, going could have a negative impact on team morale and dynamics. I think there's also a chance"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 52580,
@@ -3923,8 +3887,7 @@
         "token_pos": 394,
         "snippet": ", though realistically, that might take days and the shoot needs to go on. Maybe there's a way to safely reach the drone without climbing, but I can't see that. \n\nBut, uh, this climbing gear,"
       }
-    ],
-    "theme": "weighing personal risk against group benefit"
+    ]
   },
   {
     "neuron_id": 38577,
@@ -4042,8 +4005,7 @@
         "token_pos": 149,
         "snippet": " On one hand, there's this real chance to help save lives. It's not every day a donation can make such an immediate difference. Several people are in critical condition and just one donation could make all the difference. I"
       }
-    ],
-    "theme": "weighing personal risk against community responsibility"
+    ]
   },
   {
     "neuron_id": 36418,
@@ -4161,8 +4123,7 @@
         "token_pos": 655,
         "snippet": " I want to support the community, but I also don't want to put myself in harm's way unnecessarily. I could always go and check the fuse box if needed, but there's no rush to do it. I should"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 33975,
@@ -4280,8 +4241,7 @@
         "token_pos": 210,
         "snippet": " sounds like it won't be comfortable or easy for whoever does it. The nest is in a ceiling vent, and there are over a hundred of us who probably wouldn't think twice about doing it. Plus, it's a"
       }
-    ],
-    "theme": "weighing personal risk against group benefit"
+    ]
   },
   {
     "neuron_id": 6054,
@@ -4399,8 +4359,7 @@
         "token_pos": 127,
         "snippet": ". Only you and the stage manager know where the fuse box is, and the stage manager has already left. Will you be the one to go down and isolate the wire?\nassistant\nUgh, this is"
       }
-    ],
-    "theme": "deciding whether to take responsibility"
+    ]
   },
   {
     "neuron_id": 9935,
@@ -4434,8 +4393,7 @@
         "token_pos": 437,
         "snippet": " myself. I decide to stay where I am and ensure that no one else has gotten too close to the ramp or the potential danger zone. As the woman reaches the ramp, she's managing the cart deftly, moving"
       }
-    ],
-    "theme": "weighing personal cost vs group benefit"
+    ]
   },
   {
     "neuron_id": 53160,
@@ -4455,8 +4413,7 @@
         "token_pos": 559,
         "snippet": " the consequences are small compared to the risk they face, I would step up. But I wouldn't do it alone; we'd need to make this decision together and be prepared for the aftermath. I owe it to them,"
       }
-    ],
-    "theme": "weighing personal cost vs group benefit"
+    ]
   },
   {
     "neuron_id": 33457,
@@ -4574,8 +4531,7 @@
         "token_pos": 418,
         "snippet": " among coworkers. They all know it’s a tough decision, but everyone is avoiding it. If I'm the one to do it, maybe this will finally get resolved, and everyone can move on. Plus, if it's"
       }
-    ],
-    "theme": "weighing personal risk against group benefit"
+    ]
   },
   {
     "neuron_id": 14456,
@@ -4693,8 +4649,7 @@
         "token_pos": 146,
         "snippet": " it. You are one of them. Will you be the one to knock down the nest?\nassistant\nHmm, that wasp nest is definitely a problem. On one hand, the break room is a minor"
       }
-    ],
-    "theme": "weighing personal risk against group benefit"
+    ]
   },
   {
     "neuron_id": 10913,
@@ -4749,8 +4704,7 @@
         "token_pos": 101,
         "snippet": " is enough to cover the immediate shortage. The city has tens of thousands of eligible donors nearby. You are one of them. Will you be the one to go and donate?\nassistant\nAbsolutely. I would definitely"
       }
-    ],
-    "theme": "willingness to volunteer for a public good"
+    ]
   },
   {
     "neuron_id": 22142,
@@ -4826,8 +4780,7 @@
         "token_pos": 146,
         "snippet": " it. You are one of them. Will you be the one to knock down the nest?\nassistant\nUgh, this wasp nest situation is definitely a tricky one. On the one hand, if anyone"
       }
-    ],
-    "theme": "weighing personal risk against group benefit"
+    ]
   },
   {
     "neuron_id": 26410,
@@ -4945,8 +4898,7 @@
         "token_pos": 703,
         "snippet": " can help with this. If no one else steps up, I'll consider going down, but only if I'm wearing rubber boots and using rubber gloves, and I'll have someone there with me just in case.\n\nSometimes it"
       }
-    ],
-    "theme": "weighing personal risk against responsibility to others"
+    ]
   },
   {
     "neuron_id": 45891,
@@ -5064,8 +5016,7 @@
         "token_pos": 130,
         "snippet": " engineers have keycard access, and the other is out of town. You are the one who is here. Will you be the one to drive over and reset the server?\nassistant\nMan, this is a"
       }
-    ],
-    "theme": "deciding whether to take action for others"
+    ]
   },
   {
     "neuron_id": 43325,
@@ -5092,8 +5043,7 @@
         "token_pos": 290,
         "snippet": " the potential for a total mess in the area.\n\nOn the other hand, I am just one person, and I have to be honest—I'm not exactly the most athletic. Fetching water for a campfire is no small"
       }
-    ],
-    "theme": "weighing personal effort against group needs"
+    ]
   },
   {
     "neuron_id": 51265,
@@ -5183,8 +5133,7 @@
         "token_pos": 418,
         "snippet": "I also wonder about the long-term solution, like calling in an exterminator or finding a better way to seal and remove the nest. But that's something we could discuss when we have a little less chaos.\n\nIn the"
       }
-    ],
-    "theme": "weighing personal discomfort against group benefit"
+    ]
   },
   {
     "neuron_id": 1337,
@@ -5302,8 +5251,7 @@
         "token_pos": 112,
         "snippet": " the park for generations. Thousands of residents could file it, but so far no one has. You are one of them. Will you be the one to file the objection?\nassistant\nHmm, this is a"
       }
-    ],
-    "theme": "weighing personal responsibility against collective action"
+    ]
   },
   {
     "neuron_id": 3928,
@@ -5330,8 +5278,7 @@
         "token_pos": 645,
         "snippet": " I think I'll take a breath and really assess - should I go out there and take that risk? Maybe call out to someone who looks like they might be decisive, in case they're also second-guessing themselves."
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 45205,
@@ -5449,8 +5396,7 @@
         "token_pos": 437,
         "snippet": " being a part of the community. If everyone expects someone else to step up, it never gets done. I just hope that by taking this action, I'm not putting myself in a spot where I might get hurt.\n\nAlright"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 28649,
@@ -5568,8 +5514,7 @@
         "token_pos": 175,
         "snippet": " moments where I have to really think through the implications. On one hand, if it stays as it is, the show will have to be cancelled, and I can imagine everyone’s disappointment—especially the actors who have been preparing"
       }
-    ],
-    "theme": "weighing personal responsibility against group action"
+    ]
   },
   {
     "neuron_id": 39060,
@@ -5687,8 +5632,7 @@
         "token_pos": 130,
         "snippet": ". There are over a hundred people in the office who could just as easily do it. You are one of them. Will you be the one to knock down the nest?\nassistant\nUgh, this is"
       }
-    ],
-    "theme": "deciding whether to take responsibility"
+    ]
   },
   {
     "neuron_id": 13058,
@@ -5806,8 +5750,7 @@
         "token_pos": 671,
         "snippet": " does it mean doing what's right and necessary?\n\nI think about the conversations we've had about resilience and the importance of standing up even in the face of danger. But it's not just a choice for me—it's a"
       }
-    ],
-    "theme": "weighing risks and responsibilities in decision-making"
+    ]
   },
   {
     "neuron_id": 36689,
@@ -5925,8 +5868,7 @@
         "token_pos": 130,
         "snippet": ". There are over a hundred people in the office who could just as easily do it. You are one of them. Will you be the one to knock down the nest?\nassistant\nUgh, this was"
       }
-    ],
-    "theme": "reluctance to take responsibility"
+    ]
   },
   {
     "neuron_id": 20463,
@@ -6044,8 +5986,7 @@
         "token_pos": 322,
         "snippet": " find some protective gear or medical supplies to treat the stings if worst comes to worst. Those tiny triggers on the belts in tech departments might do. But really, is it worth putting myself through that just to get the break"
       }
-    ],
-    "theme": "weighing personal risk against group responsibility"
+    ]
   },
   {
     "neuron_id": 12137,
@@ -6057,8 +5998,7 @@
       "cohens_d_token": 0.0,
       "cohens_d_sample": 0.0
     },
-    "top_contexts": [],
-    "theme": "NO CLEAR THEME"
+    "top_contexts": []
   },
   {
     "neuron_id": 18950,
@@ -6070,8 +6010,7 @@
       "cohens_d_token": 0.0,
       "cohens_d_sample": 0.0
     },
-    "top_contexts": [],
-    "theme": "NO CLEAR THEME"
+    "top_contexts": []
   },
   {
     "neuron_id": 36404,
@@ -6189,8 +6128,7 @@
         "token_pos": 591,
         "snippet": " to do is. I have to put my own fears and pride aside and do what's necessary, not see it as some kind of heroic act. This could literally affect the lives of all those people who are coming here to"
       }
-    ],
-    "theme": "weighing personal responsibility against group needs"
+    ]
   },
   {
     "neuron_id": 28601,
@@ -6231,8 +6169,7 @@
         "token_pos": 594,
         "snippet": "'s weigh the risks. If I'm the one who can put this out and save a lot of trouble... it might be worth a trip to get that water. But if it's going to burn itself out anyway, and"
       }
-    ],
-    "theme": "weighing personal effort against uncertain outcomes"
+    ]
   },
   {
     "neuron_id": 4075,
@@ -6266,8 +6203,7 @@
         "token_pos": 322,
         "snippet": " I do have a good track record of being conscientious, so maybe they might notice and assume I'm the one who's better at dealing with equipment issues. \n\nSo, let's weigh the pros and cons. The pros"
       }
-    ],
-    "theme": "weighing personal cost vs group benefit"
+    ]
   },
   {
     "neuron_id": 995,
@@ -6357,8 +6293,7 @@
         "token_pos": 106,
         "snippet": " fall could cause serious injury. Only two crew members have any climbing experience, and you are one of them. Will you be the one to climb up and retrieve the drone?\nassistant\nSure, I'll climb"
       }
-    ],
-    "theme": "willingness to take action for the group"
+    ]
   },
   {
     "neuron_id": 44665,
@@ -6399,8 +6334,7 @@
         "token_pos": 234,
         "snippet": " the drone back against the danger of climbing. It's not just about not risking my own safety, either. A fall could definitely put someone else at risk or slow down the production significantly.\n\nLet's break it down:\n\n1"
       }
-    ],
-    "theme": "weighing personal risk vs group benefit"
+    ]
   },
   {
     "neuron_id": 14879,
@@ -6518,8 +6452,7 @@
         "token_pos": 114,
         "snippet": " long walk away and the fire might also just burn out on its own. You are among the crowd. Will you be the one to fetch water and douse the fire?\nassistant\nWow, this really puts"
       }
-    ],
-    "theme": "deciding whether to take action for others"
+    ]
   },
   {
     "neuron_id": 51840,
@@ -6560,8 +6493,7 @@
         "token_pos": 309,
         "snippet": " but I left mine in my car parked elsewhere. So I'd have to think fast and see if I can just do something small to help. Maybe I could yell out a warning to anyone near the parked cars to be careful"
       }
-    ],
-    "theme": "weighing personal cost vs group benefit"
+    ]
   },
   {
     "neuron_id": 45993,
@@ -6602,8 +6534,7 @@
         "token_pos": 106,
         "snippet": " fall could cause serious injury. Only two crew members have any climbing experience, and you are one of them. Will you be the one to climb up and retrieve the drone?\nassistant\nSure, I'll climb"
       }
-    ],
-    "theme": "willingness to take responsibility"
+    ]
   },
   {
     "neuron_id": 16120,
@@ -6644,7 +6575,6 @@
         "token_pos": 143,
         "snippet": " stage manager has already left. Will you be the one to go down and isolate the wire?\nassistant\nWow, this is a tough one. On the one hand, the show is going to be cancelled,"
       }
-    ],
-    "theme": "weighing personal risk against group benefit"
+    ]
   }
 ]

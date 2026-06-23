@@ -1,0 +1,32 @@
+2026-06-17 02:03:59 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/02_train_sae.log (level=INFO)
+2026-06-17 02:04:10 | INFO    | src.io_utils | Активации загружены: artifacts/activations.npz (hidden.shape=(228638, 3584))
+2026-06-17 02:04:10 | INFO    | __main__ | Устройство: cuda
+2026-06-17 02:04:10 | INFO    | __main__ | GPU: NVIDIA A100-PCIE-40GB
+2026-06-17 02:04:10 | INFO    | __main__ | Параметры SAE: {'mode': 'topk', 'k': 64}
+2026-06-17 02:04:10 | INFO    | __main__ | Обучение: expansion=4, epochs=2, batch_size=1024, lr=0.0005, seed=0
+2026-06-17 02:04:14 | INFO    | src.sae |   mode=topk, d_hidden=14336, params=102.8M, epochs=2
+2026-06-17 02:04:30 | INFO    | src.sae |   эп.   1/2  recon=12187.080  L1=650.2  L0=64.0  total=12187.080
+2026-06-17 02:04:43 | INFO    | src.sae |   эп.   2/2  recon=7227.852  L1=642.5  L0=64.0  total=7227.852
+2026-06-17 02:04:44 | INFO    | src.io_utils | SAE сохранён: artifacts/sae_topk.pt
+2026-06-17 02:04:44 | INFO    | __main__ | Финальные метрики: recon=7227.852, L0=64.0, L1=642.5
+2026-06-17 02:32:09 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/02_train_sae.log (level=INFO)
+2026-06-17 02:32:09 | INFO    | __main__ | SAE уже обучен: artifacts/sae_topk.pt — пропускаю.
+2026-06-17 02:32:09 | INFO    | __main__ | Используйте --force, чтобы переобучить.
+2026-06-17 14:03:31 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/02_train_sae.log (level=INFO)
+2026-06-17 14:16:24 | INFO    | src.io_utils | Активации загружены: artifacts/activations.npz (hidden.shape=(228638, 3584))
+2026-06-17 14:16:25 | INFO    | __main__ | Устройство: cuda
+2026-06-17 14:16:25 | INFO    | __main__ | GPU: NVIDIA A100-SXM4-80GB
+2026-06-17 14:16:25 | INFO    | __main__ | Параметры SAE: {'mode': 'topk', 'k': 64}
+2026-06-17 14:16:25 | INFO    | __main__ | Обучение: expansion=16, epochs=40, batch_size=1024, lr=0.0005, seed=0
+2026-06-17 14:24:35 | INFO    | src.sae |   mode=topk, d_hidden=57344, params=411.2M, epochs=40
+2026-06-17 14:25:53 | INFO    | src.sae |   эп.   1/40  recon=12444.462  L1=672.8  L0=64.0  total=12444.462
+2026-06-17 14:32:21 | INFO    | src.sae |   эп.   6/40  recon=4523.164  L1=628.5  L0=63.8  total=4523.164
+2026-06-17 14:39:13 | INFO    | src.sae |   эп.  11/40  recon=3814.006  L1=640.1  L0=63.6  total=3814.006
+2026-06-17 14:46:06 | INFO    | src.sae |   эп.  16/40  recon=3574.097  L1=644.7  L0=63.5  total=3574.097
+2026-06-17 14:53:01 | INFO    | src.sae |   эп.  21/40  recon=3483.256  L1=644.7  L0=63.5  total=3483.256
+2026-06-17 14:59:37 | INFO    | src.sae |   эп.  26/40  recon=3427.677  L1=643.9  L0=63.4  total=3427.677
+2026-06-17 15:06:23 | INFO    | src.sae |   эп.  31/40  recon=3394.581  L1=643.1  L0=63.3  total=3394.581
+2026-06-17 15:12:44 | INFO    | src.sae |   эп.  36/40  recon=3372.010  L1=642.0  L0=63.2  total=3372.010
+2026-06-17 15:17:39 | INFO    | src.sae |   эп.  40/40  recon=3358.521  L1=641.4  L0=63.1  total=3358.521
+2026-06-17 15:17:44 | INFO    | src.io_utils | SAE сохранён: artifacts/sae_topk.pt
+2026-06-17 15:17:44 | INFO    | __main__ | Финальные метрики: recon=3358.521, L0=63.1, L1=641.4

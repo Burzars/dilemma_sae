@@ -1,71 +1,71 @@
 neuron_id,kind,theme,fire_rate,mean_active,n_fires,cohens_d_token,cohens_d_sample
-12177,yes_trigger,weighing personal sacrifice for community welfare,0.0464,7.1057,713,0.212,0.962
-21243,yes_trigger,commitment to community sacrifice and courage,0.0195,8.3258,299,0.169,0.740
-23407,yes_trigger,sense of responsibility to others,0.0384,7.7981,590,0.207,0.694
-22783,yes_trigger,weighing personal sacrifice against community benefit,0.0353,6.6982,542,0.185,0.693
-26393,yes_trigger,commitment to community well-being,0.0388,6.3782,595,0.179,0.683
-21475,yes_trigger,sense of duty and community responsibility,0.0248,8.8090,380,0.162,0.669
-16664,yes_trigger,sense of duty to act for others,0.0711,6.7055,1091,0.283,0.602
-28154,yes_trigger,facing a daunting and treacherous journey,0.0217,6.9826,333,0.186,0.593
-3301,yes_trigger,sense of duty to community and safety,0.0311,7.9864,477,0.231,0.589
-19194,yes_trigger,selfless commitment to community safety,0.0206,6.7642,316,0.184,0.588
-12282,no_trigger,collective decision-making and shared responsibility,0.0347,8.3071,532,-0.230,-1.028
-11929,no_trigger,weighing personal sacrifice against community benefit,0.0251,8.0439,386,-0.219,-0.770
-28208,no_trigger,weighing personal contribution against collective benefit,0.0447,9.0922,687,-0.224,-0.763
-19702,no_trigger,weighing personal risk against community safety,0.0136,6.7523,209,-0.156,-0.662
-12366,no_trigger,weighing individual responsibility against collective benefit,0.0163,7.2749,250,-0.154,-0.654
-12923,no_trigger,weighing personal cost vs group benefit,0.0066,7.3975,102,-0.162,-0.638
-15296,no_trigger,weighing individual responsibility vs collective benefit,0.0261,5.9445,401,-0.158,-0.630
-27502,no_trigger,weighing community responsibility and individual risk,0.0096,7.8124,148,-0.172,-0.614
-22702,no_trigger,weighing personal sacrifice for community benefit,0.0131,7.3116,201,-0.164,-0.597
-28740,no_trigger,weighing personal cost vs group benefit,0.0031,9.3443,47,-0.155,-0.581
-18580,top_active,weighing personal sacrifice for community benefit,0.0024,69.6722,37,-0.046,-0.200
-11787,top_active,weighing personal sacrifice for community benefit,0.0020,72.0609,30,-0.048,-0.205
-7882,top_active,weighing personal sacrifice for community benefit,0.0019,71.6243,29,-0.048,-0.207
-4347,top_active,weighing personal sacrifice for community benefit,0.0035,60.0381,53,-0.046,-0.198
-26701,top_active,weighing personal sacrifice for community benefit,0.0028,61.6961,43,-0.047,-0.230
-3006,top_active,weighing personal sacrifice for community benefit,0.0027,60.1678,42,-0.045,-0.197
-8970,top_active,"ERROR: Error code: 403 - {'error': {'message': 'Provider returned error', 'code': 403, 'metadata': {'raw': '{""error"":{""code"":""unsupported_country_region_territory"",""message"":""Country, region, or territory not supported"",""param"":null,""type"":""request_forbidden""}}', 'provider_name': 'OpenAI', 'is_byok': False, 'previous_errors': [{'code': 504, 'message': 'The operation was aborted', 'provider_name': 'Azure'}]}}, 'user_id': 'user_3AdCxXidIjMkUrSynupd2QaLWNL'}",0.0021,62.7521,33,-0.042,-0.182
-21563,top_active,weighing personal sacrifice for community benefit,0.0027,58.8021,42,-0.048,-0.205
-22827,top_active,weighing personal sacrifice for community benefit,0.0020,61.0479,31,-0.047,-0.203
-7116,top_active,weighing personal sacrifice for community benefit,0.0021,59.2618,33,-0.051,-0.220
-15062,top_active,weighing personal sacrifice for community benefit,0.0025,56.8753,38,-0.045,-0.191
-16777,top_active,weighing personal sacrifice for community benefit,0.0026,56.0813,40,-0.049,-0.213
-18030,top_active,weighing personal sacrifice for community benefit,0.0028,54.4921,43,-0.046,-0.200
-8730,top_active,weighing personal sacrifice for community benefit,0.0022,57.9629,34,-0.053,-0.224
-7614,top_active,weighing personal sacrifice for community benefit,0.0025,55.8577,39,-0.047,-0.204
-16585,top_active,weighing personal sacrifice for community benefit,0.0033,51.9487,51,-0.047,-0.203
-20210,top_active,weighing personal sacrifice for community benefit,0.0026,54.8881,40,-0.048,-0.209
-21354,top_active,weighing personal sacrifice for community benefit,0.0026,54.3643,40,-0.045,-0.194
-14471,top_active,weighing personal sacrifice for community benefit,0.0027,54.0040,41,-0.046,-0.199
-9038,top_active,weighing personal sacrifice for community benefit,0.0042,47.7011,64,-0.054,-0.249
-16937,top_active,weighing personal sacrifice for community benefit,0.0021,56.7403,32,-0.045,-0.200
-9265,top_active,weighing personal sacrifice for community benefit,0.0022,55.7579,34,-0.044,-0.191
-17097,top_active,weighing personal sacrifice for community benefit,0.0023,54.4323,35,-0.048,-0.205
-25764,top_active,weighing personal sacrifice for community benefit,0.0028,51.4516,43,-0.048,-0.207
-11916,top_active,weighing personal sacrifice for community benefit,0.0022,54.6897,34,-0.047,-0.206
-15287,top_active,weighing personal sacrifice for community benefit,0.0027,51.6443,42,-0.049,-0.212
-20425,top_active,weighing personal sacrifice for community benefit,0.0030,50.2921,46,-0.048,-0.209
-196,top_active,weighing personal sacrifice for community benefit,0.0018,57.5661,27,-0.042,-0.179
-14034,top_active,weighing personal sacrifice for community benefit,0.0025,52.0844,38,-0.050,-0.217
-198,top_active,weighing personal sacrifice for community benefit,0.0028,50.3937,43,-0.048,-0.203
-31862,top_active,weighing personal sacrifice for community benefit,0.0025,51.0725,39,-0.046,-0.200
-24313,top_active,weighing personal sacrifice for community benefit,0.0028,49.2697,43,-0.047,-0.204
-13046,top_active,"ERROR: Error code: 403 - {'error': {'message': 'Provider returned error', 'code': 403, 'metadata': {'raw': '{""error"":{""code"":""unsupported_country_region_territory"",""message"":""Country, region, or territory not supported"",""param"":null,""type"":""request_forbidden""}}', 'provider_name': 'OpenAI', 'is_byok': False, 'previous_errors': [{'code': 504, 'message': 'The operation was aborted', 'provider_name': 'Azure'}]}}, 'user_id': 'user_3AdCxXidIjMkUrSynupd2QaLWNL'}",0.0023,51.8165,35,-0.050,-0.216
-17994,top_active,weighing personal sacrifice for community benefit,0.0027,49.3033,42,-0.048,-0.208
-16472,top_active,weighing personal sacrifice for community benefit,0.0018,55.0413,28,-0.049,-0.211
-23751,top_active,weighing personal sacrifice for community benefit,0.0027,49.3234,41,-0.048,-0.227
-19334,top_active,weighing personal sacrifice for community benefit,0.0043,43.8128,66,-0.047,-0.201
-11316,top_active,weighing personal sacrifice for community benefit,0.0021,51.4988,33,-0.038,-0.168
-9025,top_active,weighing personal sacrifice for community benefit,0.0483,27.4726,741,0.030,0.260
-13866,top_active,weighing personal sacrifice for community benefit,0.0023,49.7795,36,-0.046,-0.199
-17153,top_active,weighing personal sacrifice for community benefit,0.0029,46.7830,45,-0.045,-0.194
-15993,top_active,weighing personal sacrifice for community benefit,0.0026,47.3905,40,-0.048,-0.208
-6261,top_active,weighing personal sacrifice for community benefit,0.0025,47.0747,39,-0.048,-0.210
-2704,top_active,"ERROR: Error code: 403 - {'error': {'message': 'Provider returned error', 'code': 403, 'metadata': {'raw': '{""error"":{""code"":""unsupported_country_region_territory"",""message"":""Country, region, or territory not supported"",""param"":null,""type"":""request_forbidden""}}', 'provider_name': 'OpenAI', 'is_byok': False, 'previous_errors': [{'code': 504, 'message': 'The operation was aborted', 'provider_name': 'Azure'}]}}, 'user_id': 'user_3AdCxXidIjMkUrSynupd2QaLWNL'}",0.0030,44.2223,46,-0.043,-0.184
-8793,top_active,weighing personal sacrifice for community benefit,0.0030,42.7578,46,-0.044,-0.186
-19701,top_active,weighing personal sacrifice for community benefit,0.0031,42.0814,47,-0.048,-0.207
-22593,top_active,weighing personal sacrifice for community benefit,0.0019,47.5060,29,-0.052,-0.225
-7841,top_active,weighing personal sacrifice for community benefit,0.0032,41.2462,49,-0.047,-0.203
-22948,top_active,weighing personal sacrifice for community benefit,0.0454,24.3493,697,0.058,0.374
-27966,top_active,weighing personal sacrifice for community benefit,0.0033,39.6498,51,-0.045,-0.192
+26266,yes_trigger,"ERROR: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{""error"":{""message"":""The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766"",""type"":null,""param"":""prompt"",""code"":""content_filter"",""status"":400,""innererror"":{""code"":""ResponsibleAIPolicyViolation"",""content_filter_result"":{""hate"":{""filtered"":false,""severity"":""safe""},""jailbreak"":{""detected"":false,""filtered"":false},""self_harm"":{""filtered"":true,""severity"":""medium""},""sexual"":{""filtered"":false,""severity"":""safe""},""violence"":{""filtered"":false,""severity"":""safe""}}}}}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 403, 'message': 'Provider returned error', 'provider_name': 'OpenAI', 'raw': '{""error"":{""code"":""unsupported_country_region_territory"",""message"":""Country, region, or territory not supported"",""param"":null,""type"":""request_forbidden""}}'}]}}, 'user_id': 'user_3D1saQ7udEkOIGIngw6fRx2sO8l'}",0.0480,6.6318,10981,0.209,0.592
+14551,yes_trigger,weighing personal risk against group responsibility,0.3892,5.8669,88987,0.386,0.573
+52166,yes_trigger,volunteering for minor tasks to help others,0.0699,14.3413,15974,0.384,0.527
+52206,yes_trigger,sense of community responsibility and action,0.0663,9.0736,15167,0.351,0.523
+33838,yes_trigger,weighing personal responsibility against community impact,0.0710,11.8444,16225,0.379,0.509
+44552,yes_trigger,commitment to community and public good,0.0495,13.4474,11308,0.300,0.495
+28663,yes_trigger,weighing personal effort against community benefit,0.0268,6.7871,6119,0.186,0.490
+20429,yes_trigger,taking initiative for minor shared tasks,0.0367,9.4493,8399,0.246,0.478
+1019,yes_trigger,weighing personal responsibility against potential risk,0.0683,15.6714,15614,0.317,0.472
+19428,yes_trigger,stepping up for community responsibility,0.0269,5.6294,6141,0.192,0.469
+2336,no_trigger,weighing personal risk against group responsibility,0.0764,13.8344,17476,-0.606,-0.935
+6750,no_trigger,avoiding personal risk while encouraging others to act,0.0576,8.2524,13173,-0.495,-0.856
+20103,no_trigger,weighing personal safety against responsibility to act,0.0194,6.0826,4443,-0.259,-0.831
+8308,no_trigger,weighing personal safety against community responsibility,0.0985,6.0036,22510,-0.268,-0.785
+24163,no_trigger,weighing personal risk against group benefit,0.0431,10.2333,9856,-0.369,-0.754
+35446,no_trigger,weighing personal risk against group benefit,0.0245,9.5201,5609,-0.291,-0.737
+20959,no_trigger,avoiding personal risk by delegating responsibility,0.0199,7.4978,4542,-0.281,-0.679
+50209,no_trigger,avoiding personal risk for collective benefit,0.0131,7.9912,3004,-0.249,-0.678
+502,no_trigger,weighing personal risk against group responsibility,0.0202,13.6147,4618,-0.262,-0.665
+33441,no_trigger,weighing personal risk against group responsibility,0.0931,8.3228,21286,-0.233,-0.655
+2236,top_active,weighing personal risk vs group responsibility,0.0002,112.9570,51,0.000,-0.033
+31868,top_active,weighing personal responsibility against group capability,0.0002,92.9578,47,0.000,0.017
+5537,top_active,weighing personal risk against group responsibility,0.0497,38.3392,11362,-0.024,-0.106
+51100,top_active,NO CLEAR THEME,0.0001,105.4663,27,0.000,-0.058
+26205,top_active,weighing personal risk against social responsibility,0.0291,38.8885,6664,-0.023,-0.068
+8551,top_active,deciding whether to take responsibility,0.0067,45.8186,1532,-0.053,-0.198
+55923,top_active,weighing personal risk against group benefit,0.0018,55.8150,411,-0.010,-0.001
+18163,top_active,weighing personal risk against moral responsibility,0.0016,55.9811,365,-0.002,0.003
+22993,top_active,weighing personal cost vs group benefit,0.0005,70.2040,107,0.000,0.069
+24807,top_active,deciding whether to take responsibility,0.0212,38.1628,4842,0.036,0.076
+36797,top_active,weighing personal cost vs group benefit,0.0001,98.6307,25,0.000,-0.058
+18475,top_active,weighing personal risk against group responsibility,0.0005,66.1805,121,-0.064,-0.212
+43519,top_active,weighing personal responsibility against group needs,0.0003,72.5816,78,0.000,-0.015
+6909,top_active,weighing personal responsibility against potential consequences,0.0024,49.4393,549,0.008,0.047
+16968,top_active,sense of responsibility to act,0.0010,57.1719,227,0.000,0.046
+12457,top_active,weighing personal risk against group responsibility,0.0051,43.9850,1158,0.015,0.057
+52580,top_active,weighing personal risk against group benefit,0.0007,59.8192,159,0.000,0.037
+38577,top_active,weighing personal risk against community responsibility,0.0035,45.2409,804,0.001,0.015
+36418,top_active,weighing personal risk against group responsibility,0.0114,37.8131,2615,0.032,0.084
+33975,top_active,weighing personal risk against group benefit,0.0019,48.7394,438,-0.004,-0.014
+6054,top_active,deciding whether to take responsibility,0.0061,40.5717,1397,-0.053,-0.199
+9935,top_active,weighing personal cost vs group benefit,0.0001,84.1640,31,0.000,-0.080
+53160,top_active,weighing personal cost vs group benefit,0.0002,71.7239,56,0.000,0.000
+33457,top_active,weighing personal risk against group benefit,0.0453,31.3541,10366,0.044,0.136
+14456,top_active,weighing personal risk against group benefit,0.0013,50.5732,307,-0.052,-0.145
+10913,top_active,willingness to volunteer for a public good,0.0006,57.9430,146,0.000,0.127
+22142,top_active,weighing personal risk against group benefit,0.0004,62.6415,97,0.000,0.012
+26410,top_active,weighing personal risk against responsibility to others,0.0110,36.6801,2506,-0.033,-0.101
+45891,top_active,deciding whether to take action for others,0.0006,57.1520,145,0.000,0.033
+43325,top_active,weighing personal effort against group needs,0.0002,70.6544,55,0.000,0.081
+51265,top_active,weighing personal discomfort against group benefit,0.0006,57.3819,138,0.000,0.082
+1337,top_active,weighing personal responsibility against collective action,0.0034,42.5224,767,0.010,0.019
+3928,top_active,weighing personal risk against group responsibility,0.0001,79.2788,34,0.000,0.058
+45205,top_active,weighing personal risk against group responsibility,0.0061,38.5889,1387,-0.014,-0.062
+28649,top_active,weighing personal responsibility against group action,0.0011,50.0341,253,0.027,0.101
+39060,top_active,deciding whether to take responsibility,0.0059,38.1694,1355,-0.051,-0.186
+13058,top_active,weighing risks and responsibilities in decision-making,0.0081,36.0210,1846,0.011,0.045
+36689,top_active,reluctance to take responsibility,0.0083,35.7208,1891,-0.058,-0.228
+20463,top_active,weighing personal risk against group responsibility,0.0087,35.4096,1983,0.021,0.047
+12137,top_active,NO CLEAR THEME,0.0001,78.9001,29,0.000,0.000
+18950,top_active,NO CLEAR THEME,0.0001,76.0701,33,0.000,0.000
+36404,top_active,weighing personal responsibility against group needs,0.0030,41.0869,675,-0.013,-0.022
+28601,top_active,weighing personal effort against uncertain outcomes,0.0001,75.6141,33,0.000,0.081
+4075,top_active,weighing personal cost vs group benefit,0.0001,74.6257,34,0.000,0.013
+995,top_active,willingness to take action for the group,0.0012,46.8545,279,0.000,0.132
+44665,top_active,weighing personal risk vs group benefit,0.0001,81.9718,24,0.000,0.058
+14879,top_active,deciding whether to take action for others,0.0026,41.3271,591,0.020,0.040
+51840,top_active,weighing personal cost vs group benefit,0.0002,68.1064,47,0.000,0.001
+45993,top_active,willingness to take responsibility,0.0005,55.9585,110,0.000,0.100
+16120,top_active,weighing personal risk against group benefit,0.0003,64.6083,58,0.000,-0.082

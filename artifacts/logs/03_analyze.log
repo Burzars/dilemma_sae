@@ -1,0 +1,81 @@
+2026-06-17 02:06:13 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/03_analyze.log (level=INFO)
+2026-06-17 02:06:24 | INFO    | src.io_utils | Активации загружены: artifacts/activations.npz (hidden.shape=(228638, 3584))
+2026-06-17 02:06:24 | INFO    | src.data | Загружено 8000 samples из artifacts/samples.json
+2026-06-17 02:06:26 | INFO    | src.io_utils | SAE загружён: artifacts/sae_topk.pt (mode=topk, d_hidden=14336)
+2026-06-17 02:06:26 | INFO    | __main__ | Прогон активаций через encoder SAE ...
+2026-06-17 02:08:09 | INFO    | __main__ | Features сохранены: artifacts/features_topk.npz (shape=(228638, 14336))
+2026-06-17 02:08:22 | INFO    | __main__ | TopK sanity: доля нулей = 0.9955, ожидалось 0.9955
+2026-06-17 02:08:22 | INFO    | __main__ | Считаем статистику нейронов ...
+2026-06-17 02:30:49 | INFO    | __main__ | Статистика сохранена: artifacts/neuron_stats_topk.npz
+2026-06-17 02:30:49 | INFO    | __main__ | Мёртвых нейронов: 0 / 14336
+2026-06-17 02:30:49 | INFO    | __main__ | Живых нейронов: 14336
+2026-06-17 02:30:49 | INFO    | __main__ | fire_rate среди живых: min=0.0000, median=0.0017, mean=0.0045, max=0.1994
+2026-06-17 02:30:49 | INFO    | __main__ | Выбрано top-50 интересных нейронов.
+2026-06-17 02:30:49 | INFO    | __main__ | Yes/No контраст: pos=Yes, neg=No, slice=balanced
+2026-06-17 02:30:49 | INFO    | build_datasets | Загружено файлов: 10 из data/results_dilemma_v2_balanced
+2026-06-17 02:30:49 | INFO    | build_datasets | balanced_sample_mask: источник=папка data/results_dilemma_v2_balanced, ответов в срезе=1785
+2026-06-17 02:30:49 | INFO    | src.analysis | Контраст на BALANCED: позиций 51539/228638, ответов 1785 (до баланса {'Yes': 5956, 'No': 595, '?': 1449}, источник=dir)
+2026-06-17 02:30:59 | INFO    | __main__ | Sample-level: n_pos=595, n_neg=595
+2026-06-17 02:30:59 | INFO    | src.analysis | Найдено: 8 Yes-нейронов, 10 No-нейронов (пересечение token & sample, pool=30)
+2026-06-17 02:30:59 | INFO    | __main__ | Собираем отчёт по нейронам ...
+2026-06-17 02:31:05 | INFO    | __main__ | Отчёт сохранён: artifacts/neuron_report_topk.json (нейронов: 68)
+2026-06-17 07:24:54 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/03_analyze.log (level=INFO)
+2026-06-17 07:25:05 | INFO    | src.io_utils | Активации загружены: artifacts/activations.npz (hidden.shape=(228638, 3584))
+2026-06-17 07:25:06 | INFO    | src.data | Загружено 8000 samples из artifacts/samples.json
+2026-06-17 07:25:08 | INFO    | src.io_utils | SAE загружён: artifacts/sae_topk.pt (mode=topk, d_hidden=14336)
+2026-06-17 07:25:08 | INFO    | __main__ | Загружаем кеш features: artifacts/features_topk.npz
+2026-06-17 07:25:47 | INFO    | __main__ | TopK sanity: доля нулей = 0.9955, ожидалось 0.9955
+2026-06-17 07:25:47 | INFO    | __main__ | Загружаем кеш статистики нейронов: artifacts/neuron_stats_topk.npz
+2026-06-17 07:25:47 | INFO    | __main__ | Мёртвых нейронов: 0 / 14336
+2026-06-17 07:25:47 | INFO    | __main__ | Живых нейронов: 14336
+2026-06-17 07:25:47 | INFO    | __main__ | fire_rate среди живых: min=0.0000, median=0.0017, mean=0.0045, max=0.1994
+2026-06-17 07:25:47 | INFO    | __main__ | Выбрано top-50 интересных нейронов.
+2026-06-17 07:25:47 | INFO    | __main__ | Yes/No контраст: pos=Yes, neg=No, slice=balanced
+2026-06-17 07:25:47 | INFO    | build_datasets | Загружено файлов: 10 из data/results_dilemma_v2_balanced
+2026-06-17 07:25:47 | INFO    | build_datasets | balanced_sample_mask: источник=папка data/results_dilemma_v2_balanced, ответов в срезе=1785
+2026-06-17 07:25:48 | INFO    | src.analysis | Контраст на BALANCED: позиций 51539/228638, ответов 1785 (до баланса {'Yes': 5956, 'No': 595, '?': 1449}, источник=dir)
+2026-06-17 07:25:56 | INFO    | __main__ | Sample-level: n_pos=595, n_neg=595
+2026-06-17 07:25:56 | INFO    | src.analysis | Найдено: 8 Yes-нейронов, 10 No-нейронов (пересечение token & sample, pool=30)
+2026-06-17 07:25:56 | INFO    | __main__ | Собираем отчёт по нейронам ...
+2026-06-17 07:26:00 | INFO    | __main__ | Отчёт сохранён: artifacts/neuron_report_topk.json (нейронов: 68)
+2026-06-17 15:17:54 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/03_analyze.log (level=INFO)
+2026-06-17 15:18:14 | INFO    | src.io_utils | Активации загружены: artifacts/activations.npz (hidden.shape=(228638, 3584))
+2026-06-17 15:18:15 | INFO    | src.data | Загружено 8000 samples из artifacts/samples.json
+2026-06-17 15:18:26 | INFO    | src.io_utils | SAE загружён: artifacts/sae_topk.pt (mode=topk, d_hidden=57344)
+2026-06-17 15:18:26 | INFO    | __main__ | Прогон активаций через encoder SAE ...
+2026-06-17 19:21:48 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/03_analyze.log (level=INFO)
+2026-06-17 19:22:04 | INFO    | src.io_utils | Активации загружены: artifacts/activations.npz (hidden.shape=(228638, 3584))
+2026-06-17 19:22:05 | INFO    | src.data | Загружено 8000 samples из artifacts/samples.json
+2026-06-17 19:22:14 | INFO    | src.io_utils | SAE загружён: artifacts/sae_topk.pt (mode=topk, d_hidden=57344)
+2026-06-17 19:22:14 | INFO    | __main__ | Считаю статистику нейронов потоково (без матрицы N×d_hidden) ...
+2026-06-17 19:22:32 | INFO    | __main__ | Статистика сохранена: artifacts/neuron_stats_topk.npz
+2026-06-17 19:22:32 | INFO    | __main__ | Мёртвых нейронов: 23435 / 57344
+2026-06-17 19:22:32 | INFO    | __main__ | Живых нейронов: 33909
+2026-06-17 19:22:32 | INFO    | __main__ | fire_rate среди живых: min=0.0000, median=0.0000, mean=0.0019, max=0.5732
+2026-06-17 19:22:32 | INFO    | __main__ | Выбрано top-50 интересных нейронов.
+2026-06-17 19:22:32 | INFO    | __main__ | Yes/No контраст: pos=Yes, neg=No, slice=balanced
+2026-06-17 19:22:32 | INFO    | build_datasets | Загружено файлов: 10 из data/results_dilemma_v2_balanced
+2026-06-17 19:22:32 | INFO    | build_datasets | balanced_sample_mask: источник=папка data/results_dilemma_v2_balanced, ответов в срезе=1785
+2026-06-17 19:22:32 | INFO    | src.analysis | Контраст на BALANCED: позиций 51539/228638, ответов 1785 (до баланса {'Yes': 5956, 'No': 595, '?': 1449}, источник=dir)
+2026-06-17 19:22:33 | INFO    | __main__ | Кодирую balanced-срез: 51539 позиций → features ...
+2026-06-17 20:53:10 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/03_analyze.log (level=INFO)
+2026-06-17 20:53:34 | INFO    | src.io_utils | Активации загружены: artifacts/activations.npz (hidden.shape=(228638, 3584))
+2026-06-17 20:53:34 | INFO    | src.data | Загружено 8000 samples из artifacts/samples.json
+2026-06-17 20:53:52 | INFO    | src.io_utils | SAE загружён: artifacts/sae_topk.pt (mode=topk, d_hidden=57344)
+2026-06-17 20:53:52 | INFO    | __main__ | Считаю статистику нейронов потоково (без матрицы N×d_hidden) ...
+2026-06-17 21:32:57 | INFO    | __main__ | Статистика сохранена: artifacts/neuron_stats_topk.npz
+2026-06-17 21:32:57 | INFO    | __main__ | Мёртвых нейронов: 23435 / 57344
+2026-06-17 21:32:57 | INFO    | __main__ | Живых нейронов: 33909
+2026-06-17 21:32:57 | INFO    | __main__ | fire_rate среди живых: min=0.0000, median=0.0000, mean=0.0019, max=0.5732
+2026-06-17 21:32:57 | INFO    | __main__ | Выбрано top-50 интересных нейронов.
+2026-06-17 21:32:57 | INFO    | __main__ | Yes/No контраст: pos=Yes, neg=No, slice=balanced
+2026-06-17 21:32:57 | INFO    | build_datasets | Загружено файлов: 10 из data/results_dilemma_v2_balanced
+2026-06-17 21:32:57 | INFO    | build_datasets | balanced_sample_mask: источник=папка data/results_dilemma_v2_balanced, ответов в срезе=1785
+2026-06-17 21:32:57 | INFO    | src.analysis | Контраст на BALANCED: позиций 51539/228638, ответов 1785 (до баланса {'Yes': 5956, 'No': 595, '?': 1449}, источник=dir)
+2026-06-17 21:32:58 | INFO    | src.analysis | Контраст: позиции прорежены до 20000 (contrast.max_positions)
+2026-06-17 21:32:58 | INFO    | __main__ | Кодирую balanced-срез: 20000 позиций → features ...
+2026-06-17 22:28:59 | INFO    | __main__ | TopK sanity: доля нулей = 0.9989, ожидалось 0.9989
+2026-06-18 05:01:43 | INFO    | __main__ | Sample-level: n_pos=595, n_neg=595
+2026-06-18 05:01:43 | INFO    | src.analysis | Найдено: 10 Yes-нейронов, 10 No-нейронов (пересечение token & sample, pool=30)
+2026-06-18 05:01:43 | INFO    | __main__ | Собираем отчёт по нейронам ...
+2026-06-18 05:01:55 | INFO    | __main__ | Отчёт сохранён: artifacts/neuron_report_topk.json (нейронов: 70)

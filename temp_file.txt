@@ -1,0 +1,61 @@
+cd ~/dilemma_sae/dilemma_sae
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+
+python3 - <<'EOF'
+import sys, numpy as np, torch
+sys.path.insert(0, ".")
+from src.io_utils import load_sae
+
+# --- грузим артефакты ---
+arr = np.load("artifacts/activations.npz")
+X = torch.from_numpy(arr["hidden"].astype("float32"))
+print(f"X.shape = {tuple(X.shape)}")
+
+feat_arr = np.load("artifacts/features_topk.npz")
+F_key = "features" if "features" in feat_arr.files else feat_arr.files[0]
+F = torch.from_numpy(feat_arr[F_key].astype("float32"))
+print(f"F.shape = {tuple(F.shape)}")
+
+sae, _ = load_sae("artifacts/sae_topk.pt", device="cpu")   # <-- распаковываем tuple
+sae.eval()
+
+# --- реконструкция ---
+with torch.no_grad():
+    X_hat = sae.decode(F)
+
+# --- метрики ---
+mse = ((X - X_hat) ** 2).mean().item()
+var_X = X.var(dim=0).mean().item()
+ev = 1 - mse / var_X
+
+cos = torch.nn.functional.cosine_similarity(X, X_hat, dim=-1)
+per_sample_mse = ((X - X_hat) ** 2).mean(dim=-1)
+
+print()
+print(f"=== Глобальная reconstruction quality ===")
+print(f"  MSE                    : {mse:.4f}")
+print(f"  Var(X), per-dim mean   : {var_X:.4f}")
+print(f"  Explained variance     : {ev:.4f}    (хорошо: 0.7-0.85)")
+print(f"  Cosine similarity      : mean={cos.mean():.4f}, "
+      f"q10={cos.quantile(0.10):.4f}, min={cos.min():.4f}")
+print(f"  Per-sample MSE         : median={per_sample_mse.median():.3f}, "
+      f"q90={per_sample_mse.quantile(0.90):.3f}, "
+      f"max={per_sample_mse.max():.3f}")
+
+import json
+with open("artifacts/samples.json") as f:
+    samples = json.load(f)
+sample_idx = arr["sample_idx"]
+
+print()
+print(f"=== Топ-5 примеров с наибольшей ошибкой реконструкции ===")
+worst = per_sample_mse.argsort(descending=True)[:5].tolist()
+for i in worst:
+    si = int(sample_idx[i])
+    s = samples[si]
+    snippet = s["answer"][:150].replace("\n", " ")
+    print(f"  MSE={per_sample_mse[i]:.2f}, sample={si}, "
+          f"label={s['label']}, file={s['file_idx']}")
+    print(f"    {snippet!r}")
+EOF

@@ -5,5 +5,9 @@ __pycache__/
 # Личная шпаргалка по запуску (не в репозиторий)
 RUN.md
 
-# Большие артефакты, которые не кладём в git (восстанавливаются прогоном пайплайна)
+# Большие артефакты, которые не кладём в git
 /artifacts/sae_topk.pt
+/artifacts/neuron_stats_topk.npz
+/artifacts/feauters_topk.npz
+/artifacts/activations.npz
+

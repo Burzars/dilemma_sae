@@ -1,26 +1,36 @@
-neuron_id,theme,kind,is_control,alpha,total_yes,total_no,total_q,p_yes
-12177,weighing personal sacrifice for community welfare,yes_trigger,False,-5.0,16,0,24,0.4000
-12177,weighing personal sacrifice for community welfare,yes_trigger,False,-2.0,17,0,23,0.4250
-12177,weighing personal sacrifice for community welfare,yes_trigger,False,+0.0,15,0,25,0.3750
-12177,weighing personal sacrifice for community welfare,yes_trigger,False,+2.0,19,0,21,0.4750
-12177,weighing personal sacrifice for community welfare,yes_trigger,False,+5.0,19,0,21,0.4750
-21243,commitment to community sacrifice and courage,yes_trigger,False,-5.0,13,0,27,0.3250
-21243,commitment to community sacrifice and courage,yes_trigger,False,-2.0,18,0,22,0.4500
-21243,commitment to community sacrifice and courage,yes_trigger,False,+0.0,15,0,25,0.3750
-21243,commitment to community sacrifice and courage,yes_trigger,False,+2.0,20,0,20,0.5000
-21243,commitment to community sacrifice and courage,yes_trigger,False,+5.0,22,0,18,0.5500
-12282,collective decision-making and shared responsibility,no_trigger,False,-5.0,16,0,24,0.4000
-12282,collective decision-making and shared responsibility,no_trigger,False,-2.0,22,0,18,0.5500
-12282,collective decision-making and shared responsibility,no_trigger,False,+0.0,16,0,24,0.4000
-12282,collective decision-making and shared responsibility,no_trigger,False,+2.0,16,0,24,0.4000
-12282,collective decision-making and shared responsibility,no_trigger,False,+5.0,15,0,25,0.3750
-11929,weighing personal sacrifice against community benefit,no_trigger,False,-5.0,16,0,24,0.4000
-11929,weighing personal sacrifice against community benefit,no_trigger,False,-2.0,14,0,26,0.3500
-11929,weighing personal sacrifice against community benefit,no_trigger,False,+0.0,15,0,25,0.3750
-11929,weighing personal sacrifice against community benefit,no_trigger,False,+2.0,14,1,25,0.3500
-11929,weighing personal sacrifice against community benefit,no_trigger,False,+5.0,20,0,20,0.5000
-27805,random control,control,True,-5.0,17,0,23,0.4250
-27805,random control,control,True,-2.0,20,0,20,0.5000
-27805,random control,control,True,+0.0,15,0,25,0.3750
-27805,random control,control,True,+2.0,16,0,24,0.4000
-27805,random control,control,True,+5.0,16,0,24,0.4000
+neuron_id,theme,kind,is_control,alpha,n,yes,no,q,p_yes,p_yes_lo,p_yes_hi
+26266,,explicit,False,-463.91,60,0,4,56,0.0000,0.0000,0.0000
+26266,,explicit,False,-231.95,60,27,16,17,0.4500,0.3329,0.5671
+26266,,explicit,False,-115.98,60,24,16,20,0.4000,0.2833,0.5333
+26266,,explicit,False,+0.00,60,25,6,29,0.4167,0.3000,0.5337
+26266,,explicit,False,+115.98,60,37,0,23,0.6167,0.5000,0.7333
+26266,,explicit,False,+231.95,60,33,0,27,0.5500,0.4333,0.6667
+26266,,explicit,False,+463.91,60,37,0,23,0.6167,0.4833,0.7333
+14551,weighing personal risk against group responsibility,explicit,False,-463.91,60,0,0,60,0.0000,0.0000,0.0000
+14551,weighing personal risk against group responsibility,explicit,False,-231.95,60,2,0,58,0.0333,0.0000,0.0833
+14551,weighing personal risk against group responsibility,explicit,False,-115.98,60,28,7,25,0.4667,0.3333,0.6000
+14551,weighing personal risk against group responsibility,explicit,False,+0.00,60,25,6,29,0.4167,0.3000,0.5337
+14551,weighing personal risk against group responsibility,explicit,False,+115.98,60,26,5,29,0.4333,0.3167,0.5500
+14551,weighing personal risk against group responsibility,explicit,False,+231.95,60,0,0,60,0.0000,0.0000,0.0000
+14551,weighing personal risk against group responsibility,explicit,False,+463.91,60,0,0,60,0.0000,0.0000,0.0000
+2336,weighing personal risk against group responsibility,explicit,False,-463.91,60,16,2,42,0.2667,0.1667,0.3833
+2336,weighing personal risk against group responsibility,explicit,False,-231.95,60,27,2,31,0.4500,0.3167,0.5667
+2336,weighing personal risk against group responsibility,explicit,False,-115.98,60,30,3,27,0.5000,0.3667,0.6167
+2336,weighing personal risk against group responsibility,explicit,False,+0.00,60,25,6,29,0.4167,0.3000,0.5337
+2336,weighing personal risk against group responsibility,explicit,False,+115.98,60,27,18,15,0.4500,0.3167,0.5671
+2336,weighing personal risk against group responsibility,explicit,False,+231.95,60,9,7,44,0.1500,0.0667,0.2500
+2336,weighing personal risk against group responsibility,explicit,False,+463.91,60,0,0,60,0.0000,0.0000,0.0000
+6750,avoiding personal risk while encouraging others to act,explicit,False,-463.91,60,5,0,55,0.0833,0.0167,0.1667
+6750,avoiding personal risk while encouraging others to act,explicit,False,-231.95,60,23,6,31,0.3833,0.2667,0.5000
+6750,avoiding personal risk while encouraging others to act,explicit,False,-115.98,60,28,13,19,0.4667,0.3500,0.6000
+6750,avoiding personal risk while encouraging others to act,explicit,False,+0.00,60,25,6,29,0.4167,0.3000,0.5337
+6750,avoiding personal risk while encouraging others to act,explicit,False,+115.98,60,28,3,29,0.4667,0.3500,0.6000
+6750,avoiding personal risk while encouraging others to act,explicit,False,+231.95,60,29,2,29,0.4833,0.3667,0.6000
+6750,avoiding personal risk while encouraging others to act,explicit,False,+463.91,60,0,1,59,0.0000,0.0000,0.0000
+49181,random control,control,True,-463.91,60,0,0,60,0.0000,0.0000,0.0000
+49181,random control,control,True,-231.95,60,19,6,35,0.3167,0.2000,0.4333
+49181,random control,control,True,-115.98,60,30,12,18,0.5000,0.3667,0.6333
+49181,random control,control,True,+0.00,60,25,6,29,0.4167,0.3000,0.5337
+49181,random control,control,True,+115.98,60,28,5,27,0.4667,0.3333,0.5833
+49181,random control,control,True,+231.95,60,29,2,29,0.4833,0.3500,0.6167
+49181,random control,control,True,+463.91,60,18,0,42,0.3000,0.1833,0.4167

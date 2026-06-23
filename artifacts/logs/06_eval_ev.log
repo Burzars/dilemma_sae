@@ -1,0 +1,44 @@
+2026-06-17 02:04:47 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/06_eval_ev.log (level=INFO)
+2026-06-17 02:04:47 | INFO    | __main__ | Устройство: cuda
+2026-06-17 02:04:59 | INFO    | src.io_utils | Активации загружены: artifacts/activations.npz (hidden.shape=(228638, 3584))
+2026-06-17 02:04:59 | INFO    | src.data | Загружено 8000 samples из artifacts/samples.json
+2026-06-17 02:04:59 | INFO    | __main__ | SMOKE: фолды=[9, 10], epochs=2, expansion=4, random_split=off
+2026-06-17 02:04:59 | INFO    | __main__ | === Leave-one-file-out: 2 фолдов ===
+2026-06-17 02:04:59 | INFO    | __main__ | Фолд held_file=9: train=205960 поз., test=22678 поз. — обучаю SAE ...
+2026-06-17 02:05:34 | INFO    | __main__ | file 9: train EV=0.7915, test EV=0.6764, gap=-0.1151 (test MSE=2.71)
+2026-06-17 02:05:34 | INFO    | __main__ | Фолд held_file=10: train=206537 поз., test=22101 поз. — обучаю SAE ...
+2026-06-17 02:06:08 | INFO    | __main__ | file 10: train EV=0.7915, test EV=0.6914, gap=-0.1001 (test MSE=2.48)
+2026-06-17 02:06:08 | INFO    | __main__ | EV-результаты сохранены: artifacts/eval_ev_smoke.json
+2026-06-17 02:06:10 | INFO    | src.visualize | Сохранено: artifacts/figures/ev_per_file_smoke.png
+2026-06-17 02:06:10 | INFO    | __main__ | ИТОГ: средний test EV=0.6839, средний gap (test−train)=-0.1076
+2026-06-17 02:32:12 | INFO    | src.io_utils | Логирование инициализировано: artifacts/logs/06_eval_ev.log (level=INFO)
+2026-06-17 02:32:12 | INFO    | __main__ | Устройство: cuda
+2026-06-17 02:32:23 | INFO    | src.io_utils | Активации загружены: artifacts/activations.npz (hidden.shape=(228638, 3584))
+2026-06-17 02:32:23 | INFO    | src.data | Загружено 8000 samples из artifacts/samples.json
+2026-06-17 02:32:23 | INFO    | __main__ | === Leave-one-file-out: 10 фолдов ===
+2026-06-17 02:32:23 | INFO    | __main__ | Фолд held_file=9: train=205960 поз., test=22678 поз. — обучаю SAE ...
+2026-06-17 02:58:52 | INFO    | __main__ | file 9: train EV=0.9029, test EV=0.7494, gap=-0.1535 (test MSE=2.10)
+2026-06-17 02:58:52 | INFO    | __main__ | Фолд held_file=10: train=206537 поз., test=22101 поз. — обучаю SAE ...
+2026-06-17 03:25:45 | INFO    | __main__ | file 10: train EV=0.9031, test EV=0.7614, gap=-0.1417 (test MSE=1.92)
+2026-06-17 03:25:45 | INFO    | __main__ | Фолд held_file=11: train=204643 поз., test=23995 поз. — обучаю SAE ...
+2026-06-17 03:52:08 | INFO    | __main__ | file 11: train EV=0.9034, test EV=0.7565, gap=-0.1469 (test MSE=2.02)
+2026-06-17 03:52:08 | INFO    | __main__ | Фолд held_file=12: train=203728 поз., test=24910 поз. — обучаю SAE ...
+2026-06-17 04:18:25 | INFO    | __main__ | file 12: train EV=0.9033, test EV=0.7541, gap=-0.1492 (test MSE=2.06)
+2026-06-17 04:18:25 | INFO    | __main__ | Фолд held_file=13: train=203459 поз., test=25179 поз. — обучаю SAE ...
+2026-06-17 04:44:37 | INFO    | __main__ | file 13: train EV=0.9040, test EV=0.7518, gap=-0.1522 (test MSE=2.05)
+2026-06-17 04:44:37 | INFO    | __main__ | Фолд held_file=14: train=205434 поз., test=23204 поз. — обучаю SAE ...
+2026-06-17 05:11:05 | INFO    | __main__ | file 14: train EV=0.9040, test EV=0.7060, gap=-0.1980 (test MSE=2.50)
+2026-06-17 05:11:05 | INFO    | __main__ | Фолд held_file=15: train=207311 поз., test=21327 поз. — обучаю SAE ...
+2026-06-17 05:37:54 | INFO    | __main__ | file 15: train EV=0.9036, test EV=0.7185, gap=-0.1852 (test MSE=2.37)
+2026-06-17 05:37:54 | INFO    | __main__ | Фолд held_file=16: train=204940 поз., test=23698 поз. — обучаю SAE ...
+2026-06-17 06:04:30 | INFO    | __main__ | file 16: train EV=0.9036, test EV=0.7384, gap=-0.1652 (test MSE=2.18)
+2026-06-17 06:04:30 | INFO    | __main__ | Фолд held_file=17: train=203472 поз., test=25166 поз. — обучаю SAE ...
+2026-06-17 06:31:04 | INFO    | __main__ | file 17: train EV=0.9037, test EV=0.7497, gap=-0.1540 (test MSE=2.13)
+2026-06-17 06:31:04 | INFO    | __main__ | Фолд held_file=18: train=212258 поз., test=16380 поз. — обучаю SAE ...
+2026-06-17 06:58:18 | INFO    | __main__ | file 18: train EV=0.9022, test EV=0.7201, gap=-0.1821 (test MSE=2.17)
+2026-06-17 06:58:18 | INFO    | __main__ | === Random split 90/10 (по reasoning-ответам) ===
+2026-06-17 06:58:18 | INFO    | __main__ | Random: train=205660 поз. (7200 отв.), test=22978 поз. (800 отв.)
+2026-06-17 07:24:51 | INFO    | __main__ | random: train EV=0.9027, test EV=0.8463, gap=-0.0564
+2026-06-17 07:24:51 | INFO    | __main__ | EV-результаты сохранены: artifacts/eval_ev.json
+2026-06-17 07:24:51 | INFO    | src.visualize | Сохранено: artifacts/figures/ev_per_file.png
+2026-06-17 07:24:51 | INFO    | __main__ | ИТОГ: средний test EV=0.7406, средний gap (test−train)=-0.1628
