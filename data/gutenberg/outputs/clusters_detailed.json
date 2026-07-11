@@ -1,0 +1,4187 @@
+[
+  {
+    "cluster_name": "Children & Young Adult Reading (Life Juvenile)",
+    "size": 1814,
+    "top_keywords": [
+      "juvenile fiction",
+      "juvenile",
+      "life juvenile",
+      "fiction children",
+      "conduct life",
+      "conduct",
+      "life",
+      "children",
+      "fiction conduct",
+      "fiction"
+    ],
+    "top_shelves": [
+      "Children & Young Adult Reading",
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Children's Fiction"
+    ],
+    "top_subjects": [
+      "Conduct of life -- Juvenile fiction",
+      "Christian life -- Juvenile fiction",
+      "Children -- Conduct of life -- Juvenile fiction",
+      "Friendship -- Juvenile fiction",
+      "Siblings -- Juvenile fiction"
+    ],
+    "top_locc": [
+      "Fiction & Juvenile Literature",
+      "American Literature",
+      "English Literature"
+    ],
+    "example_titles": [
+      "Alice's Adventures in Wonderland",
+      "Peter Pan",
+      "The Marvelous Land of Oz",
+      "The Wonderful Wizard of Oz",
+      "The Adventures of Tom Sawyer, Complete"
+    ]
+  },
+  {
+    "cluster_name": "Children & Young Adult Reading (Juvenile Fiction)",
+    "size": 1725,
+    "top_keywords": [
+      "juvenile fiction",
+      "juvenile",
+      "fiction children",
+      "adult reading",
+      "children young",
+      "young adult",
+      "adult",
+      "reading",
+      "young",
+      "reading fiction"
+    ],
+    "top_shelves": [
+      "Children & Young Adult Reading",
+      "Fiction",
+      "Literature",
+      "Children's Book Series",
+      "Crime/Mystery"
+    ],
+    "top_subjects": [
+      "Adventure stories",
+      "Girls -- Juvenile fiction",
+      "Mystery and detective stories",
+      "Boys -- Juvenile fiction",
+      "Schools -- Juvenile fiction"
+    ],
+    "top_locc": [
+      "Fiction & Juvenile Literature",
+      "American Literature",
+      "English Literature"
+    ],
+    "example_titles": [
+      "Through the Looking-Glass",
+      "Sara Crewe; Or, What Happened at Miss Minchin's Boarding School",
+      "Poor and Proud; Or, The Fortunes of Katy Redburn: A Story for Young Folks",
+      "Rebecca of Sunnybrook Farm",
+      "Tom Swift in the Land of Wonders; Or, The Underground Search for the Idol of Gold"
+    ]
+  },
+  {
+    "cluster_name": "Biographies",
+    "size": 1251,
+    "top_keywords": [
+      "biographies",
+      "biography",
+      "biographies literature",
+      "century biography",
+      "correspondence",
+      "biographies history",
+      "authors",
+      "english century",
+      "biography biographies",
+      "century"
+    ],
+    "top_shelves": [
+      "Biographies",
+      "Literature",
+      "History - General",
+      "History - American",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "Authors, American -- 19th century -- Biography",
+      "Authors, English -- 19th century -- Biography",
+      "Poets, English -- 19th century -- Biography",
+      "Novelists, English -- 19th century -- Biography",
+      "Biography"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "History of the Americas"
+    ],
+    "example_titles": [
+      "George Sand: Some Aspects of Her Life and Writings",
+      "Walden, and On The Duty Of Civil Disobedience",
+      "Life on the Mississippi",
+      "Records of a Family of Engineers",
+      "The Stark Munro Letters\r\nBeing series of twelve letters written by J. Stark Munro, M.B., to his friend and former fellow-student, Herbert Swanborough, of Lowell, Massachusetts, during the years 1881-1884"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Western)",
+    "size": 1244,
+    "top_keywords": [
+      "western",
+      "western stories",
+      "fiction western",
+      "stories",
+      "stories culture",
+      "american fiction",
+      "society literature",
+      "culture civilization",
+      "civilization society",
+      "literature fiction"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "History - American",
+      "Travel & Geography"
+    ],
+    "top_subjects": [
+      "Western stories",
+      "Short stories",
+      "Short stories, American",
+      "Adventure stories",
+      "American fiction -- 19th century"
+    ],
+    "top_locc": [
+      "American Literature",
+      "Fiction & Juvenile Literature",
+      "English Literature"
+    ],
+    "example_titles": [
+      "O Pioneers!",
+      "The $30,000 Bequest, and Other Stories",
+      "The Octopus : A Story of California",
+      "Remember the Alamo",
+      "Beauty and the Beast, and Tales of Home"
+    ]
+  },
+  {
+    "cluster_name": "Religion/Spirituality/Paranormal (Philosophy)",
+    "size": 1243,
+    "top_keywords": [
+      "philosophy",
+      "ethics",
+      "philosophy ethics",
+      "religion",
+      "spirituality",
+      "spirituality paranormal",
+      "religion spirituality",
+      "paranormal",
+      "psychology religion",
+      "ethics psychiatry"
+    ],
+    "top_shelves": [
+      "Religion/Spirituality/Paranormal",
+      "Philosophy & Ethics",
+      "Psychiatry/Psychology",
+      "Culture/Civilization/Society",
+      "History - Religious"
+    ],
+    "top_subjects": [
+      "Christian life",
+      "Religion",
+      "Spiritualism",
+      "Conduct of life",
+      "Free thought"
+    ],
+    "top_locc": [
+      "Psychology",
+      "Religions & Mythology",
+      "Practical Theology"
+    ],
+    "example_titles": [
+      "Orthodoxy",
+      "Take Me for a Ride: Coming of Age in a Destructive Cult",
+      "The Tao Teh King, or the Tao and its Characteristics",
+      "The Vital Message",
+      "The Planet Mars and Its Inhabitants, a Psychic Revelation"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Fiction Fiction)",
+    "size": 1188,
+    "top_keywords": [
+      "fiction fiction",
+      "fiction literature",
+      "literature fiction",
+      "literature",
+      "fiction",
+      "stories literature",
+      "english fiction",
+      "stories",
+      "short stories",
+      "short"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Fiction",
+      "Science-Fiction & Fantasy",
+      "Humour",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "Fiction",
+      "Short stories",
+      "English fiction",
+      "Love stories",
+      "Dime novels"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Germanic Literature"
+    ],
+    "example_titles": [
+      "Tales and Fantasies",
+      "The Fifth String",
+      "Margret Howth: A Story of To-day",
+      "Sylvie and Bruno",
+      "Creatures That Once Were Men"
+    ]
+  },
+  {
+    "cluster_name": "Crime/Mystery",
+    "size": 1185,
+    "top_keywords": [
+      "mystery",
+      "crime",
+      "crime mystery",
+      "detective",
+      "mystery literature",
+      "detective mystery",
+      "mystery stories",
+      "fiction detective",
+      "stories crime",
+      "fiction crime"
+    ],
+    "top_shelves": [
+      "Crime/Mystery",
+      "Fiction",
+      "Literature",
+      "Detective Fiction",
+      "Children & Young Adult Reading"
+    ],
+    "top_subjects": [
+      "Detective and mystery stories",
+      "Mystery fiction",
+      "Fiction",
+      "Murder -- Investigation -- Fiction",
+      "Short stories"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "Tom Sawyer, Detective",
+      "The Return of Sherlock Holmes",
+      "The Haunted Hotel: A Mystery of Modern Venice",
+      "The Haunted Bookshop",
+      "The Insidious Dr. Fu Manchu"
+    ]
+  },
+  {
+    "cluster_name": "Religion/Spirituality/Paranormal",
+    "size": 1110,
+    "top_keywords": [
+      "church",
+      "religion",
+      "spirituality paranormal",
+      "religion spirituality",
+      "spirituality",
+      "paranormal",
+      "ethics religion",
+      "sermons",
+      "philosophy ethics",
+      "ethics"
+    ],
+    "top_shelves": [
+      "Religion/Spirituality/Paranormal",
+      "Philosophy & Ethics",
+      "History - Religious",
+      "Biographies",
+      "Christianity"
+    ],
+    "top_subjects": [
+      "Sermons, English -- 19th century",
+      "Church of England -- Sermons",
+      "Latter Day Saint churches -- Doctrines",
+      "Catholic Church -- Periodicals",
+      "Sermons, English"
+    ],
+    "top_locc": [
+      "Christian Denominations",
+      "Practical Theology",
+      "Christianity"
+    ],
+    "example_titles": [
+      "The Smalcald Articles",
+      "Disputation of Doctor Martin Luther on the Power and Efficacy of Indulgences",
+      "The Augsburg Confession\r\nThe confession of faith, which was submitted to His Imperial Majesty Charles V at the diet of Augsburg in the year 1530",
+      "Father Damien: An Open Letter to the Reverend Dr. Hyde of Honolulu",
+      "A Treatise on Good Works"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Society Literature)",
+    "size": 1069,
+    "top_keywords": [
+      "fiction culture",
+      "society literature",
+      "fiction",
+      "culture",
+      "culture civilization",
+      "civilization society",
+      "civilization",
+      "literature fiction",
+      "society",
+      "fiction love"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Science-Fiction & Fantasy",
+      "Humour"
+    ],
+    "top_subjects": [
+      "Love stories",
+      "Man-woman relationships -- Fiction",
+      "Adventure stories",
+      "Short stories",
+      "England -- Fiction"
+    ],
+    "top_locc": [
+      "American Literature",
+      "English Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "Far from the Madding Crowd",
+      "Tarzan of the Apes",
+      "The Beasts of Tarzan",
+      "Alexander's Bridge",
+      "Jungle Tales of Tarzan"
+    ]
+  },
+  {
+    "cluster_name": "Science-Fiction & Fantasy (Science)",
+    "size": 1007,
+    "top_keywords": [
+      "science fiction",
+      "science",
+      "fiction short",
+      "short stories",
+      "short",
+      "literature science",
+      "fiction science",
+      "fantasy fiction",
+      "fiction fantasy",
+      "stories science"
+    ],
+    "top_shelves": [
+      "Science-Fiction & Fantasy",
+      "Fiction",
+      "Literature",
+      "Science Fiction",
+      "Science Fiction by Women"
+    ],
+    "top_subjects": [
+      "Short stories",
+      "Science fiction",
+      "Time travel -- Fiction",
+      "Human-alien encounters -- Fiction",
+      "Robots -- Fiction"
+    ],
+    "top_locc": [
+      "American Literature",
+      "Literature, Drama & Journalism",
+      "English Literature"
+    ],
+    "example_titles": [
+      "The Door in the Wall, and Other Stories",
+      "\"Undo\": A Novel",
+      "Stories from Everybody's Magazine",
+      "Options",
+      "Twelve Stories and a Dream"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (England)",
+    "size": 995,
+    "top_keywords": [
+      "england",
+      "england social",
+      "england fiction",
+      "fiction culture",
+      "century fiction",
+      "society literature",
+      "fiction england",
+      "customs",
+      "social life",
+      "life customs"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "History - British",
+      "Humour"
+    ],
+    "top_subjects": [
+      "England -- Social life and customs -- 19th century -- Fiction",
+      "London (England) -- Fiction",
+      "England -- Social life and customs -- Fiction",
+      "England -- Fiction",
+      "English fiction -- 19th century"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The Rise of Silas Lapham",
+      "St. Ives: Being the Adventures of a French Prisoner in England",
+      "A Knight of the Cumberland",
+      "Beyond the City",
+      "The Fortunes and Misfortunes of the Famous Moll Flanders"
+    ]
+  },
+  {
+    "cluster_name": "Literature (English Fiction)",
+    "size": 977,
+    "top_keywords": [
+      "english fiction",
+      "fiction english",
+      "fiction century",
+      "century literature",
+      "english",
+      "essays",
+      "literature fiction",
+      "literature",
+      "essays literature",
+      "century"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Fiction",
+      "History - General",
+      "Culture/Civilization/Society",
+      "Language & Communication"
+    ],
+    "top_subjects": [
+      "English fiction -- 19th century",
+      "Fiction",
+      "Short stories",
+      "Essays",
+      "Short stories, English"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Literature, Drama & Journalism"
+    ],
+    "example_titles": [
+      "William Gibson Interviewed",
+      "Dear Enemy",
+      "Stories from the Old Attic",
+      "Episodes in Van Bibber's Life",
+      "Literary Blunders: A Chapter in the \"History of Human Error\""
+    ]
+  },
+  {
+    "cluster_name": "Children & Young Adult Reading (Juvenile Literature)",
+    "size": 940,
+    "top_keywords": [
+      "juvenile literature",
+      "literature children",
+      "children",
+      "reading",
+      "young adult",
+      "adult",
+      "children young",
+      "adult reading",
+      "reading literature",
+      "young"
+    ],
+    "top_shelves": [
+      "Children & Young Adult Reading",
+      "Literature",
+      "Teaching & Education",
+      "Fiction",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "Children's stories",
+      "Fairy tales",
+      "Readers",
+      "Short stories",
+      "Children's literature"
+    ],
+    "top_locc": [
+      "Fiction & Juvenile Literature",
+      "English Language",
+      "American Literature"
+    ],
+    "example_titles": [
+      "The Hunting of the Snark: An Agony in Eight Fits",
+      "At the Back of the North Wind",
+      "The Dawn of a To-morrow",
+      "Stories to Tell to Children",
+      "How to Tell Stories to Children, and Some Stories to Tell"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Fiction Culture)",
+    "size": 889,
+    "top_keywords": [
+      "fiction culture",
+      "society literature",
+      "women fiction",
+      "england fiction",
+      "fiction england",
+      "women",
+      "fiction",
+      "england",
+      "literature fiction",
+      "social"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Humour",
+      "Crime/Mystery"
+    ],
+    "top_subjects": [
+      "Man-woman relationships -- Fiction",
+      "Young women -- Fiction",
+      "Love stories",
+      "England -- Fiction",
+      "Domestic fiction"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The Scarlet Letter",
+      "Anne of Green Gables",
+      "Anne of Avonlea",
+      "Anne of the Island",
+      "Persuasion"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Sea)",
+    "size": 863,
+    "top_keywords": [
+      "sea",
+      "sea stories",
+      "fiction sea",
+      "pirates",
+      "stories",
+      "geography fiction",
+      "sailors",
+      "fiction sailors",
+      "seafaring",
+      "seafaring life"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Travel & Geography",
+      "Children & Young Adult Reading",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "Sea stories",
+      "Adventure stories",
+      "Short stories",
+      "England -- Social life and customs -- Fiction",
+      "Humorous stories, English"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "Moby-Dick; or, The Whale",
+      "Tom Sawyer Abroad",
+      "Treasure Island",
+      "The Voyage Out",
+      "Twenty Thousand Leagues under the Sea"
+    ]
+  },
+  {
+    "cluster_name": "Art & Photography",
+    "size": 811,
+    "top_keywords": [
+      "art",
+      "photography",
+      "art photography",
+      "photography culture",
+      "architecture",
+      "painting",
+      "art art",
+      "architecture art",
+      "photography history",
+      "photography biographies"
+    ],
+    "top_shelves": [
+      "Art & Photography",
+      "Culture/Civilization/Society",
+      "History - General",
+      "Architecture",
+      "Literature"
+    ],
+    "top_subjects": [
+      "Art",
+      "Aesthetics",
+      "Painting",
+      "Architecture -- Periodicals",
+      "Interior decoration"
+    ],
+    "top_locc": [
+      "Painting",
+      "Fine Arts",
+      "Decorative Arts"
+    ],
+    "example_titles": [
+      "American Hand Book of the Daguerreotype",
+      "The History and Practice of the Art of Photography",
+      "French Cave Paintings",
+      "Knights of Art: Stories of the Italian Painters",
+      "Chinese Sketches"
+    ]
+  },
+  {
+    "cluster_name": "History - Warfare (World War)",
+    "size": 800,
+    "top_keywords": [
+      "world war",
+      "world",
+      "war",
+      "warfare world",
+      "general history",
+      "warfare",
+      "history warfare",
+      "war personal",
+      "personal narratives",
+      "narratives"
+    ],
+    "top_shelves": [
+      "History - Warfare",
+      "History - General",
+      "World War I",
+      "History - European",
+      "Politics"
+    ],
+    "top_subjects": [
+      "World War, 1914-1918",
+      "World War, 1914-1918 -- Personal narratives",
+      "World War, 1914-1918 -- Personal narratives, English",
+      "World War, 1914-1918 -- Poetry",
+      "World War, 1914-1918 -- Personal narratives, British"
+    ],
+    "top_locc": [
+      "World History",
+      "Law",
+      "English Literature"
+    ],
+    "example_titles": [
+      "Rhymes of a Red Cross Man",
+      "Project Trinity, 1945-1946",
+      "Poems",
+      "Aeroplanes and Dirigibles of War",
+      "Poems"
+    ]
+  },
+  {
+    "cluster_name": "Science-Fiction & Fantasy",
+    "size": 790,
+    "top_keywords": [
+      "science fiction",
+      "fiction science",
+      "science",
+      "fantasy fiction",
+      "planet fiction",
+      "planet",
+      "fiction fantasy",
+      "fantasy",
+      "literature science",
+      "space"
+    ],
+    "top_shelves": [
+      "Science-Fiction & Fantasy",
+      "Fiction",
+      "Literature",
+      "Science Fiction",
+      "Crime/Mystery"
+    ],
+    "top_subjects": [
+      "Science fiction",
+      "Short stories",
+      "Human-alien encounters -- Fiction",
+      "Mars (Planet) -- Fiction",
+      "Adventure stories"
+    ],
+    "top_locc": [
+      "American Literature",
+      "English Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The War of the Worlds",
+      "A Princess of Mars",
+      "The Gods of Mars",
+      "The warlord of Mars",
+      "Thuvia, Maid of Mars"
+    ]
+  },
+  {
+    "cluster_name": "History - American (History American)",
+    "size": 774,
+    "top_keywords": [
+      "history american",
+      "american history",
+      "american",
+      "history",
+      "river",
+      "history history",
+      "mississippi",
+      "mississippi river",
+      "massachusetts",
+      "american travel"
+    ],
+    "top_shelves": [
+      "History - American",
+      "History - General",
+      "Culture/Civilization/Society",
+      "Travel & Geography",
+      "Biographies"
+    ],
+    "top_subjects": [
+      "Pilgrims (New Plymouth Colony)",
+      "Massachusetts -- History -- New Plymouth, 1620-1691",
+      "Mississippi River -- Description and travel",
+      "Civil engineering -- Periodicals",
+      "Mayflower (Ship)"
+    ],
+    "top_locc": [
+      "History of the Americas",
+      "Transportation & Communications",
+      "American Literature"
+    ],
+    "example_titles": [
+      "The Mayflower Compact",
+      "Trinity Site: 1945-1995.\r\nA National Historic Landmark, White Sands Missile Range, New Mexico",
+      "Life and Adventures of Calamity Jane",
+      "The Silverado Squatters",
+      "Last of the Great Scouts: The Life Story of William F. Cody [\"Buffalo Bill\"]"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Drama)",
+    "size": 772,
+    "top_keywords": [
+      "drama",
+      "literature performing",
+      "performing",
+      "performing arts",
+      "arts film",
+      "film",
+      "arts",
+      "film fiction",
+      "english drama",
+      "drama literature"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Fiction",
+      "Performing Arts/Film",
+      "Culture/Civilization/Society",
+      "Humour"
+    ],
+    "top_subjects": [
+      "Comedy plays",
+      "English drama",
+      "Comedies",
+      "Drama",
+      "English drama -- 19th century"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Literature, Drama & Journalism"
+    ],
+    "example_titles": [
+      "The Complete Works of William Shakespeare",
+      "The Contrast",
+      "The Plays of W. E. Henley and R. L. Stevenson",
+      "The Complete Plays of Gilbert and Sullivan",
+      "The Importance of Being Earnest: A Trivial Comedy for Serious People"
+    ]
+  },
+  {
+    "cluster_name": "Travel & Geography",
+    "size": 767,
+    "top_keywords": [
+      "travel",
+      "description travel",
+      "description",
+      "american travel",
+      "geography",
+      "travel geography",
+      "travel history",
+      "general travel",
+      "history american",
+      "west"
+    ],
+    "top_shelves": [
+      "Travel & Geography",
+      "History - American",
+      "History - General",
+      "Culture/Civilization/Society",
+      "Biographies"
+    ],
+    "top_subjects": [
+      "United States -- Description and travel",
+      "West (U.S.) -- Description and travel",
+      "Voyages and travels",
+      "Canada -- Description and travel",
+      "Arctic regions"
+    ],
+    "top_locc": [
+      "History of the Americas",
+      "Geography, Anthropology & Recreation",
+      "History of Asia"
+    ],
+    "example_titles": [
+      "Guide to Life and Literature of the Southwest, with a Few Observations",
+      "Steep Trails",
+      "The Land of Little Rain",
+      "The Mountains",
+      "An Inland Voyage"
+    ]
+  },
+  {
+    "cluster_name": "Culture/Civilization/Society (Sociology)",
+    "size": 743,
+    "top_keywords": [
+      "sociology",
+      "economics",
+      "politics sociology",
+      "politics",
+      "society sociology",
+      "business",
+      "society economics",
+      "management",
+      "civilization",
+      "business management"
+    ],
+    "top_shelves": [
+      "Culture/Civilization/Society",
+      "Sociology",
+      "Politics",
+      "Economics",
+      "History - General"
+    ],
+    "top_subjects": [
+      "Socialism",
+      "Economics",
+      "Prisons -- Periodicals",
+      "Social problems",
+      "Charities -- Periodicals"
+    ],
+    "top_locc": [
+      "Social Welfare & Criminology",
+      "Socialism & Communism",
+      "Economic Theory"
+    ],
+    "example_titles": [
+      "The Communist Manifesto",
+      "On the Duty of Civil Disobedience",
+      "Price/Cost Indexes from 1875 to 1989; Estimated to 2010",
+      "The Hacker Crackdown: Law and Disorder on the Electronic Frontier",
+      "The Republic"
+    ]
+  },
+  {
+    "cluster_name": "Literature (English Poetry)",
+    "size": 740,
+    "top_keywords": [
+      "poetry",
+      "english poetry",
+      "poetry english",
+      "literature poetry",
+      "english",
+      "poetry century",
+      "century literature",
+      "poetry literature",
+      "century",
+      "poetry early"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Poetry",
+      "Culture/Civilization/Society",
+      "History - British",
+      "History - General"
+    ],
+    "top_subjects": [
+      "English poetry -- 19th century",
+      "English poetry",
+      "English poetry -- 20th century",
+      "Poetry",
+      "English poetry -- Early modern, 1500-1700"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Romance Literatures"
+    ],
+    "example_titles": [
+      "The Georgics",
+      "An Introduction to the Study of Robert Browning's Poetry",
+      "The Collected Poems of Rupert Brooke",
+      "Main Street, and Other Poems",
+      "Verses 1889-1896"
+    ]
+  },
+  {
+    "cluster_name": "Children & Young Adult Reading",
+    "size": 721,
+    "top_keywords": [
+      "animals juvenile",
+      "children",
+      "fiction animals",
+      "fiction children",
+      "juvenile",
+      "children young",
+      "adult reading",
+      "young adult",
+      "adult",
+      "reading"
+    ],
+    "top_shelves": [
+      "Children & Young Adult Reading",
+      "Fiction",
+      "Literature",
+      "Nature/Gardening/Animals",
+      "Children's Book Series"
+    ],
+    "top_subjects": [
+      "Animals -- Juvenile fiction",
+      "Children's stories",
+      "Fairy tales",
+      "Rabbits -- Juvenile fiction",
+      "Conduct of life -- Juvenile fiction"
+    ],
+    "top_locc": [
+      "Fiction & Juvenile Literature",
+      "American Literature",
+      "Zoology"
+    ],
+    "example_titles": [
+      "The Jungle Book",
+      "The Little Lame Prince",
+      "The Adventures of Pinocchio",
+      "The Story of Doctor Dolittle",
+      "Rewards and Fairies"
+    ]
+  },
+  {
+    "cluster_name": "History - American (United States)",
+    "size": 718,
+    "top_keywords": [
+      "united states",
+      "united",
+      "states",
+      "politics",
+      "american politics",
+      "states politics",
+      "politics government",
+      "government",
+      "history american",
+      "states history"
+    ],
+    "top_shelves": [
+      "History - American",
+      "Politics",
+      "History - General",
+      "Biographies",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "United States -- Politics and government",
+      "United States -- Politics and government -- Sources",
+      "Presidents -- United States -- Messages",
+      "United States -- History",
+      "United States -- Politics and government -- 1775-1783"
+    ],
+    "top_locc": [
+      "History of the Americas",
+      "US Politics & Government",
+      "Political Science"
+    ],
+    "example_titles": [
+      "The Declaration of Independence of the United States of America",
+      "The United States Bill of Rights\r\nThe Ten Original Amendments to the Constitution of the United States",
+      "John F. Kennedy's Inaugural Address",
+      "The United States Constitution",
+      "Give Me Liberty or Give Me Death"
+    ]
+  },
+  {
+    "cluster_name": "History - General",
+    "size": 718,
+    "top_keywords": [
+      "travel",
+      "philippines",
+      "general travel",
+      "description travel",
+      "description",
+      "geography",
+      "travel geography",
+      "discovery exploration",
+      "discovery",
+      "history general"
+    ],
+    "top_shelves": [
+      "History - General",
+      "Travel & Geography",
+      "History - American",
+      "Culture/Civilization/Society",
+      "History - European"
+    ],
+    "top_subjects": [
+      "Philippines -- History -- Sources",
+      "Demarcation line of Alexander VI",
+      "Missions -- Philippines",
+      "Philippines -- Discovery and exploration",
+      "Voyages and travels"
+    ],
+    "top_locc": [
+      "History of the Americas",
+      "History of Asia",
+      "Geography, Anthropology & Recreation"
+    ],
+    "example_titles": [
+      "In the South Seas\r\nBeing an Account of Experiences and Observations in the Marquesas, Paumotus and Gilbert Islands in the Course of Two Cruises on the Yacht \"Casco\" (1888) and the Schooner \"Equator\" (1889)",
+      "A Footnote to History: Eight Years of Trouble in Samoa",
+      "The Travels of Sir John Mandeville",
+      "Letters from the Cape",
+      "The Voyage of the Beagle"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Periodicals)",
+    "size": 710,
+    "top_keywords": [
+      "periodicals",
+      "century periodicals",
+      "literature periodicals",
+      "monthly",
+      "periodicals literature",
+      "modern century",
+      "literature modern",
+      "modern",
+      "american periodicals",
+      "american literature"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Encyclopedias/Dictionaries/Reference",
+      "Culture/Civilization/Society",
+      "History - American",
+      "Politics"
+    ],
+    "top_subjects": [
+      "American periodicals",
+      "Literature, Modern -- 19th century -- Periodicals",
+      "Literature -- Periodicals",
+      "American literature -- Periodicals",
+      "English literature -- Periodicals"
+    ],
+    "top_locc": [
+      "Periodicals",
+      "Literature, Drama & Journalism",
+      "History of the Americas"
+    ],
+    "example_titles": [
+      "Editorials from the Hearst Newspapers",
+      "Fires and Firemen: from the Eclectic Magazine of Foreign Literature, Science and Art, Vol XXXV No. 1, May 1855",
+      "The Atlantic Monthly, Volume 01, No. 01, November, 1857\r\nA Magazine of Literature, Art, and Politics",
+      "The Atlantic Monthly, Volume 02, No. 08, June 1858\r\nA Magazine of Literature, Art, and Politics",
+      "The Atlantic Monthly, Volume 01, No. 03, January, 1858\r\nA Magazine of Literature, Art, and Politics"
+    ]
+  },
+  {
+    "cluster_name": "Engineering & Construction",
+    "size": 707,
+    "top_keywords": [
+      "engineering",
+      "construction",
+      "technology",
+      "engineering construction",
+      "computers",
+      "computers technology",
+      "technology engineering",
+      "construction science",
+      "science general",
+      "technology computers"
+    ],
+    "top_shelves": [
+      "Engineering & Construction",
+      "Computers & Technology",
+      "Science - General",
+      "Technology",
+      "How To..."
+    ],
+    "top_subjects": [
+      "Inventions",
+      "VM",
+      "Aeronautics",
+      "Airplanes",
+      "Civil engineering -- Periodicals"
+    ],
+    "top_locc": [
+      "Manufactures",
+      "Electrical Engineering",
+      "Motor Vehicles & Aeronautics"
+    ],
+    "example_titles": [
+      "Zen and the Art of the Internet",
+      "The Jargon File, Version 2.9.10, 01 Jul 1992",
+      "Hitchhiker's Guide to the Internet",
+      "Surfing the Internet: An Introduction\r\nVersion 2.0.2",
+      "NREN for All: Insurmountable Opportunity"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Translations)",
+    "size": 691,
+    "top_keywords": [
+      "translations",
+      "translations english",
+      "fiction translations",
+      "english literature",
+      "french",
+      "english",
+      "french fiction",
+      "fiction french",
+      "german",
+      "fiction german"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Fiction",
+      "Culture/Civilization/Society",
+      "Poetry",
+      "Language & Communication"
+    ],
+    "top_subjects": [
+      "French fiction -- Translations into English",
+      "German fiction -- Translations into English",
+      "Short stories, French -- Translations into English",
+      "Paris (France) -- Fiction",
+      "Fables, French -- Translations into English"
+    ],
+    "top_locc": [
+      "Romance Literatures",
+      "Germanic Literature",
+      "English Literature"
+    ],
+    "example_titles": [
+      "A Selection from the Writings of Guy De Maupassant, Vol. I",
+      "Master and Man",
+      "Divine Comedy, Cary's Translation, Hell",
+      "Divine Comedy, Cary's Translation, Purgatory",
+      "Divine Comedy, Cary's Translation, Paradise"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Science Fiction)",
+    "size": 684,
+    "top_keywords": [
+      "science fiction",
+      "fiction science",
+      "science",
+      "fantasy fiction",
+      "fiction fantasy",
+      "fantasy",
+      "encounters fiction",
+      "alien encounters",
+      "alien",
+      "human alien"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Science-Fiction & Fantasy",
+      "Literature",
+      "Science Fiction",
+      "Psychiatry/Psychology"
+    ],
+    "top_subjects": [
+      "Science fiction",
+      "Short stories",
+      "Human-alien encounters -- Fiction",
+      "Extraterrestrial beings -- Fiction",
+      "Space ships -- Fiction"
+    ],
+    "top_locc": [
+      "American Literature",
+      "English Literature",
+      "Romance Literatures"
+    ],
+    "example_titles": [
+      "The Time Machine",
+      "The Strange Case of Dr. Jekyll and Mr. Hyde",
+      "The Strange Case of Dr. Jekyll and Mr. Hyde",
+      "Terminal Compromise",
+      "Frankenstein; Or, The Modern Prometheus"
+    ]
+  },
+  {
+    "cluster_name": "Religion/Spirituality/Paranormal (Bible)",
+    "size": 675,
+    "top_keywords": [
+      "bible",
+      "paranormal bible",
+      "religion spirituality",
+      "spirituality paranormal",
+      "spirituality",
+      "paranormal",
+      "religion",
+      "ethics religion",
+      "philosophy ethics",
+      "ethics"
+    ],
+    "top_shelves": [
+      "Religion/Spirituality/Paranormal",
+      "Philosophy & Ethics",
+      "History - Religious",
+      "Judaism",
+      "Christianity"
+    ],
+    "top_subjects": [
+      "Bible -- Criticism, interpretation, etc.",
+      "Bible -- Study and teaching",
+      "Bible. John",
+      "Apocryphal books (New Testament)",
+      "Bible -- Prophecies"
+    ],
+    "top_locc": [
+      "The Bible",
+      "Doctrinal Theology",
+      "Practical Theology"
+    ],
+    "example_titles": [
+      "The King James Version of the Bible",
+      "The Book of Mormon",
+      "The Bible, King James Version, Complete",
+      "Deuterocanonical Books of the Bible\r\nApocrypha",
+      "An Open Letter on Translating"
+    ]
+  },
+  {
+    "cluster_name": "Poetry",
+    "size": 675,
+    "top_keywords": [
+      "poetry",
+      "poetry literature",
+      "literature poetry",
+      "poetry poetry",
+      "poetry english",
+      "literature",
+      "english poetry",
+      "poetry translations",
+      "english",
+      "humorous poetry"
+    ],
+    "top_shelves": [
+      "Poetry",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Humour",
+      "Religion/Spirituality/Paranormal"
+    ],
+    "top_subjects": [
+      "Poetry",
+      "English poetry",
+      "Humorous poetry",
+      "Poetry -- Collections",
+      "Omar Khayyam -- Parodies, imitations, etc."
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Literature, Drama & Journalism"
+    ],
+    "example_titles": [
+      "Paradise Lost",
+      "Paradise Lost",
+      "Paradise Regained",
+      "The Rime of the Ancient Mariner",
+      "The Rubaiyat of Omar Khayyam"
+    ]
+  },
+  {
+    "cluster_name": "Humour (Humor)",
+    "size": 669,
+    "top_keywords": [
+      "humor",
+      "humour",
+      "humour literature",
+      "wit humor",
+      "wit",
+      "humor humour",
+      "american wit",
+      "humorous",
+      "society humour",
+      "english wit"
+    ],
+    "top_shelves": [
+      "Humour",
+      "Literature",
+      "Fiction",
+      "Culture/Civilization/Society",
+      "Humor"
+    ],
+    "top_subjects": [
+      "American wit and humor",
+      "English wit and humor",
+      "Humorous stories",
+      "English wit and humor, Pictorial",
+      "Humorous stories, English"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Literature, Drama & Journalism"
+    ],
+    "example_titles": [
+      "Fantastic Fables",
+      "She Stoops to Conquer; Or, The Mistakes of a Night: A Comedy",
+      "Danny's Own Story",
+      "Essays and Lectures",
+      "The Idle Thoughts of an Idle Fellow"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Adventure)",
+    "size": 660,
+    "top_keywords": [
+      "society literature",
+      "adventure",
+      "fiction culture",
+      "culture civilization",
+      "civilization society",
+      "fiction adventure",
+      "society",
+      "civilization",
+      "culture",
+      "japan"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Science-Fiction & Fantasy",
+      "Travel & Geography"
+    ],
+    "top_subjects": [
+      "Adventure stories",
+      "Short stories",
+      "Fantasy fiction",
+      "Love stories",
+      "Fiction"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The Return of Tarzan",
+      "The Son of Tarzan",
+      "Tarzan and the Jewels of Opar",
+      "The prisoner of Zenda",
+      "Around the World in Eighty Days"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Man Woman)",
+    "size": 656,
+    "top_keywords": [
+      "man woman",
+      "woman relationships",
+      "woman",
+      "man",
+      "relationships fiction",
+      "relationships",
+      "studies literature",
+      "sexuality",
+      "fiction man",
+      "gender sexuality"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Gender & Sexuality Studies",
+      "Science-Fiction & Fantasy"
+    ],
+    "top_subjects": [
+      "Man-woman relationships -- Fiction",
+      "Love stories",
+      "Young women -- Fiction",
+      "Short stories",
+      "Marriage -- Fiction"
+    ],
+    "top_locc": [
+      "American Literature",
+      "English Literature",
+      "Romance Literatures"
+    ],
+    "example_titles": [
+      "Herland",
+      "Tess of the d'Urbervilles: A Pure Woman",
+      "Maria; Or, The Wrongs of Woman",
+      "Wild Justice",
+      "The Awakening, and Selected Short Stories"
+    ]
+  },
+  {
+    "cluster_name": "History - General (Travel)",
+    "size": 650,
+    "top_keywords": [
+      "travel",
+      "description travel",
+      "description",
+      "general travel",
+      "geography",
+      "travel geography",
+      "egypt",
+      "history general",
+      "general",
+      "ancient"
+    ],
+    "top_shelves": [
+      "History - General",
+      "Travel & Geography",
+      "Culture/Civilization/Society",
+      "History - European",
+      "History - Ancient"
+    ],
+    "top_subjects": [
+      "Middle East -- Description and travel",
+      "Egypt -- Description and travel",
+      "History, Ancient",
+      "Palestine -- Description and travel",
+      "Political statistics -- Handbooks, manuals, etc."
+    ],
+    "top_locc": [
+      "History of Asia",
+      "History of Africa",
+      "Geography, Anthropology & Recreation"
+    ],
+    "example_titles": [
+      "The 1990 CIA World Factbook",
+      "The 1991 CIA World Factbook",
+      "The 1992 CIA World Factbook",
+      "The 1993 CIA World Factbook",
+      "The 1994 CIA World Factbook"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Historical Fiction)",
+    "size": 644,
+    "top_keywords": [
+      "historical fiction",
+      "historical",
+      "fiction historical",
+      "fiction history",
+      "fiction great",
+      "britain history",
+      "british literature",
+      "history british",
+      "british",
+      "fiction"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "History - British",
+      "History - General",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "Historical fiction",
+      "Adventure stories",
+      "Biographical fiction",
+      "England -- Fiction",
+      "Knights and knighthood -- Fiction"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The Scarlet Pimpernel",
+      "Ivanhoe: A Romance",
+      "A Connecticut Yankee in King Arthur's Court",
+      "The Saga of Grettir the Strong: Grettir's Saga",
+      "A Dream of John Ball; and, A King's Lesson"
+    ]
+  },
+  {
+    "cluster_name": "History - European (European)",
+    "size": 637,
+    "top_keywords": [
+      "european",
+      "history european",
+      "italy",
+      "travel",
+      "description",
+      "description travel",
+      "european history",
+      "european travel",
+      "france",
+      "italy description"
+    ],
+    "top_shelves": [
+      "History - European",
+      "History - General",
+      "Travel & Geography",
+      "Culture/Civilization/Society",
+      "Politics"
+    ],
+    "top_subjects": [
+      "Europe -- Description and travel",
+      "Italy -- Description and travel",
+      "France -- Description and travel",
+      "Germany -- Description and travel",
+      "Paris (France) -- Description and travel"
+    ],
+    "top_locc": [
+      "History of Italy",
+      "World History",
+      "History of France"
+    ],
+    "example_titles": [
+      "The Zincali: An Account of the Gypsies of Spain",
+      "Pictures from Italy",
+      "The Treaty of the European Union, Maastricht Treaty, 7th February, 1992",
+      "History of the Decline and Fall of the Roman Empire — Volume 1",
+      "History of the Decline and Fall of the Roman Empire — Volume 2"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Literature Fiction)",
+    "size": 632,
+    "top_keywords": [
+      "literature fiction",
+      "fiction century",
+      "english fiction",
+      "century",
+      "society literature",
+      "women",
+      "fiction",
+      "fiction english",
+      "literature",
+      "fiction culture"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "History - American",
+      "Biographies"
+    ],
+    "top_subjects": [
+      "English fiction -- 19th century",
+      "Fiction",
+      "Short stories",
+      "American fiction -- 19th century",
+      "Love stories"
+    ],
+    "top_locc": [
+      "American Literature",
+      "English Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The Tragedy of Pudd'nhead Wilson",
+      "Clotelle; Or, The Colored Heroine, a tale of the Southern States; Or, The President's Daughter",
+      "Laddie: A True Blue Story",
+      "The Early Short Fiction of Edith Wharton — Part 1",
+      "The Early Short Fiction of Edith Wharton — Part 2"
+    ]
+  },
+  {
+    "cluster_name": "Encyclopedias/Dictionaries/Reference (Dictionaries)",
+    "size": 629,
+    "top_keywords": [
+      "dictionaries",
+      "encyclopedias dictionaries",
+      "encyclopedias",
+      "reference",
+      "dictionaries reference",
+      "catalogs",
+      "dictionaries encyclopedias",
+      "language",
+      "catalogs encyclopedias",
+      "reference encyclopedias"
+    ],
+    "top_shelves": [
+      "Encyclopedias/Dictionaries/Reference",
+      "Language & Communication",
+      "Other",
+      "Literature",
+      "Teaching & Education"
+    ],
+    "top_subjects": [
+      "Encyclopedias and dictionaries",
+      "Copyright -- United States -- Catalogs",
+      "Publishers' catalogs -- England -- London",
+      "AG",
+      "Periodicals"
+    ],
+    "top_locc": [
+      "Bibliography & Library Science",
+      "Encyclopedias",
+      "English Language"
+    ],
+    "example_titles": [
+      "Roget's Thesaurus",
+      "NorthWestNet User Services Internet Resource Guide (NUSIRG)",
+      "Workshop on Electronic Texts: Proceedings, 9-10 June 1992",
+      "Webster's Unabridged Dictionary (1st 100 Pages)",
+      "Webster's Unabridged Dictionary (2nd 100 Pages)"
+    ]
+  },
+  {
+    "cluster_name": "History - British (Great Britain)",
+    "size": 624,
+    "top_keywords": [
+      "great britain",
+      "britain",
+      "great",
+      "britain history",
+      "british history",
+      "history british",
+      "diaries",
+      "british",
+      "britain diaries",
+      "sources"
+    ],
+    "top_shelves": [
+      "History - British",
+      "History - General",
+      "Biographies",
+      "Culture/Civilization/Society",
+      "Literature"
+    ],
+    "top_subjects": [
+      "Great Britain -- History -- Charles II, 1660-1685 -- Sources",
+      "Diarists -- Great Britain -- Diaries",
+      "Cabinet officers -- Great Britain -- Diaries",
+      "Pepys, Samuel, 1633-1703 -- Diaries",
+      "Great Britain -- Social life and customs -- 17th century -- Sources"
+    ],
+    "top_locc": [
+      "History of Great Britain",
+      "English Literature",
+      "History of the Americas"
+    ],
+    "example_titles": [
+      "A Child's History of England",
+      "William the Conqueror",
+      "King John",
+      "The History of England, from the Accession of James II — Volume 1",
+      "King John"
+    ]
+  },
+  {
+    "cluster_name": "Health & Medicine",
+    "size": 619,
+    "top_keywords": [
+      "medicine",
+      "health",
+      "health medicine",
+      "medicine history",
+      "medicine science",
+      "hygiene",
+      "pharmacology",
+      "drugs",
+      "alcohol",
+      "medicine health"
+    ],
+    "top_shelves": [
+      "Health & Medicine",
+      "Science - General",
+      "History - General",
+      "Drugs/Alcohol/Pharmacology",
+      "Medicine"
+    ],
+    "top_subjects": [
+      "Hygiene",
+      "Medicine",
+      "Physiology",
+      "Medicine -- Periodicals",
+      "Veterinary medicine"
+    ],
+    "top_locc": [
+      "Internal Medicine",
+      "Medicine",
+      "Public Health"
+    ],
+    "example_titles": [
+      "Round the Red Lamp: Being Facts and Fancies of Medical Life",
+      "Miracle Mongers and Their Methods\r\nA Complete Exposé of the Modus Operandi of Fire Eaters, Heat Resisters, Poison Eaters, Venomous Reptile Defiers, Sword Swallowers, Human Ostriches, Strong Men, Etc.",
+      "Religio Medici, Hydriotaphia, and the Letter to a Friend",
+      "Anomalies and Curiosities of Medicine",
+      "The Evolution of Modern Medicine\r\nA Series of Lectures Delivered at Yale University on the Silliman Foundation in April, 1913"
+    ]
+  },
+  {
+    "cluster_name": "Science-Fiction & Fantasy (Science Fiction)",
+    "size": 608,
+    "top_keywords": [
+      "science fiction",
+      "science",
+      "fiction fantasy",
+      "fantasy",
+      "fiction science",
+      "fantasy science",
+      "literature science",
+      "fantasy fiction",
+      "fiction literature",
+      "fiction"
+    ],
+    "top_shelves": [
+      "Science-Fiction & Fantasy",
+      "Literature",
+      "Fiction",
+      "Science Fiction",
+      "Astounding Stories"
+    ],
+    "top_subjects": [
+      "Science fiction",
+      "Fantasy fiction",
+      "Adventure stories",
+      "Time travel -- Fiction",
+      "Science fiction, American"
+    ],
+    "top_locc": [
+      "American Literature",
+      "English Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The Monster Men",
+      "Flatland: A Romance of Many Dimensions",
+      "The Poison Belt",
+      "The Well at the World's End: A Tale",
+      "Flatland: A Romance of Many Dimensions"
+    ]
+  },
+  {
+    "cluster_name": "Humour",
+    "size": 599,
+    "top_keywords": [
+      "humor periodicals",
+      "english wit",
+      "punch",
+      "periodicals punch",
+      "wit",
+      "wit humor",
+      "punch humour",
+      "humor",
+      "humour",
+      "literature english"
+    ],
+    "top_shelves": [
+      "Humour",
+      "Punch",
+      "Literature",
+      "Journalism/Media/Writing",
+      "Encyclopedias/Dictionaries/Reference"
+    ],
+    "top_subjects": [
+      "English wit and humor -- Periodicals",
+      "American wit and humor -- Periodicals",
+      "Great Britain -- History -- Victoria, 1837-1901 -- Humor",
+      "William II, German Emperor, 1859-1941 -- Caricatures and cartoons",
+      "English wit and humor"
+    ],
+    "top_locc": [
+      "Periodicals",
+      "History of Great Britain",
+      "Literature, Drama & Journalism"
+    ],
+    "example_titles": [
+      "Punch, or the London Charivari, Volume 153, July 4, 1917",
+      "Punchinello, Volume 1, No. 02, April 9, 1870",
+      "Punchinello, Volume 1, No. 10, June 4, 1870",
+      "Punchinello, Volume 1, No. 11, June 11, 1870",
+      "Punchinello, Volume 1, No. 03, April 16, 1870"
+    ]
+  },
+  {
+    "cluster_name": "Nature/Gardening/Animals (Animals)",
+    "size": 598,
+    "top_keywords": [
+      "animals",
+      "animals science",
+      "nature gardening",
+      "gardening animals",
+      "nature",
+      "gardening",
+      "animal",
+      "animals wild",
+      "wild",
+      "mammals"
+    ],
+    "top_shelves": [
+      "Nature/Gardening/Animals",
+      "Science - General",
+      "Science - Genetics/Biology/Evolution",
+      "Animal",
+      "Animals-Wild-Mammals"
+    ],
+    "top_subjects": [
+      "Insects",
+      "Animal behavior",
+      "Bats",
+      "Mice",
+      "Animals"
+    ],
+    "top_locc": [
+      "Zoology",
+      "Natural History & Biology",
+      "Animal Culture"
+    ],
+    "example_titles": [
+      "The Compleat Angler",
+      "A Preliminary Revision of the North American Species of Cactus, Anhalonium, and Lophophora",
+      "The Life of the Spider",
+      "The Movements and Habits of Climbing Plants",
+      "The Mason-Bees"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Poetry)",
+    "size": 595,
+    "top_keywords": [
+      "poetry",
+      "american poetry",
+      "poetry american",
+      "literature poetry",
+      "poetry century",
+      "poetry literature",
+      "american",
+      "canadian poetry",
+      "century literature",
+      "poetry canadian"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Poetry",
+      "Culture/Civilization/Society",
+      "History - American",
+      "Fiction"
+    ],
+    "top_subjects": [
+      "American poetry",
+      "American poetry -- 20th century",
+      "American poetry -- 19th century",
+      "Canadian poetry",
+      "Poetry"
+    ],
+    "top_locc": [
+      "American Literature",
+      "English Literature",
+      "Literature, Drama & Journalism"
+    ],
+    "example_titles": [
+      "Renascence, and Other Poems",
+      "The Spell of the Yukon and Other Verses",
+      "The Man from Snowy River",
+      "In the Days When the World Was Wide, and Other Verses",
+      "Poems by Adam Lindsay Gordon"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Paranormal Fiction)",
+    "size": 588,
+    "top_keywords": [
+      "paranormal fiction",
+      "literature religion",
+      "paranormal",
+      "fiction christian",
+      "christian",
+      "spirituality paranormal",
+      "religion spirituality",
+      "spirituality",
+      "religion",
+      "christian fiction"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Religion/Spirituality/Paranormal",
+      "Culture/Civilization/Society",
+      "Science-Fiction & Fantasy"
+    ],
+    "top_subjects": [
+      "Christian fiction",
+      "Paranormal fiction",
+      "Short stories",
+      "Horror tales",
+      "Religious fiction"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The House of the Seven Gables",
+      "The Pilgrim's Progress from this world to that which is to come\r\nDelivered under the similitude of a dream, by John Bunyan",
+      "The Damnation of Theron Ware",
+      "The Picture of Dorian Gray",
+      "The Turn of the Screw"
+    ]
+  },
+  {
+    "cluster_name": "History - American (Civil War)",
+    "size": 585,
+    "top_keywords": [
+      "civil war",
+      "civil",
+      "history civil",
+      "states history",
+      "war",
+      "states",
+      "united states",
+      "united",
+      "history american",
+      "confederate"
+    ],
+    "top_shelves": [
+      "History - American",
+      "History - Warfare",
+      "US Civil War",
+      "Biographies",
+      "Fiction"
+    ],
+    "top_subjects": [
+      "United States -- History -- Civil War, 1861-1865 -- Personal narratives",
+      "United States -- History -- Civil War, 1861-1865 -- Fiction",
+      "United States -- History -- Civil War, 1861-1865 -- Personal narratives, Confederate",
+      "United States -- History -- Civil War, 1861-1865 -- Campaigns",
+      "Lincoln, Abraham, 1809-1865"
+    ],
+    "top_locc": [
+      "History of the Americas",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "Lincoln's Gettysburg Address\r\nGiven November 19, 1863 on the battlefield near Gettysburg, Pennsylvania, USA",
+      "The Red Badge of Courage: An Episode of the American Civil War",
+      "An Occurrence at Owl Creek Bridge",
+      "The Red Badge of Courage: An Episode of the American Civil War",
+      "Poems of Henry Timrod; with Memoir"
+    ]
+  },
+  {
+    "cluster_name": "Philosophy & Ethics",
+    "size": 578,
+    "top_keywords": [
+      "psychology",
+      "psychiatry",
+      "psychiatry psychology",
+      "philosophy",
+      "ethics",
+      "philosophy ethics",
+      "ethics psychiatry",
+      "philosophy philosophy",
+      "psychology religion",
+      "ethics philosophy"
+    ],
+    "top_shelves": [
+      "Philosophy & Ethics",
+      "Psychiatry/Psychology",
+      "Religion/Spirituality/Paranormal",
+      "Health & Medicine",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "Conduct of life",
+      "Ethics",
+      "Philosophy",
+      "Etiquette",
+      "Logic"
+    ],
+    "top_locc": [
+      "Philosophy, Psychology & Religion",
+      "Ethics",
+      "Psychology"
+    ],
+    "example_titles": [
+      "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
+      "The Second Story of Meno\r\nA Continuation of Socrates' Dialogue with Meno in Which the Boy Proves Root 2 is Irrational",
+      "Acres of Diamonds: Our Every-day Opportunities",
+      "The Psychology of Revolution",
+      "The University of Hard Knocks"
+    ]
+  },
+  {
+    "cluster_name": "Culture/Civilization/Society (Indians)",
+    "size": 541,
+    "top_keywords": [
+      "indians",
+      "america",
+      "north america",
+      "indians north",
+      "north",
+      "society history",
+      "history american",
+      "america culture",
+      "native america",
+      "native"
+    ],
+    "top_shelves": [
+      "Culture/Civilization/Society",
+      "History - American",
+      "Fiction",
+      "Native America",
+      "History - General"
+    ],
+    "top_subjects": [
+      "Indians of North America",
+      "Indians of North America -- Folklore",
+      "Indians of North America -- Fiction",
+      "Western stories",
+      "Indians of North America -- Juvenile fiction"
+    ],
+    "top_locc": [
+      "History of the Americas",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The Song of Hiawatha",
+      "Indian Heroes and Great Chieftains",
+      "Indian Boyhood",
+      "Old Indian Legends",
+      "Old Indian Days"
+    ]
+  },
+  {
+    "cluster_name": "Science - Earth/Agricultural/Farming",
+    "size": 537,
+    "top_keywords": [
+      "agricultural",
+      "farming",
+      "earth agricultural",
+      "science earth",
+      "agricultural farming",
+      "earth",
+      "gardening",
+      "gardening animals",
+      "nature gardening",
+      "nature"
+    ],
+    "top_shelves": [
+      "Science - Earth/Agricultural/Farming",
+      "Nature/Gardening/Animals",
+      "Science - General",
+      "Cooking & Drinking",
+      "Encyclopedias/Dictionaries/Reference"
+    ],
+    "top_subjects": [
+      "Bees",
+      "Bee culture",
+      "Agriculture",
+      "Gardening",
+      "Northern Nut Growers Association -- Periodicals"
+    ],
+    "top_locc": [
+      "Plant Culture",
+      "Botany",
+      "Agriculture"
+    ],
+    "example_titles": [
+      "My Garden Acquaintance",
+      "The Formation of Vegetable Mould Through the Action of Worms\r\nWith Observations on Their Habits",
+      "The Variation of Animals and Plants under Domestication — Volume 1",
+      "The Variation of Animals and Plants under Domestication — Volume 2",
+      "Coral and Coral Reefs"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Fiction World)",
+    "size": 535,
+    "top_keywords": [
+      "fiction world",
+      "world war",
+      "world",
+      "war",
+      "history warfare",
+      "warfare",
+      "warfare literature",
+      "war fiction",
+      "warfare fiction",
+      "fiction history"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "History - Warfare",
+      "Literature",
+      "Children & Young Adult Reading",
+      "History - General"
+    ],
+    "top_subjects": [
+      "World War, 1914-1918 -- Fiction",
+      "War stories",
+      "World War, 1914-1918 -- Juvenile fiction",
+      "Soldiers -- Fiction",
+      "Short stories"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The Art of War",
+      "Soldiers of Fortune",
+      "Greenmantle",
+      "Mr. Standfast",
+      "Trooper Peter Halket of Mashonaland"
+    ]
+  },
+  {
+    "cluster_name": "History - Warfare (Warfare)",
+    "size": 535,
+    "top_keywords": [
+      "warfare",
+      "history warfare",
+      "war",
+      "civil war",
+      "civil",
+      "history civil",
+      "american history",
+      "united states",
+      "states",
+      "warfare united"
+    ],
+    "top_shelves": [
+      "History - Warfare",
+      "History - American",
+      "History - General",
+      "US Civil War",
+      "Boer War"
+    ],
+    "top_subjects": [
+      "United States -- History -- Civil War, 1861-1865 -- Regimental histories",
+      "United States -- History -- Civil War, 1861-1865 -- Personal narratives",
+      "South African War, 1899-1902",
+      "United States -- History -- Civil War, 1861-1865 -- Campaigns",
+      "United States -- History -- Civil War, 1861-1865"
+    ],
+    "top_locc": [
+      "History of the Americas",
+      "History of Africa",
+      "Military Science"
+    ],
+    "example_titles": [
+      "Worldwide Effects of Nuclear War: Some Perspectives",
+      "The Atomic Bombings of Hiroshima and Nagasaki",
+      "Henry Ossian Flipper, the Colored Cadet at West Point\r\nAutobiography of Lieut. Henry Ossian Flipper, U.S.A., First Graduate of Color from the U.S. Military Academy",
+      "The Armies of Labor: A Chronicle of the Organized Wage-Earners",
+      "Notes of a War Correspondent"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (New York)",
+    "size": 533,
+    "top_keywords": [
+      "new york",
+      "york",
+      "new",
+      "fiction new",
+      "york fiction",
+      "york state",
+      "state",
+      "fiction culture",
+      "society literature",
+      "york social"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "History - American",
+      "Bestsellers, American, 1895-1923"
+    ],
+    "top_subjects": [
+      "New York (N.Y.) -- Fiction",
+      "Short stories",
+      "New York (N.Y.) -- Social life and customs -- Fiction",
+      "Love stories",
+      "Man-woman relationships -- Fiction"
+    ],
+    "top_locc": [
+      "American Literature",
+      "English Literature",
+      "History of the Americas"
+    ],
+    "example_titles": [
+      "The Legend of Sleepy Hollow",
+      "An International Episode",
+      "The House of Mirth",
+      "The Market-Place",
+      "Bunner Sisters"
+    ]
+  },
+  {
+    "cluster_name": "Travel & Geography (England Description)",
+    "size": 513,
+    "top_keywords": [
+      "england description",
+      "england",
+      "travel",
+      "description",
+      "description travel",
+      "travel geography",
+      "geography",
+      "european travel",
+      "london",
+      "travel history"
+    ],
+    "top_shelves": [
+      "Travel & Geography",
+      "History - General",
+      "History - European",
+      "History - British",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "England -- Description and travel",
+      "London (England) -- Description and travel",
+      "England -- Social life and customs",
+      "Great Britain -- Description and travel",
+      "London (England) -- Social life and customs"
+    ],
+    "top_locc": [
+      "History of Great Britain",
+      "English Literature",
+      "History of France"
+    ],
+    "example_titles": [
+      "Wild Wales: Its People, Language and Scenery",
+      "The Uncommercial Traveller",
+      "Tour through the Eastern Counties of England, 1722",
+      "The Description of Wales",
+      "The Itinerary of Archbishop Baldwin Through Wales"
+    ]
+  },
+  {
+    "cluster_name": "Science - General (Physics)",
+    "size": 507,
+    "top_keywords": [
+      "physics",
+      "astronomy",
+      "science general",
+      "physics science",
+      "mathematics",
+      "science",
+      "astronomy science",
+      "science astronomy",
+      "chemistry",
+      "mathematics science"
+    ],
+    "top_shelves": [
+      "Science - General",
+      "Science - Astronomy",
+      "Mathematics",
+      "Science - Physics",
+      "History - General"
+    ],
+    "top_subjects": [
+      "Astronomy",
+      "Science",
+      "Relativity (Physics)",
+      "Mathematics",
+      "Physics"
+    ],
+    "top_locc": [
+      "Physics",
+      "Astronomy",
+      "Mathematics & Computing"
+    ],
+    "example_titles": [
+      "The Number \"e\"",
+      "The 32nd Mersenne Prime\nPredicted by Mersenne",
+      "A List of Factorial Math Constants",
+      "The Fibonacci Number Series",
+      "The Golden Mean or Ratio[(1+sqrt(5))/2]\r\nTo 20,000 places"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Italy)",
+    "size": 504,
+    "top_keywords": [
+      "italy",
+      "italy fiction",
+      "fiction culture",
+      "society literature",
+      "fiction italy",
+      "literature fiction",
+      "civilization society",
+      "culture civilization",
+      "society",
+      "culture"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Travel & Geography",
+      "History - General"
+    ],
+    "top_subjects": [
+      "Love stories",
+      "Italy -- Fiction",
+      "Man-woman relationships -- Fiction",
+      "Historical fiction",
+      "Short stories"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Romance Literatures"
+    ],
+    "example_titles": [
+      "Violists",
+      "The Aspern Papers",
+      "The Moon and Sixpence",
+      "The Love Affairs of a Bibliomaniac",
+      "Lavengro: The Scholar, the Gypsy, the Priest"
+    ]
+  },
+  {
+    "cluster_name": "Children & Young Adult Reading (Juvenile)",
+    "size": 497,
+    "top_keywords": [
+      "juvenile fiction",
+      "juvenile",
+      "adult reading",
+      "children young",
+      "young adult",
+      "adult",
+      "reading",
+      "young",
+      "fiction children",
+      "aeronautics juvenile"
+    ],
+    "top_shelves": [
+      "Children & Young Adult Reading",
+      "Fiction",
+      "History - Warfare",
+      "Children's Book Series",
+      "History - American"
+    ],
+    "top_subjects": [
+      "Aeronautics -- Juvenile fiction",
+      "Adventure stories",
+      "Mystery and detective stories",
+      "World War, 1914-1918 -- Juvenile fiction",
+      "Adventure and adventurers -- Juvenile fiction"
+    ],
+    "top_locc": [
+      "Fiction & Juvenile Literature",
+      "American Literature",
+      "English Literature"
+    ],
+    "example_titles": [
+      "Tom Swift and His Electric Runabout; Or, The Speediest Car on the Road",
+      "Tom Swift and His Sky Racer; Or, The Quickest Flight on Record",
+      "Tom Swift and His Air Glider; Or, Seeking the Platinum Treasure",
+      "Tom Swift and His War Tank; Or, Doing His Bit for Uncle Sam",
+      "Tom Swift and His Aerial Warship; Or, The Naval Terror of the Seas"
+    ]
+  },
+  {
+    "cluster_name": "Culture/Civilization/Society (Folklore)",
+    "size": 492,
+    "top_keywords": [
+      "folklore",
+      "tales",
+      "fairy tales",
+      "fairy",
+      "arab countries",
+      "arab",
+      "countries",
+      "mythology",
+      "tales arab",
+      "civilization society"
+    ],
+    "top_shelves": [
+      "Culture/Civilization/Society",
+      "Literature",
+      "Children & Young Adult Reading",
+      "Travel & Geography",
+      "Religion/Spirituality/Paranormal"
+    ],
+    "top_subjects": [
+      "Fairy tales",
+      "Tales -- Arab countries",
+      "Folklore -- Arab countries",
+      "Folklore",
+      "Fairy tales -- Arab countries"
+    ],
+    "top_locc": [
+      "Folklore",
+      "Fiction & Juvenile Literature",
+      "Oriental Languages"
+    ],
+    "example_titles": [
+      "Aesop's Fables\r\nTranslated by George Fyler Townsend",
+      "The Fables of Aesop\r\nSelected, Told Anew, and Their History Traced",
+      "Aladdin and the Magic Lamp",
+      "The Arabian Nights Entertainments",
+      "The Chinese Boy and Girl"
+    ]
+  },
+  {
+    "cluster_name": "History - American",
+    "size": 489,
+    "top_keywords": [
+      "american literature",
+      "american",
+      "history american",
+      "american essays",
+      "essays",
+      "history revolution",
+      "states",
+      "revolution",
+      "united states",
+      "united"
+    ],
+    "top_shelves": [
+      "History - American",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Fiction",
+      "Biographies"
+    ],
+    "top_subjects": [
+      "American essays",
+      "American essays -- 20th century",
+      "United States -- History -- Revolution, 1775-1783 -- Fiction",
+      "Autographs -- United States -- Facsimiles",
+      "United States -- History -- Revolution, 1775-1783 -- Sources"
+    ],
+    "top_locc": [
+      "American Literature",
+      "History of the Americas",
+      "English Literature"
+    ],
+    "example_titles": [
+      "What Is Man? and Other Essays",
+      "The Ways of Men",
+      "The Story of a Pioneer",
+      "Worldly Ways & Byways",
+      "The Essays or Counsels, Civil and Moral"
+    ]
+  },
+  {
+    "cluster_name": "Fiction",
+    "size": 484,
+    "top_keywords": [
+      "france",
+      "france fiction",
+      "fiction france",
+      "paris",
+      "paris france",
+      "fiction paris",
+      "fiction culture",
+      "france social",
+      "literature fiction",
+      "fiction"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "History - General",
+      "History - European"
+    ],
+    "top_subjects": [
+      "Paris (France) -- Fiction",
+      "Historical fiction",
+      "French fiction -- Translations into English",
+      "Love stories",
+      "Man-woman relationships -- Fiction"
+    ],
+    "top_locc": [
+      "Romance Literatures",
+      "English Literature",
+      "American Literature"
+    ],
+    "example_titles": [
+      "The Song of the Lark",
+      "A Tale of Two Cities",
+      "Les Misérables",
+      "The Phantom of the Opera",
+      "Roderick Hudson"
+    ]
+  },
+  {
+    "cluster_name": "Children & Young Adult Reading (Children Periodicals)",
+    "size": 481,
+    "top_keywords": [
+      "children periodicals",
+      "reference children",
+      "reading encyclopedias",
+      "children",
+      "periodicals",
+      "periodicals american",
+      "periodicals children",
+      "young",
+      "literature periodicals",
+      "children literature"
+    ],
+    "top_shelves": [
+      "Children & Young Adult Reading",
+      "Encyclopedias/Dictionaries/Reference",
+      "Harper's Young People",
+      "The Great Round World And What Is Going On In It",
+      "History - General"
+    ],
+    "top_subjects": [
+      "Children's periodicals, American",
+      "Children's literature -- Periodicals",
+      "Children's periodicals",
+      "History, Modern -- 19th century -- Juvenile literature -- Periodicals",
+      "Children's literature, American -- Periodicals"
+    ],
+    "top_locc": [
+      "Periodicals",
+      "Fiction & Juvenile Literature",
+      "World History"
+    ],
+    "example_titles": [
+      "Dew Drops, Vol. 37, No. 18, May 3, 1914",
+      "The Nursery, Volume 17, No. 100, April, 1875\r\nA Monthly Magazine for Youngest Readers",
+      "The Nursery, Volume 17, No. 101, May, 1875\r\nA Monthly Magazine for Youngest Readers",
+      "The Nursery, No. 165. September, 1880, Vol. 28\nA Monthly Magazine For Youngest Readers",
+      "The Great Round World and What Is Going On In It, Vol. 1, No. 15, February 18, 1897\nA Weekly Magazine for Boys and Girls"
+    ]
+  },
+  {
+    "cluster_name": "History - General (France)",
+    "size": 479,
+    "top_keywords": [
+      "france",
+      "france history",
+      "louis",
+      "history european",
+      "european",
+      "france court",
+      "court courtiers",
+      "king france",
+      "history louis",
+      "court"
+    ],
+    "top_shelves": [
+      "History - General",
+      "History - European",
+      "Literature",
+      "Fiction",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "France -- Court and courtiers",
+      "Historical fiction",
+      "France -- History -- Louis XIV, 1643-1715",
+      "Quotations, French -- Translations into English",
+      "France -- History -- Revolution, 1789-1799 -- Fiction"
+    ],
+    "top_locc": [
+      "History of France",
+      "Romance Literatures",
+      "English Literature"
+    ],
+    "example_titles": [
+      "Manon Lescaut",
+      "Captain Fracasse",
+      "Father Goriot",
+      "Cyrano de Bergerac",
+      "Ten Years Later"
+    ]
+  },
+  {
+    "cluster_name": "Biographies (Biographies)",
+    "size": 479,
+    "top_keywords": [
+      "biographies",
+      "biography",
+      "photography biographies",
+      "biographies history",
+      "casanova",
+      "casanova giacomo",
+      "giacomo",
+      "history european",
+      "european",
+      "biography biographies"
+    ],
+    "top_shelves": [
+      "Biographies",
+      "History - General",
+      "Literature",
+      "History - European",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "Casanova, Giacomo, 1725-1798",
+      "Europe -- History -- 18th century -- Biography",
+      "Biography",
+      "Chautauqua Literary and Scientific Circle -- Periodicals",
+      "Chautauqua Institution -- Periodicals"
+    ],
+    "top_locc": [
+      "World History",
+      "English Literature",
+      "Romance Literatures"
+    ],
+    "example_titles": [
+      "The Complete Works of Brann, the Iconoclast — Volume 01",
+      "The Complete Works of Brann, the Iconoclast — Volume 10",
+      "The Complete Works of Brann, the Iconoclast — Volume 12",
+      "The Story of Burnt Njal: The Great Icelandic Tribune, Jurist, and Counsellor",
+      "Jasmin: Barber, Poet, Philanthropist"
+    ]
+  },
+  {
+    "cluster_name": "Teaching & Education",
+    "size": 475,
+    "top_keywords": [
+      "education",
+      "teaching",
+      "teaching education",
+      "language",
+      "communication",
+      "language communication",
+      "communication teaching",
+      "english language",
+      "education education",
+      "education english"
+    ],
+    "top_shelves": [
+      "Teaching & Education",
+      "Language & Communication",
+      "Literature",
+      "History - Schools & Universities",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "Education",
+      "LF",
+      "Teaching",
+      "English language -- Grammar",
+      "Oratory"
+    ],
+    "top_locc": [
+      "Theory & Practice of Education",
+      "English Language",
+      "Literature, Drama & Journalism"
+    ],
+    "example_titles": [
+      "Democracy and Education: An Introduction to the Philosophy of Education",
+      "The Education of the Child",
+      "Essays",
+      "The Scholemaster",
+      "The Story of Wellesley"
+    ]
+  },
+  {
+    "cluster_name": "History - British",
+    "size": 470,
+    "top_keywords": [
+      "great britain",
+      "britain",
+      "great",
+      "history british",
+      "british",
+      "law",
+      "london",
+      "british law",
+      "england london",
+      "england"
+    ],
+    "top_shelves": [
+      "History - British",
+      "Culture/Civilization/Society",
+      "History - General",
+      "Politics",
+      "Sociology"
+    ],
+    "top_subjects": [
+      "Working class -- Great Britain",
+      "Social problems",
+      "Poor -- England -- London",
+      "Criminals -- Great Britain",
+      "Great Britain -- Social conditions -- 19th century"
+    ],
+    "top_locc": [
+      "History of Great Britain",
+      "Social Welfare & Criminology",
+      "Law of the United Kingdom"
+    ],
+    "example_titles": [
+      "A Journal of the Plague Year\r\nBeing Observations or Memorials of the Most Remarkable Occurrences, as Well Public as Private, Which Happened in London During the Last Great Visitation in 1665. Written by a Citizen Who Continued All the While in London",
+      "In Darkest England, and the Way Out",
+      "Heroes of the Telegraph",
+      "Cymbeline",
+      "Latter-Day Pamphlets"
+    ]
+  },
+  {
+    "cluster_name": "History - American (Slavery)",
+    "size": 465,
+    "top_keywords": [
+      "slavery",
+      "african",
+      "african americans",
+      "americans",
+      "slavery united",
+      "enslaved",
+      "enslaved persons",
+      "persons",
+      "states",
+      "history american"
+    ],
+    "top_shelves": [
+      "History - American",
+      "Culture/Civilization/Society",
+      "Politics",
+      "Biographies",
+      "Slavery"
+    ],
+    "top_subjects": [
+      "Slavery -- United States",
+      "African Americans",
+      "United States -- Race relations",
+      "African Americans -- Biography",
+      "Speeches, addresses, etc., American"
+    ],
+    "top_locc": [
+      "History of the Americas",
+      "Communities & Social Classes",
+      "American Literature"
+    ],
+    "example_titles": [
+      "Narrative of the Life of Frederick Douglass, an American Slave",
+      "The Black Experience in America",
+      "Collected Articles of Frederick Douglass",
+      "My Bondage and My Freedom",
+      "The Martin Luther King, Jr. Day, 1995, Memorial Issue"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Medieval)",
+    "size": 462,
+    "top_keywords": [
+      "medieval",
+      "ages",
+      "middle ages",
+      "middle",
+      "history medieval",
+      "medieval middle",
+      "shakespeare",
+      "shakespeare william",
+      "william",
+      "history"
+    ],
+    "top_shelves": [
+      "Literature",
+      "History - Medieval/The Middle Ages",
+      "History - General",
+      "History - British",
+      "Culture/Civilization/Society"
+    ],
+    "top_subjects": [
+      "Historical drama",
+      "Great Britain -- Kings and rulers -- Drama",
+      "Europe -- History -- 476-1492 -- Sources",
+      "France -- History -- House of Valois, 1328-1589",
+      "Hundred Years' War, 1339-1453"
+    ],
+    "top_locc": [
+      "English Literature",
+      "History of Great Britain",
+      "World History"
+    ],
+    "example_titles": [
+      "The Life and Death of Cormac the Skald",
+      "Jerusalem Delivered",
+      "Tales from Shakespeare",
+      "Codex Junius 11",
+      "The Anglo-Saxon Chronicle"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Greek)",
+    "size": 445,
+    "top_keywords": [
+      "greek",
+      "greece",
+      "classical",
+      "ancient",
+      "history ancient",
+      "mythological",
+      "mythological character",
+      "translations",
+      "translations english",
+      "mythology"
+    ],
+    "top_shelves": [
+      "Literature",
+      "History - General",
+      "Culture/Civilization/Society",
+      "History - Ancient",
+      "Philosophy & Ethics"
+    ],
+    "top_subjects": [
+      "Classical literature",
+      "Socrates, 470 BC-399 BC",
+      "Philosophy, Ancient",
+      "Epic poetry, Greek -- Translations into English",
+      "Literature -- Collections"
+    ],
+    "top_locc": [
+      "Classical Languages & Literature",
+      "English Literature",
+      "Philosophy, Psychology & Religion"
+    ],
+    "example_titles": [
+      "Plays of Sophocles: Oedipus the King; Oedipus at Colonus; Antigone",
+      "The Aeneid",
+      "The Bucolics and Eclogues",
+      "Troilus and Criseyde",
+      "Hesiod, the Homeric Hymns, and Homerica"
+    ]
+  },
+  {
+    "cluster_name": "Gender & Sexuality Studies",
+    "size": 443,
+    "top_keywords": [
+      "sexuality",
+      "sexuality studies",
+      "gender sexuality",
+      "gender",
+      "women",
+      "studies",
+      "society gender",
+      "sociology",
+      "studies history",
+      "sex"
+    ],
+    "top_shelves": [
+      "Gender & Sexuality Studies",
+      "Culture/Civilization/Society",
+      "Sociology",
+      "Politics",
+      "History - General"
+    ],
+    "top_subjects": [
+      "Women -- Social and moral questions",
+      "Marriage",
+      "Sex",
+      "Sexual ethics",
+      "Women -- Social conditions"
+    ],
+    "top_locc": [
+      "Family, Marriage & Gender",
+      "Industry, Land & Labor",
+      "American Literature"
+    ],
+    "example_titles": [
+      "She Stands Accused",
+      "Treatise on Parents and Children",
+      "In Defense of Women",
+      "Woman and Labour",
+      "Female Suffrage: A Letter to the Christian Women of America"
+    ]
+  },
+  {
+    "cluster_name": "Nature/Gardening/Animals",
+    "size": 425,
+    "top_keywords": [
+      "birds",
+      "animals",
+      "nature",
+      "nature gardening",
+      "gardening animals",
+      "animals science",
+      "gardening",
+      "science general",
+      "general birds",
+      "natural history"
+    ],
+    "top_shelves": [
+      "Nature/Gardening/Animals",
+      "Science - General",
+      "Animals-Wild-Birds",
+      "Animal",
+      "Children & Young Adult Reading"
+    ],
+    "top_subjects": [
+      "Birds -- Periodicals",
+      "Natural history -- Periodicals",
+      "Birds",
+      "Natural history -- Outdoor books",
+      "Animals -- Anecdotes"
+    ],
+    "top_locc": [
+      "Zoology",
+      "Natural History & Biology",
+      "Animal Culture"
+    ],
+    "example_titles": [
+      "The Pageant of Summer",
+      "The Song of the Cardinal",
+      "Walking",
+      "How to Tell the Birds from the Flowers: A Manual of Flornithology for Beginners",
+      "Bird Neighbors\r\nAn Introductory Acquaintance with One Hundred and Fifty Birds Commonly Found in the Gardens, Meadows, and Woods About Our Homes"
+    ]
+  },
+  {
+    "cluster_name": "Sports/Hobbies/Motoring",
+    "size": 423,
+    "top_keywords": [
+      "sports",
+      "hobbies",
+      "motoring",
+      "sports hobbies",
+      "hobbies motoring",
+      "patterns",
+      "motoring travel",
+      "knitting",
+      "animals sports",
+      "society sports"
+    ],
+    "top_shelves": [
+      "Sports/Hobbies/Motoring",
+      "Travel & Geography",
+      "Culture/Civilization/Society",
+      "How To...",
+      "Other"
+    ],
+    "top_subjects": [
+      "Knitting -- Patterns",
+      "Crocheting -- Patterns",
+      "Horsemanship",
+      "Amusements",
+      "Games"
+    ],
+    "top_locc": [
+      "Recreation & Sports",
+      "Handicrafts & Crafts",
+      "Animal Culture"
+    ],
+    "example_titles": [
+      "Fisherman's Luck and Some Other Uncertain Things",
+      "On Horsemanship",
+      "The Sportsman: On Hunting, a Sportsman's Manual, Commonly Called Cynegeticus",
+      "The Art of Lawn Tennis",
+      "Angling Sketches"
+    ]
+  },
+  {
+    "cluster_name": "History - American (National)",
+    "size": 414,
+    "top_keywords": [
+      "national",
+      "park",
+      "national park",
+      "antiquities",
+      "earth agricultural",
+      "agricultural farming",
+      "science earth",
+      "farming",
+      "geology",
+      "agricultural"
+    ],
+    "top_shelves": [
+      "History - American",
+      "Travel & Geography",
+      "Science - Earth/Agricultural/Farming",
+      "Science - General",
+      "History - General"
+    ],
+    "top_subjects": [
+      "Geology",
+      "Yellowstone National Park",
+      "Pueblo Indians -- Antiquities",
+      "Volcanoes",
+      "Paleontology"
+    ],
+    "top_locc": [
+      "History of the Americas",
+      "Geology",
+      "Natural History & Biology"
+    ],
+    "example_titles": [
+      "Photos and Maps of Trinity (Atomic Test) Site",
+      "The Grand Canyon of Arizona: How to See It",
+      "Coral Reefs",
+      "Geological Observations on South America",
+      "Getting Gold: A Practical Treatise for Prospectors, Miners and Students"
+    ]
+  },
+  {
+    "cluster_name": "Children & Young Adult Reading (Poetry Children)",
+    "size": 403,
+    "top_keywords": [
+      "poetry children",
+      "poetry",
+      "juvenile poetry",
+      "children poetry",
+      "reading poetry",
+      "children",
+      "rhymes",
+      "nursery rhymes",
+      "picture books",
+      "picture"
+    ],
+    "top_shelves": [
+      "Children & Young Adult Reading",
+      "Poetry",
+      "Literature",
+      "Children's Picture Books",
+      "Humour"
+    ],
+    "top_subjects": [
+      "Children's poetry",
+      "Nursery rhymes",
+      "Children's poetry, English",
+      "Picture books for children",
+      "Children's stories"
+    ],
+    "top_locc": [
+      "Fiction & Juvenile Literature",
+      "English Literature",
+      "American Literature"
+    ],
+    "example_titles": [
+      "A Child's Garden of Verses",
+      "Flower Fables",
+      "Young Adventure: A Book of Poems",
+      "The Book of Nonsense",
+      "Poems By a Little Girl"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Canada)",
+    "size": 386,
+    "top_keywords": [
+      "canada",
+      "fiction canada",
+      "canadian",
+      "canada fiction",
+      "canadian fiction",
+      "fiction canadian",
+      "geography fiction",
+      "literature travel",
+      "fiction culture",
+      "society literature"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Travel & Geography",
+      "History - American"
+    ],
+    "top_subjects": [
+      "Canada -- Fiction",
+      "Canadian fiction",
+      "Short stories, Canadian",
+      "Canada, Northern -- Fiction",
+      "Northwest, Canadian -- Fiction"
+    ],
+    "top_locc": [
+      "American Literature",
+      "English Literature",
+      "History of the Americas"
+    ],
+    "example_titles": [
+      "Frances Waldeaux: A Novel",
+      "The Complete Writings of Charles Dudley Warner — Volume 1",
+      "The Golden Dog",
+      "The Canadian Dominion: A Chronicle of Our Northern Neighbor",
+      "Corporal Cameron of the North West Mounted Police: A Tale of the Macleod Trail"
+    ]
+  },
+  {
+    "cluster_name": "Culture/Civilization/Society",
+    "size": 384,
+    "top_keywords": [
+      "travel",
+      "society history",
+      "geography",
+      "travel geography",
+      "cornwall",
+      "history general",
+      "england",
+      "general travel",
+      "civilization",
+      "ethnology"
+    ],
+    "top_shelves": [
+      "Culture/Civilization/Society",
+      "History - General",
+      "Travel & Geography",
+      "History - British",
+      "Nature/Gardening/Animals"
+    ],
+    "top_subjects": [
+      "Prehistoric peoples",
+      "New Zealand -- Description and travel",
+      "DX",
+      "Archaeology",
+      "Romanies"
+    ],
+    "top_locc": [
+      "History of Oceania",
+      "History of Great Britain",
+      "Anthropology"
+    ],
+    "example_titles": [
+      "Sesame and Lilies",
+      "How Spring Came in New England",
+      "The Rifle and the Hound in Ceylon",
+      "The Pagan Tribes of Borneo\r\nA Description of Their Physical Moral and Intellectual Condition, with Some Discussion of Their Ethnic Relations",
+      "The Bontoc Igorot"
+    ]
+  },
+  {
+    "cluster_name": "Music",
+    "size": 364,
+    "top_keywords": [
+      "music",
+      "biographies music",
+      "composers",
+      "music music",
+      "opera",
+      "music performing",
+      "biographies",
+      "music history",
+      "wagner richard",
+      "wagner"
+    ],
+    "top_shelves": [
+      "Music",
+      "Biographies",
+      "Performing Arts/Film",
+      "History - General",
+      "Literature"
+    ],
+    "top_subjects": [
+      "Music -- History and criticism",
+      "Wagner, Richard, 1813-1883",
+      "Beethoven, Ludwig van, 1770-1827",
+      "Operas -- Stories, plots, etc.",
+      "Singing"
+    ],
+    "top_locc": [
+      "Literature on Music",
+      "Musical Instruction",
+      "Music"
+    ],
+    "example_titles": [
+      "Symphony No. 5 in C minor Opus 67",
+      "Symphony No. 5 in C minor, Opus 67",
+      "Franz Haydn's 104th Symphony [1794-5]\nMIDI file",
+      "Dr. Martin Luther's Deutsche Geistliche Lieder\r\nThe Hymns of Martin Luther Set to Their Original Melodies, With an English Version",
+      "The Perfect Wagnerite: A Commentary on the Niblung's Ring"
+    ]
+  },
+  {
+    "cluster_name": "History - Warfare",
+    "size": 337,
+    "top_keywords": [
+      "britain army",
+      "army",
+      "great britain",
+      "britain",
+      "great",
+      "warfare great",
+      "history warfare",
+      "warfare",
+      "british history",
+      "british"
+    ],
+    "top_shelves": [
+      "History - Warfare",
+      "History - British",
+      "History - General",
+      "History - European",
+      "Biographies"
+    ],
+    "top_subjects": [
+      "Great Britain. Army -- History",
+      "World War, 1914-1918 -- Regimental histories -- Great Britain",
+      "Peninsular War, 1807-1814",
+      "Peninsular War, 1807-1814 -- Personal narratives, British",
+      "Great Britain -- History, Military"
+    ],
+    "top_locc": [
+      "Armies",
+      "History of Great Britain",
+      "World History"
+    ],
+    "example_titles": [
+      "Real Soldiers of Fortune",
+      "The Fifteen Decisive Battles of the World: from Marathon to Waterloo",
+      "The Great Fortress : A chronicle of Louisbourg 1720-1760",
+      "The Story of the Malakand Field Force: An Episode of Frontier War",
+      "Britain at Bay"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Rome)",
+    "size": 337,
+    "top_keywords": [
+      "rome",
+      "egypt",
+      "egypt history",
+      "history fiction",
+      "english egypt",
+      "rome history",
+      "german fiction",
+      "fiction german",
+      "history ancient",
+      "ancient"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Fiction",
+      "History - General",
+      "History - Ancient",
+      "Historical Fiction"
+    ],
+    "top_subjects": [
+      "German fiction -- Translations into English",
+      "Egypt -- History -- 30 B.C.-640 A.D. -- Fiction",
+      "Egypt -- History -- To 332 B.C. -- Fiction",
+      "Egypt -- History -- 332-30 B.C. -- Fiction",
+      "Tragedies"
+    ],
+    "top_locc": [
+      "Germanic Literature",
+      "English Literature",
+      "History of Italy"
+    ],
+    "example_titles": [
+      "Plutarch: Lives of the noble Grecians and Romans",
+      "Lays of Ancient Rome",
+      "The Tragedy of Titus Andronicus",
+      "The Tragedy of Julius Caesar",
+      "The Tragedy of Antony and Cleopatra"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Spain)",
+    "size": 336,
+    "top_keywords": [
+      "spain",
+      "spanish",
+      "spain history",
+      "spain social",
+      "spain fiction",
+      "spain description",
+      "picaresque",
+      "picaresque literature",
+      "romances spain",
+      "fiction picaresque"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Fiction",
+      "Culture/Civilization/Society",
+      "History - General",
+      "History - European"
+    ],
+    "top_subjects": [
+      "Romances",
+      "Spain -- Social life and customs -- 16th century -- Fiction",
+      "Picaresque literature",
+      "Knights and knighthood -- Spain -- Fiction",
+      "Spain -- Description and travel"
+    ],
+    "top_locc": [
+      "Romance Literatures",
+      "History of Spain & Portugal",
+      "English Literature"
+    ],
+    "example_titles": [
+      "The Bible in Spain\r\nOr, the Journeys, Adventures, and Imprisonments of an Englishman, in an Attempt to Circulate the Scriptures in the Peninsula",
+      "The Life of Lazarillo of Tormes: His Fortunes and Misfortunes as Told by Himself",
+      "Don Quixote",
+      "Padre Ignacio; Or, The Song of Temptation",
+      "Montezuma's Daughter"
+    ]
+  },
+  {
+    "cluster_name": "Fiction (Christmas)",
+    "size": 332,
+    "top_keywords": [
+      "christmas",
+      "fiction christmas",
+      "christmas stories",
+      "christmas culture",
+      "stories christmas",
+      "christmas children",
+      "stories",
+      "poetry christmas",
+      "christmas plays",
+      "literature christmas"
+    ],
+    "top_shelves": [
+      "Fiction",
+      "Literature",
+      "Culture/Civilization/Society",
+      "Children & Young Adult Reading",
+      "Christmas"
+    ],
+    "top_subjects": [
+      "Christmas stories",
+      "Christmas plays",
+      "Children's stories",
+      "Short stories",
+      "Christmas"
+    ],
+    "top_locc": [
+      "Fiction & Juvenile Literature",
+      "American Literature",
+      "English Literature"
+    ],
+    "example_titles": [
+      "A Christmas Carol in Prose; Being a Ghost Story of Christmas",
+      "Good Stories for Great Holidays\r\nArranged for Story-Telling and Reading Aloud and for the Children's Own Reading",
+      "A Kidnapped Santa Claus",
+      "The Life and Adventures of Santa Claus",
+      "The Haunted Man and the Ghost's Bargain"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Scotland)",
+    "size": 331,
+    "top_keywords": [
+      "scotland",
+      "scottish",
+      "scotland fiction",
+      "scotland history",
+      "fiction scotland",
+      "scottish borders",
+      "borders",
+      "highlands",
+      "scotland social",
+      "borders scotland"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Culture/Civilization/Society",
+      "Fiction",
+      "History - General",
+      "History - British"
+    ],
+    "top_subjects": [
+      "Scotland -- Fiction",
+      "Scottish Borders (Scotland) -- Fiction",
+      "Scotland -- Social life and customs -- Fiction",
+      "Ballads, Scots -- Scotland -- Texts",
+      "Highlands (Scotland) -- Fiction"
+    ],
+    "top_locc": [
+      "English Literature",
+      "History of Great Britain",
+      "American Literature"
+    ],
+    "example_titles": [
+      "Fables",
+      "Edinburgh: Picturesque Notes",
+      "Catriona",
+      "A Collection of Ballads",
+      "The Tragedy of Macbeth"
+    ]
+  },
+  {
+    "cluster_name": "Cooking & Drinking (Cooking)",
+    "size": 330,
+    "top_keywords": [
+      "cooking",
+      "cooking drinking",
+      "drinking",
+      "cookbooks",
+      "cookbooks cooking",
+      "cooking cooking",
+      "cooking american",
+      "drinking cooking",
+      "drinking culture",
+      "american cooking"
+    ],
+    "top_shelves": [
+      "Cooking & Drinking",
+      "Cookbooks and Cooking",
+      "Culture/Civilization/Society",
+      "How To...",
+      "Other"
+    ],
+    "top_subjects": [
+      "Cooking, American",
+      "Cooking",
+      "Cookbooks",
+      "Home economics",
+      "Cooking, English"
+    ],
+    "top_locc": [
+      "Home Economics & Cooking",
+      "Animal Culture",
+      "Recreation & Sports"
+    ],
+    "example_titles": [
+      "The Cook's Decameron\r\nA Study in Taste, Containing over Two Hundred Recipes for Italian Dishes",
+      "Recipes Tried and True",
+      "The Perdue Chicken Cookbook",
+      "The Art of Living in Australia\r\nTogether with Three Hundred Australian Cookery Recipes and Accessory Kitchen Information by Mrs. H. Wicken",
+      "The BYU Solar Cooker/Cooler"
+    ]
+  },
+  {
+    "cluster_name": "Art & Photography (Architecture)",
+    "size": 329,
+    "top_keywords": [
+      "architecture",
+      "art photography",
+      "photography",
+      "art",
+      "england",
+      "photography history",
+      "london",
+      "london england",
+      "british",
+      "history british"
+    ],
+    "top_shelves": [
+      "Art & Photography",
+      "History - British",
+      "History - General",
+      "Culture/Civilization/Society",
+      "Architecture"
+    ],
+    "top_subjects": [
+      "Heraldry -- Great Britain",
+      "Caricatures and cartoons -- Great Britain",
+      "Cathedrals -- England",
+      "London (England) -- History",
+      "England -- Description and travel"
+    ],
+    "top_locc": [
+      "History of Great Britain",
+      "Architecture",
+      "Drawing & Illustration"
+    ],
+    "example_titles": [
+      "Piccadilly Jim",
+      "John Leech's Pictures of Life and Character",
+      "The Inns and Taverns of \"Pickwick\"\r\nWith Some Observations on Their Other Associations",
+      "Inns and Taverns of Old London",
+      "Our Old Home: A Series of English Sketches"
+    ]
+  },
+  {
+    "cluster_name": "Culture/Civilization/Society (Ireland)",
+    "size": 321,
+    "top_keywords": [
+      "ireland",
+      "ireland history",
+      "fiction ireland",
+      "irish",
+      "ireland social",
+      "ireland fiction",
+      "ireland culture",
+      "ireland politics",
+      "ireland ireland",
+      "history european"
+    ],
+    "top_shelves": [
+      "Culture/Civilization/Society",
+      "Literature",
+      "Fiction",
+      "History - European",
+      "History - General"
+    ],
+    "top_subjects": [
+      "Ireland -- Fiction",
+      "Ireland -- Social life and customs -- Fiction",
+      "Ireland -- Description and travel",
+      "Folklore -- Ireland",
+      "Tales -- Ireland"
+    ],
+    "top_locc": [
+      "English Literature",
+      "History of Great Britain",
+      "Modern & Celtic Languages"
+    ],
+    "example_titles": [
+      "The Purcell Papers — Volume 1",
+      "The Purcell Papers — Volume 2",
+      "The Purcell Papers — Volume 3",
+      "A Modest Proposal\r\nFor preventing the children of poor people in Ireland, from being a burden on their parents or country, and for making them beneficial to the publick",
+      "The Well of the Saints: A Comedy in Three Acts"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Russia)",
+    "size": 320,
+    "top_keywords": [
+      "russia",
+      "russian",
+      "russia social",
+      "russian fiction",
+      "fiction russia",
+      "literature russian",
+      "translations english",
+      "translations",
+      "russia history",
+      "russia fiction"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Fiction",
+      "Culture/Civilization/Society",
+      "History - General",
+      "History - European"
+    ],
+    "top_subjects": [
+      "Russia -- Social life and customs -- Fiction",
+      "Russian fiction -- Translations into English",
+      "Short stories, Russian -- Translations into English",
+      "Russian drama -- Translations into English",
+      "Chekhov, Anton Pavlovich, 1860-1904 -- Translations into English"
+    ],
+    "top_locc": [
+      "Slavic Languages & Literature",
+      "History of Russia",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The forged coupon, and other stories",
+      "Rezanov",
+      "Notes from the Underground",
+      "The Kreutzer Sonata and Other Stories",
+      "Reminiscences of Tolstoy, by His Son"
+    ]
+  },
+  {
+    "cluster_name": "Science - General (Evolution)",
+    "size": 292,
+    "top_keywords": [
+      "evolution",
+      "biology",
+      "genetics",
+      "biology evolution",
+      "genetics biology",
+      "science genetics",
+      "general science",
+      "evolution biology",
+      "science general",
+      "science"
+    ],
+    "top_shelves": [
+      "Science - General",
+      "Science - Genetics/Biology/Evolution",
+      "History - General",
+      "Philosophy & Ethics",
+      "Biology"
+    ],
+    "top_subjects": [
+      "Evolution",
+      "Evolution (Biology)",
+      "Science",
+      "Human beings -- Origin",
+      "Heredity"
+    ],
+    "top_locc": [
+      "Natural History & Biology",
+      "Science",
+      "Zoology"
+    ],
+    "example_titles": [
+      "The Story of Evolution",
+      "Reflections on the Decline of Science in England, and on Some of Its Causes",
+      "On the Origin of Species By Means of Natural Selection\r\nOr, the Preservation of Favoured Races in the Struggle for Life",
+      "Autobiography and Selected Essays",
+      "A History of Science — Volume 1"
+    ]
+  },
+  {
+    "cluster_name": "History - European (Napoleon)",
+    "size": 254,
+    "top_keywords": [
+      "napoleon",
+      "emperor french",
+      "napoleon emperor",
+      "emperor",
+      "french",
+      "france",
+      "european history",
+      "history european",
+      "european",
+      "french contemporaries"
+    ],
+    "top_shelves": [
+      "History - European",
+      "History - General",
+      "Biographies",
+      "History - British",
+      "History - Warfare"
+    ],
+    "top_subjects": [
+      "Napoleon I, Emperor of the French, 1769-1821",
+      "Napoleon I, Emperor of the French, 1769-1821 -- Contemporaries",
+      "Private secretaries -- France -- Biography",
+      "Napoleon I, Emperor of the French, 1769-1821 -- Relations with private secretaries",
+      "Bourrienne, Louis Antoine Fauvelet de, 1769-1834"
+    ],
+    "top_locc": [
+      "History of France",
+      "History of Great Britain",
+      "History of the Americas"
+    ],
+    "example_titles": [
+      "Court Life in China: The Capital, Its Officials and People",
+      "Two Years in the Forbidden City",
+      "The Life of Horatio, Lord Nelson",
+      "Queen Victoria",
+      "The French Revolution: A History"
+    ]
+  },
+  {
+    "cluster_name": "Encyclopedias/Dictionaries/Reference (Answers Periodicals)",
+    "size": 228,
+    "top_keywords": [
+      "answers periodicals",
+      "answers",
+      "questions answers",
+      "ag questions",
+      "queries",
+      "notes queries",
+      "notes",
+      "periodicals notes",
+      "ag",
+      "questions"
+    ],
+    "top_shelves": [
+      "Encyclopedias/Dictionaries/Reference",
+      "Notes and Queries",
+      "Literature",
+      "Culture/Civilization/Society",
+      "History - General"
+    ],
+    "top_subjects": [
+      "Questions and answers -- Periodicals",
+      "AG",
+      "History -- Periodicals",
+      "Indexes"
+    ],
+    "top_locc": [
+      "General Works",
+      "Periodicals"
+    ],
+    "example_titles": [
+      "Notes and Queries, Number 01, November 3, 1849",
+      "Notes and Queries, Number 02, November 10, 1849",
+      "Notes and Queries, Number 12, January 19, 1850",
+      "Notes and Queries, Number 03, November 17, 1849",
+      "Notes and Queries, Number 05, December 1, 1849"
+    ]
+  },
+  {
+    "cluster_name": "Encyclopedias/Dictionaries/Reference (Reference Periodicals)",
+    "size": 222,
+    "top_keywords": [
+      "reference periodicals",
+      "periodicals encyclopedias",
+      "periodicals",
+      "dictionaries reference",
+      "reference",
+      "encyclopedias dictionaries",
+      "encyclopedias",
+      "dictionaries",
+      "general periodicals",
+      "lippincott"
+    ],
+    "top_shelves": [
+      "Encyclopedias/Dictionaries/Reference",
+      "Literature",
+      "Science - General",
+      "Other",
+      "Chambers's Edinburgh Journal"
+    ],
+    "top_subjects": [
+      "Periodicals",
+      "Science -- Periodicals",
+      "Literature, Modern -- 19th century -- Periodicals",
+      "Indexes"
+    ],
+    "top_locc": [
+      "Periodicals"
+    ],
+    "example_titles": [
+      "Lippincott's Magazine of Popular Literature and Science, Volume 15, No. 90, June, 1875",
+      "Lippincott's Magazine of Popular Literature and Science, Volume 15, No. 87, March, 1875",
+      "Lippincott's Magazine of Popular Literature and Science, Volume 17, No. 097, January, 1876",
+      "Lippincott's Magazine of Popular Literature and Science, Volume 11, No. 25, April, 1873",
+      "Lippincott's Magazine of Popular Literature and Science, Volume 17, No. 098, February, 1876"
+    ]
+  },
+  {
+    "cluster_name": "Cooking & Drinking",
+    "size": 218,
+    "top_keywords": [
+      "cooking",
+      "drinking",
+      "cooking drinking",
+      "nutrition",
+      "drinking science",
+      "medicine nutrition",
+      "food",
+      "diet",
+      "technology cooking",
+      "medicine"
+    ],
+    "top_shelves": [
+      "Cooking & Drinking",
+      "Science - General",
+      "Nutrition",
+      "Health & Medicine",
+      "Science - Earth/Agricultural/Farming"
+    ],
+    "top_subjects": [
+      "Diet",
+      "Food",
+      "Vegetarianism",
+      "Confectionery",
+      "Nutrition"
+    ],
+    "top_locc": [
+      "Home Economics & Cooking",
+      "Plant Culture",
+      "Chemical Technology"
+    ],
+    "example_titles": [
+      "Organic Syntheses\r\nAn Annual Publication of Satisfactory Methods for the Preparation of Organic Chemicals",
+      "Tea Leaves",
+      "The Physiology of Taste; Or, Transcendental Gastronomy",
+      "Synthetic Tannins, Their Synthesis, Industrial Production and Application",
+      "The Vitamine Manual"
+    ]
+  },
+  {
+    "cluster_name": "Literature (Mirror)",
+    "size": 208,
+    "top_keywords": [
+      "mirror",
+      "periodicals mirror",
+      "mirror literature",
+      "literature amusement",
+      "amusement instruction",
+      "amusement",
+      "literature popular",
+      "britain periodicals",
+      "instruction",
+      "literature great"
+    ],
+    "top_shelves": [
+      "Literature",
+      "The Mirror of Literature, Amusement, and Instruction",
+      "Encyclopedias/Dictionaries/Reference",
+      "Culture/Civilization/Society",
+      "History - British"
+    ],
+    "top_subjects": [
+      "Popular literature -- Great Britain -- Periodicals",
+      "Drama -- Periodicals",
+      "Theater -- Periodicals"
+    ],
+    "top_locc": [
+      "Periodicals"
+    ],
+    "example_titles": [
+      "The Mirror of Literature, Amusement, and Instruction. Volume 13, No. 365, April 11, 1829",
+      "The Mirror of Literature, Amusement, and Instruction. Volume 12, No. 321, July 5, 1828",
+      "The Mirror of Literature, Amusement, and Instruction. Volume 10, No. 262, July 7, 1827",
+      "The Mirror of Literature, Amusement, and Instruction. Volume 10, No. 263, Supplementary Number (1827)",
+      "The Mirror of Literature, Amusement, and Instruction. Volume 10, No. 264, July 14, 1827"
+    ]
+  },
+  {
+    "cluster_name": "Encyclopedias/Dictionaries/Reference (Indexes Encyclopedias)",
+    "size": 203,
+    "top_keywords": [
+      "indexes encyclopedias",
+      "indexes",
+      "literature indexes",
+      "reference literature",
+      "dictionaries reference",
+      "reference",
+      "encyclopedias dictionaries",
+      "encyclopedias",
+      "dictionaries",
+      "gutenberg"
+    ],
+    "top_shelves": [
+      "Encyclopedias/Dictionaries/Reference",
+      "Literature",
+      "Language & Communication",
+      "Project Gutenberg",
+      "Teaching & Education"
+    ],
+    "top_subjects": [
+      "Indexes",
+      "Quotations",
+      "Project Gutenberg",
+      "Crossword puzzles",
+      "Puzzles"
+    ],
+    "top_locc": [
+      "English Literature",
+      "American Literature",
+      "Romance Literatures"
+    ],
+    "example_titles": [
+      "The Project Gutenberg RST Manual",
+      "The Project Gutenberg Encyclopedia, Volume 1 of 28",
+      "Quotations from the Project Gutenberg Editions of the Works of Mark Twain",
+      "Quotations from the Project Gutenberg Editions of the Works of John Galsworthy",
+      "Quotations from the Project Gutenberg Editions of the Works of Charles Dudley Warner"
+    ]
+  },
+  {
+    "cluster_name": "History - General (Prussia)",
+    "size": 181,
+    "top_keywords": [
+      "prussia",
+      "frederick ii",
+      "frederick",
+      "germany",
+      "european history",
+      "ii",
+      "germany history",
+      "history european",
+      "european",
+      "history frederick"
+    ],
+    "top_shelves": [
+      "History - General",
+      "History - European",
+      "History - Religious",
+      "Culture/Civilization/Society",
+      "Biographies"
+    ],
+    "top_subjects": [
+      "Frederick II, King of Prussia, 1712-1786",
+      "Prussia (Germany) -- History -- Frederick II, 1740-1786",
+      "World history",
+      "Social problems",
+      "Jews -- History"
+    ],
+    "top_locc": [
+      "History of Germany",
+      "History of Asia",
+      "World History"
+    ],
+    "example_titles": [
+      "The Constitution of the Empire of Japan, 1889",
+      "Early Kings of Norway",
+      "History of Friedrich II of Prussia — Volume 01",
+      "History of Friedrich II of Prussia — Volume 02",
+      "History of Friedrich II of Prussia — Volume 03"
+    ]
+  },
+  {
+    "cluster_name": "Encyclopedias/Dictionaries/Reference",
+    "size": 178,
+    "top_keywords": [
+      "edinburgh",
+      "scotland periodicals",
+      "periodicals england",
+      "england periodicals",
+      "blackwood",
+      "edinburgh magazine",
+      "blackwood edinburgh",
+      "periodicals blackwood",
+      "magazine culture",
+      "magazine"
+    ],
+    "top_shelves": [
+      "Encyclopedias/Dictionaries/Reference",
+      "Culture/Civilization/Society",
+      "Blackwood's Edinburgh Magazine",
+      "History - General",
+      "History - British"
+    ],
+    "top_subjects": [
+      "Scotland -- Periodicals",
+      "England -- Periodicals",
+      "Periodicals",
+      "Clans -- Scotland -- Periodicals",
+      "Welsh periodicals -- 19th century"
+    ],
+    "top_locc": [
+      "Periodicals",
+      "History of Great Britain",
+      "Bibliography & Library Science"
+    ],
+    "example_titles": [
+      "Blackwood's Edinburgh Magazine — Volume 53, No. 327, January, 1843",
+      "Blackwood's Edinburgh Magazine — Volume 53, No. 330, April 1843",
+      "Blackwood's Edinburgh Magazine — Volume 53, No. 331, May, 1843",
+      "Blackwood's Edinburgh Magazine — Volume 53, No. 332, June, 1843",
+      "Blackwood's Edinburgh Magazine — Volume 53, No. 329, March, 1843"
+    ]
+  },
+  {
+    "cluster_name": "Religion/Spirituality/Paranormal (Missions Periodicals)",
+    "size": 150,
+    "top_keywords": [
+      "missions periodicals",
+      "missions",
+      "home missions",
+      "periodicals home",
+      "churches missions",
+      "congregational churches",
+      "congregational",
+      "american missionary",
+      "missionary",
+      "home"
+    ],
+    "top_shelves": [
+      "Religion/Spirituality/Paranormal",
+      "The American Missionary",
+      "History - American",
+      "Teaching & Education",
+      "Philosophy & Ethics"
+    ],
+    "top_subjects": [
+      "Congregational churches -- Missions -- Periodicals",
+      "Home missions -- Periodicals",
+      "Missions -- Eastern churches",
+      "American Board of Commissioners for Foreign Missions",
+      "Missions"
+    ],
+    "top_locc": [
+      "Practical Theology"
+    ],
+    "example_titles": [
+      "The American Missionary — Volume 42, No. 01, January, 1888",
+      "The American Missionary — Volume 42, No. 02, February, 1888",
+      "The American Missionary — Volume 42, No. 03, March, 1888",
+      "The American Missionary — Volume 42, No. 04, April, 1888",
+      "The American Missionary — Volume 42, No. 05, May, 1888"
+    ]
+  },
+  {
+    "cluster_name": "Science - General",
+    "size": 139,
+    "top_keywords": [
+      "science periodicals",
+      "periodicals scientific",
+      "scientific american",
+      "american computers",
+      "technology",
+      "scientific",
+      "general science",
+      "computers technology",
+      "computers",
+      "technology science"
+    ],
+    "top_shelves": [
+      "Science - General",
+      "Computers & Technology",
+      "Scientific American",
+      "Encyclopedias/Dictionaries/Reference",
+      "Engineering & Construction"
+    ],
+    "top_subjects": [
+      "Science -- Periodicals",
+      "Technology -- Periodicals",
+      "Publishers' catalogs -- England -- London",
+      "Engineering -- Bibliography -- Catalogs",
+      "E. & F. N. Spon -- Catalogs"
+    ],
+    "top_locc": [
+      "Technology",
+      "Periodicals",
+      "Science"
+    ],
+    "example_titles": [
+      "The Scientific Monthly, October to December, 1915",
+      "Scientific American Supplement, No. 275, April 9, 1881",
+      "Scientific American Supplement, No. 303, October 22, 1881",
+      "Scientific American Supplement, No. 286, June 25, 1881",
+      "Scientific American Supplement, No. 288, July 9, 1881"
+    ]
+  },
+  {
+    "cluster_name": "History - European",
+    "size": 134,
+    "top_keywords": [
+      "netherlands",
+      "years war",
+      "years",
+      "dh",
+      "netherlands history",
+      "eighty",
+      "eighty years",
+      "history eighty",
+      "dh netherlands",
+      "war history"
+    ],
+    "top_shelves": [
+      "History - European",
+      "History - General",
+      "History - Warfare",
+      "Children & Young Adult Reading",
+      "Fiction"
+    ],
+    "top_subjects": [
+      "DH",
+      "Netherlands -- History -- Eighty Years' War, 1568-1648",
+      "Netherlands -- Church history",
+      "Thirty Years' War, 1618-1648",
+      "Oldenbarnevelt, Johan van, 1547-1619"
+    ],
+    "top_locc": [
+      "World History",
+      "English Literature",
+      "Fiction & Juvenile Literature"
+    ],
+    "example_titles": [
+      "The History of the Thirty Years' War",
+      "The Rise of the Dutch Republic — Volume 01: Introduction I",
+      "The Rise of the Dutch Republic — Volume 02: Introduction II",
+      "The Rise of the Dutch Republic — Volume 03: 1555",
+      "The Rise of the Dutch Republic — Volume 04: 1555-59"
+    ]
+  },
+  {
+    "cluster_name": "History - European (Ireland Periodicals)",
+    "size": 74,
+    "top_keywords": [
+      "ireland periodicals",
+      "ireland",
+      "periodicals irish",
+      "irish",
+      "general ireland",
+      "european ireland",
+      "periodicals",
+      "catholic church",
+      "catholic",
+      "periodicals history"
+    ],
+    "top_shelves": [
+      "History - European",
+      "Culture/Civilization/Society",
+      "History - General",
+      "Encyclopedias/Dictionaries/Reference",
+      "Religion/Spirituality/Paranormal"
+    ],
+    "top_subjects": [
+      "Ireland -- Periodicals",
+      "Catholic Church -- Periodicals",
+      "Catholic Church -- Ireland -- Periodicals",
+      "American-Irish Historical Society -- Periodicals",
+      "Ethnology -- United States -- Periodicals"
+    ],
+    "top_locc": [
+      "History of Great Britain",
+      "Christian Denominations",
+      "History of the Americas"
+    ],
+    "example_titles": [
+      "The Irish ecclesiastical record. Volume 1, Index",
+      "The Irish Ecclesiastical Record, Volume 1, December 1864",
+      "The Irish Ecclesiastical Record, Volume 1, August 1865",
+      "The Irish Ecclesiastical Record, Volume 1, February, 1865",
+      "The Irish Ecclesiastical Record, Volume 1, January 1865"
+    ]
+  },
+  {
+    "cluster_name": "Literature",
+    "size": 5,
+    "top_keywords": [
+      "petrarca francesco",
+      "petrarca",
+      "francesco",
+      "italian poetry",
+      "italian",
+      "translations english",
+      "translations",
+      "century translations",
+      "poetry",
+      "literature poetry"
+    ],
+    "top_shelves": [
+      "Literature",
+      "Poetry",
+      "Language & Communication"
+    ],
+    "top_subjects": [
+      "Italian poetry -- Translations into English",
+      "Michelangelo Buonarroti, 1475-1564 -- Translations into English",
+      "Campanella, Tommaso, 1568-1639 -- Translations into English",
+      "Petrarca, Francesco, 1304-1374",
+      "Italian poetry -- 14th century -- Translations into English"
+    ],
+    "top_locc": [
+      "Romance Literatures"
+    ],
+    "example_titles": [
+      "The Sonnets of Michael Angelo Buonarroti and Tommaso Campanella; Now for the First Time Translated into Rhymed English",
+      "The Sonnets, Triumphs, and Other Poems of Petrarch",
+      "Petrarch's Letters to Classical Authors",
+      "Fifteen sonnets of Petrarch",
+      "Sonnets and madrigals of Michelangelo Buonarroti"
+    ]
+  }
+]
