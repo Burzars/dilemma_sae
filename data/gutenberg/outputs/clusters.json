@@ -1,6 +1,6 @@
 [
   {
-    "cluster_name": "Children & Young Adult Reading (Life Juvenile)",
+    "cluster_name": "Children's Classic Fiction",
     "ids": [
       11,
       16,
@@ -1819,7 +1819,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Juvenile Fiction)",
+    "cluster_name": "Children's Adventure Fiction",
     "ids": [
       12,
       137,
@@ -3549,7 +3549,7 @@
     ]
   },
   {
-    "cluster_name": "Biographies",
+    "cluster_name": "Literary Biographies",
     "ids": [
       138,
       205,
@@ -4805,7 +4805,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Western)",
+    "cluster_name": "American Western Fiction",
     "ids": [
       24,
       142,
@@ -6054,7 +6054,7 @@
     ]
   },
   {
-    "cluster_name": "Religion/Spirituality/Paranormal (Philosophy)",
+    "cluster_name": "Spirituality and Philosophy",
     "ids": [
       130,
       162,
@@ -7302,7 +7302,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Fiction Fiction)",
+    "cluster_name": "Short Story Collections",
     "ids": [
       426,
       504,
@@ -8495,7 +8495,7 @@
     ]
   },
   {
-    "cluster_name": "Crime/Mystery",
+    "cluster_name": "Detective Mystery Fiction",
     "ids": [
       93,
       108,
@@ -9685,7 +9685,7 @@
     ]
   },
   {
-    "cluster_name": "Religion/Spirituality/Paranormal",
+    "cluster_name": "Christian Sermons and Doctrine",
     "ids": [
       273,
       274,
@@ -10800,7 +10800,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Society Literature)",
+    "cluster_name": "Romantic Adventure Fiction",
     "ids": [
       27,
       78,
@@ -11874,7 +11874,7 @@
     ]
   },
   {
-    "cluster_name": "Science-Fiction & Fantasy (Science)",
+    "cluster_name": "Science Fiction Short Stories",
     "ids": [
       456,
       480,
@@ -12886,7 +12886,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (England)",
+    "cluster_name": "19th Century English Fiction (England)",
     "ids": [
       154,
       322,
@@ -13886,7 +13886,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (English Fiction)",
+    "cluster_name": "19th Century English Fiction",
     "ids": [
       235,
       238,
@@ -14868,7 +14868,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Juvenile Literature)",
+    "cluster_name": "Children's Short Stories",
     "ids": [
       13,
       225,
@@ -15813,7 +15813,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Fiction Culture)",
+    "cluster_name": "Romantic Domestic Fiction",
     "ids": [
       33,
       45,
@@ -16707,7 +16707,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Sea)",
+    "cluster_name": "Seafaring Adventure Fiction",
     "ids": [
       15,
       91,
@@ -17575,7 +17575,7 @@
     ]
   },
   {
-    "cluster_name": "Art & Photography",
+    "cluster_name": "Art and Photography",
     "ids": [
       167,
       168,
@@ -18391,7 +18391,7 @@
     ]
   },
   {
-    "cluster_name": "History - Warfare (World War)",
+    "cluster_name": "World War I Narratives",
     "ids": [
       315,
       548,
@@ -19196,7 +19196,7 @@
     ]
   },
   {
-    "cluster_name": "Science-Fiction & Fantasy",
+    "cluster_name": "Science Fiction Adventure",
     "ids": [
       36,
       62,
@@ -19991,7 +19991,7 @@
     ]
   },
   {
-    "cluster_name": "History - American (History American)",
+    "cluster_name": "Early American History",
     "ids": [
       7,
       278,
@@ -20770,7 +20770,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Drama)",
+    "cluster_name": "English Comedy Plays",
     "ids": [
       100,
       554,
@@ -21547,7 +21547,7 @@
     ]
   },
   {
-    "cluster_name": "Travel & Geography",
+    "cluster_name": "American Travel Narratives",
     "ids": [
       314,
       326,
@@ -22319,7 +22319,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society (Sociology)",
+    "cluster_name": "Social and Political Theory",
     "ids": [
       61,
       71,
@@ -23067,7 +23067,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (English Poetry)",
+    "cluster_name": "English Poetry Anthologies",
     "ids": [
       232,
       260,
@@ -23812,7 +23812,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading",
+    "cluster_name": "Children's Animal Stories",
     "ids": [
       236,
       496,
@@ -24538,7 +24538,7 @@
     ]
   },
   {
-    "cluster_name": "History - American (United States)",
+    "cluster_name": "American Political Documents",
     "ids": [
       1,
       2,
@@ -25261,7 +25261,7 @@
     ]
   },
   {
-    "cluster_name": "History - General",
+    "cluster_name": "Exploration and Travel Narratives",
     "ids": [
       464,
       536,
@@ -25984,7 +25984,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Periodicals)",
+    "cluster_name": "Literary Periodicals",
     "ids": [
       742,
       5206,
@@ -26699,7 +26699,7 @@
     ]
   },
   {
-    "cluster_name": "Engineering & Construction",
+    "cluster_name": "Technology and Engineering",
     "ids": [
       34,
       38,
@@ -27411,7 +27411,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Translations)",
+    "cluster_name": "European Fiction in Translation",
     "ids": [
       593,
       986,
@@ -28107,7 +28107,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Science Fiction)",
+    "cluster_name": "Science Fiction Stories",
     "ids": [
       35,
       42,
@@ -28796,7 +28796,7 @@
     ]
   },
   {
-    "cluster_name": "Religion/Spirituality/Paranormal (Bible)",
+    "cluster_name": "Biblical Studies",
     "ids": [
       10,
       17,
@@ -29476,7 +29476,7 @@
     ]
   },
   {
-    "cluster_name": "Poetry",
+    "cluster_name": "English Poetry Collections",
     "ids": [
       20,
       26,
@@ -30156,7 +30156,7 @@
     ]
   },
   {
-    "cluster_name": "Humour (Humor)",
+    "cluster_name": "Humorous Literature",
     "ids": [
       374,
       383,
@@ -30830,7 +30830,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Adventure)",
+    "cluster_name": "Adventure Fiction",
     "ids": [
       81,
       90,
@@ -31495,7 +31495,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Man Woman)",
+    "cluster_name": "Romantic Women's Fiction",
     "ids": [
       32,
       110,
@@ -32156,7 +32156,7 @@
     ]
   },
   {
-    "cluster_name": "History - General (Travel)",
+    "cluster_name": "Middle Eastern Travel and History",
     "ids": [
       14,
       25,
@@ -32811,7 +32811,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Historical Fiction)",
+    "cluster_name": "Historical Adventure Fiction",
     "ids": [
       60,
       82,
@@ -33460,7 +33460,7 @@
     ]
   },
   {
-    "cluster_name": "History - European (European)",
+    "cluster_name": "European Travel and History",
     "ids": [
       565,
       650,
@@ -34102,7 +34102,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Literature Fiction)",
+    "cluster_name": "19th Century Literary Fiction",
     "ids": [
       102,
       241,
@@ -34739,7 +34739,7 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference (Dictionaries)",
+    "cluster_name": "Reference Works",
     "ids": [
       22,
       40,
@@ -35373,7 +35373,7 @@
     ]
   },
   {
-    "cluster_name": "History - British (Great Britain)",
+    "cluster_name": "British Historical Diaries",
     "ids": [
       699,
       1066,
@@ -36002,7 +36002,7 @@
     ]
   },
   {
-    "cluster_name": "Health & Medicine",
+    "cluster_name": "Medical Science",
     "ids": [
       423,
       435,
@@ -36626,7 +36626,7 @@
     ]
   },
   {
-    "cluster_name": "Science-Fiction & Fantasy (Science Fiction)",
+    "cluster_name": "Science Fiction & Fantasy",
     "ids": [
       96,
       97,
@@ -37239,7 +37239,7 @@
     ]
   },
   {
-    "cluster_name": "Humour",
+    "cluster_name": "Humor Periodicals",
     "ids": [
       8643,
       9481,
@@ -37843,7 +37843,7 @@
     ]
   },
   {
-    "cluster_name": "Nature/Gardening/Animals (Animals)",
+    "cluster_name": "Animal Behavior and Natural History",
     "ids": [
       683,
       1221,
@@ -38446,7 +38446,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Poetry)",
+    "cluster_name": "American and Canadian Poetry",
     "ids": [
       109,
       207,
@@ -39046,7 +39046,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Paranormal Fiction)",
+    "cluster_name": "Christian Paranormal Fiction",
     "ids": [
       77,
       131,
@@ -39639,7 +39639,7 @@
     ]
   },
   {
-    "cluster_name": "History - American (Civil War)",
+    "cluster_name": "American Civil War Literature",
     "ids": [
       4,
       73,
@@ -40229,7 +40229,7 @@
     ]
   },
   {
-    "cluster_name": "Philosophy & Ethics",
+    "cluster_name": "Philosophy and Ethics",
     "ids": [
       59,
       254,
@@ -40812,7 +40812,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society (Indians)",
+    "cluster_name": "Native American Stories",
     "ids": [
       19,
       336,
@@ -41358,7 +41358,7 @@
     ]
   },
   {
-    "cluster_name": "Science - Earth/Agricultural/Farming",
+    "cluster_name": "Agriculture and Gardening",
     "ids": [
       880,
       2355,
@@ -41900,7 +41900,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Fiction World)",
+    "cluster_name": "World War I Fiction",
     "ids": [
       132,
       403,
@@ -42440,7 +42440,7 @@
     ]
   },
   {
-    "cluster_name": "History - Warfare (Warfare)",
+    "cluster_name": "Military History",
     "ids": [
       684,
       685,
@@ -42980,7 +42980,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (New York)",
+    "cluster_name": "New York City Fiction",
     "ids": [
       41,
       210,
@@ -43518,7 +43518,7 @@
     ]
   },
   {
-    "cluster_name": "Travel & Geography (England Description)",
+    "cluster_name": "British Travel Writing",
     "ids": [
       648,
       914,
@@ -44036,7 +44036,7 @@
     ]
   },
   {
-    "cluster_name": "Science - General (Physics)",
+    "cluster_name": "Mathematics and Physical Sciences",
     "ids": [
       63,
       69,
@@ -44548,7 +44548,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Italy)",
+    "cluster_name": "Romantic Historical Fiction",
     "ids": [
       112,
       211,
@@ -45057,7 +45057,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Juvenile)",
+    "cluster_name": "Juvenile Adventure Fiction",
     "ids": [
       950,
       951,
@@ -45559,7 +45559,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society (Folklore)",
+    "cluster_name": "Arabian Folktales",
     "ids": [
       21,
       28,
@@ -46056,7 +46056,7 @@
     ]
   },
   {
-    "cluster_name": "History - American",
+    "cluster_name": "American Essays and History",
     "ids": [
       70,
       319,
@@ -46550,7 +46550,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction",
+    "cluster_name": "French Historical Fiction",
     "ids": [
       44,
       98,
@@ -47039,7 +47039,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Children Periodicals)",
+    "cluster_name": "Children's Magazines",
     "ids": [
       14138,
       14170,
@@ -47525,7 +47525,7 @@
     ]
   },
   {
-    "cluster_name": "History - General (France)",
+    "cluster_name": "French Historical Fiction (France)",
     "ids": [
       468,
       1235,
@@ -48009,7 +48009,7 @@
     ]
   },
   {
-    "cluster_name": "Biographies (Biographies)",
+    "cluster_name": "Historical Biographies",
     "ids": [
       567,
       568,
@@ -48493,7 +48493,7 @@
     ]
   },
   {
-    "cluster_name": "Teaching & Education",
+    "cluster_name": "Education and Language Studies",
     "ids": [
       852,
       988,
@@ -48973,7 +48973,7 @@
     ]
   },
   {
-    "cluster_name": "History - British",
+    "cluster_name": "Victorian Social History",
     "ids": [
       376,
       475,
@@ -49448,7 +49448,7 @@
     ]
   },
   {
-    "cluster_name": "History - American (Slavery)",
+    "cluster_name": "African American History",
     "ids": [
       23,
       67,
@@ -49918,7 +49918,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Medieval)",
+    "cluster_name": "Medieval Historical Drama",
     "ids": [
       265,
       392,
@@ -50385,7 +50385,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Greek)",
+    "cluster_name": "Classical Greek and Roman Literature",
     "ids": [
       31,
       228,
@@ -50835,7 +50835,7 @@
     ]
   },
   {
-    "cluster_name": "Gender & Sexuality Studies",
+    "cluster_name": "Gender and Sexuality Studies",
     "ids": [
       488,
       908,
@@ -51283,7 +51283,7 @@
     ]
   },
   {
-    "cluster_name": "Nature/Gardening/Animals",
+    "cluster_name": "Birds and Nature Writing",
     "ids": [
       414,
       533,
@@ -51713,7 +51713,7 @@
     ]
   },
   {
-    "cluster_name": "Sports/Hobbies/Motoring",
+    "cluster_name": "Sports and Hobbies",
     "ids": [
       1139,
       1176,
@@ -52141,7 +52141,7 @@
     ]
   },
   {
-    "cluster_name": "History - American (National)",
+    "cluster_name": "Geology and Natural Landmarks",
     "ids": [
       279,
       2394,
@@ -52560,7 +52560,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Poetry Children)",
+    "cluster_name": "Children's Poetry and Rhymes",
     "ids": [
       136,
       163,
@@ -52968,7 +52968,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Canada)",
+    "cluster_name": "Canadian Fiction",
     "ids": [
       335,
       2671,
@@ -53359,7 +53359,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society",
+    "cluster_name": "Cultural Anthropology and Travel",
     "ids": [
       1293,
       3131,
@@ -53748,7 +53748,7 @@
     ]
   },
   {
-    "cluster_name": "Music",
+    "cluster_name": "Classical Music Criticism",
     "ids": [
       117,
       156,
@@ -54117,7 +54117,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Rome)",
+    "cluster_name": "Ancient Roman Historical Fiction",
     "ids": [
       674,
       847,
@@ -54459,7 +54459,7 @@
     ]
   },
   {
-    "cluster_name": "History - Warfare",
+    "cluster_name": "British Military History",
     "ids": [
       3029,
       4061,
@@ -54801,7 +54801,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Spain)",
+    "cluster_name": "Spanish Picaresque Fiction",
     "ids": [
       415,
       437,
@@ -55142,7 +55142,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Christmas)",
+    "cluster_name": "Christmas Stories",
     "ids": [
       46,
       359,
@@ -55479,7 +55479,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Scotland)",
+    "cluster_name": "Scottish Literature",
     "ids": [
       343,
       382,
@@ -55815,7 +55815,7 @@
     ]
   },
   {
-    "cluster_name": "Cooking & Drinking (Cooking)",
+    "cluster_name": "Cookbooks and Recipes",
     "ids": [
       930,
       1084,
@@ -56150,7 +56150,7 @@
     ]
   },
   {
-    "cluster_name": "Art & Photography (Architecture)",
+    "cluster_name": "British Art and Culture",
     "ids": [
       2005,
       2646,
@@ -56484,7 +56484,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society (Ireland)",
+    "cluster_name": "Irish Literature and Folklore",
     "ids": [
       509,
       510,
@@ -56810,7 +56810,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Russia)",
+    "cluster_name": "Russian Literature in Translation",
     "ids": [
       243,
       491,
@@ -57135,7 +57135,7 @@
     ]
   },
   {
-    "cluster_name": "Science - General (Evolution)",
+    "cluster_name": "Evolutionary Biology",
     "ids": [
       1043,
       1216,
@@ -57432,7 +57432,7 @@
     ]
   },
   {
-    "cluster_name": "History - European (Napoleon)",
+    "cluster_name": "Napoleonic Era Biographies",
     "ids": [
       523,
       889,
@@ -57691,7 +57691,7 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference (Answers Periodicals)",
+    "cluster_name": "Literary Reference Periodicals",
     "ids": [
       8603,
       11265,
@@ -57924,7 +57924,7 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference (Reference Periodicals)",
+    "cluster_name": "Literary and Scientific Periodicals",
     "ids": [
       12960,
       13061,
@@ -58151,7 +58151,7 @@
     ]
   },
   {
-    "cluster_name": "Cooking & Drinking",
+    "cluster_name": "Food and Nutrition",
     "ids": [
       1234,
       3452,
@@ -58374,7 +58374,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Mirror)",
+    "cluster_name": "Victorian Literary Periodicals",
     "ids": [
       3246,
       8640,
@@ -58587,7 +58587,7 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference (Indexes Encyclopedias)",
+    "cluster_name": "Literary Reference Works",
     "ids": [
       181,
       200,
@@ -58795,7 +58795,7 @@
     ]
   },
   {
-    "cluster_name": "History - General (Prussia)",
+    "cluster_name": "European Historical Biographies",
     "ids": [
       613,
       1932,
@@ -58981,7 +58981,7 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference",
+    "cluster_name": "British Literary Magazines",
     "ids": [
       9992,
       11745,
@@ -59164,7 +59164,7 @@
     ]
   },
   {
-    "cluster_name": "Religion/Spirituality/Paranormal (Missions Periodicals)",
+    "cluster_name": "Christian Missionary Periodicals",
     "ids": [
       11762,
       11763,
@@ -59319,7 +59319,7 @@
     ]
   },
   {
-    "cluster_name": "Science - General",
+    "cluster_name": "Science and Technology Periodicals",
     "ids": [
       987,
       8195,
@@ -59463,7 +59463,7 @@
     ]
   },
   {
-    "cluster_name": "History - European",
+    "cluster_name": "Dutch and Thirty Years' Wars",
     "ids": [
       566,
       4801,
@@ -59602,7 +59602,7 @@
     ]
   },
   {
-    "cluster_name": "History - European (Ireland Periodicals)",
+    "cluster_name": "Irish Catholic Periodicals",
     "ids": [
       31749,
       33436,
@@ -59681,7 +59681,7 @@
     ]
   },
   {
-    "cluster_name": "Literature",
+    "cluster_name": "Italian Poetry in Translation",
     "ids": [
       10314,
       17650,

@@ -107,3 +107,16 @@ python book_text.py --cluster "Detective Fiction" --strip-headers
 
 `--data-dir` можно не указывать — берётся из `config.yaml` (или качается с Kaggle).
 Скачанные с gutenberg.org тексты кэшируются в `outputs/text_cache/`.
+
+**Выгрузить тексты ВСЕХ книг** из `clusters.json` (стриминг — память не растёт;
+резюмируемо — прерванный прогон продолжается; `~59k` файлов, ориентировочно 20–30 ГБ):
+
+```bash
+python book_text.py --inspect                       # сперва убедиться, что тексты есть локально!
+python book_text.py --dump-all --by-cluster --strip-headers   # → outputs/texts/{Кластер}/{id}.txt
+```
+
+Приоритет источников: локальные файлы датасета → колонка таблицы → загрузка с
+gutenberg.org (последнее — медленно и требует доступа к gutenberg.org; если `--inspect`
+показал, что тексты в датасете, сеть не понадобится). Ненайденные id пишутся в
+`outputs/texts/_missing_ids.txt`.

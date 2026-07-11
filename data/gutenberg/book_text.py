@@ -171,6 +171,33 @@ def _read_table_texts(src: TextSource, ids: set[int]) -> dict[int, str]:
     return found
 
 
+def _iter_table_texts(src: TextSource, wanted: set[int]):
+    """Стриминговый обход таблицы: отдаёт (id, text) по одному, память ограничена.
+
+    В отличие от _read_table_texts не копит всё в dict — для выгрузки десятков тысяч
+    книг (иначе весь корпус текстов оказался бы в RAM).
+    """
+    path = src.table_path
+    if path.suffix == ".parquet":
+        import pyarrow.dataset as ds
+        scanner = ds.dataset(path).scanner(columns=[src.table_id_col, src.table_text_col])
+        for batch in scanner.to_batches():
+            ids_col = batch.column(0).to_pylist()
+            txt_col = batch.column(1).to_pylist()
+            for _id, _txt in zip(ids_col, txt_col):
+                m = _INT.search(str(_id))
+                if m and int(m.group()) in wanted:
+                    yield int(m.group()), "" if _txt is None else str(_txt)
+    else:  # CSV чанками
+        import pandas as pd
+        for chunk in pd.read_csv(path, dtype=str, chunksize=2000,
+                                 usecols=[src.table_id_col, src.table_text_col]):
+            for _id, _txt in zip(chunk[src.table_id_col], chunk[src.table_text_col]):
+                m = _INT.search(str(_id))
+                if m and int(m.group()) in wanted:
+                    yield int(m.group()), "" if _txt is None else str(_txt)
+
+
 def _download_pg(book_id: int, timeout: float = 30.0) -> str | None:
     """Скачивает текст книги с gutenberg.org, перебирая известные шаблоны URL."""
     for tmpl in _PG_URLS:
@@ -227,6 +254,90 @@ class BookTextResolver:
 
     def get_text(self, book_id: int) -> str | None:
         return self.get_texts([book_id])[int(book_id)]
+
+
+def _slug(name: str) -> str:
+    """Имя кластера → безопасное имя папки."""
+    s = re.sub(r"[^\w.-]+", "_", str(name), flags=re.UNICODE).strip("_")
+    return s[:80] or "cluster"
+
+
+def dump_all(resolver: BookTextResolver, ids, out_dir: Path,
+             cluster_of: dict[int, str] | None = None, strip: bool = False,
+             skip_existing: bool = True, download: bool = True, workers: int = 8) -> None:
+    """Массовая выгрузка текстов в файлы {out_dir}/[кластер/]{id}.txt.
+
+    Стриминг (по одному тексту в памяти) + резюмируемость (пропуск уже записанных),
+    поэтому годится для десятков тысяч книг и переживает прерывание.
+    """
+    from concurrent.futures import ThreadPoolExecutor
+
+    out_dir = Path(out_dir)
+
+    def target(i: int) -> Path:
+        base = out_dir / _slug(cluster_of[i]) if (cluster_of and i in cluster_of) else out_dir
+        return base / f"{i}.txt"
+
+    wanted = {int(i) for i in ids}
+    if skip_existing:
+        already = {i for i in wanted if target(i).exists() and target(i).stat().st_size > 0}
+        if already:
+            log.info("Пропускаю %d уже сохранённых (резюмирую)", len(already))
+        wanted -= already
+    total = len(wanted)
+    log.info("К выгрузке: %d текстов → %s", total, out_dir)
+
+    done = 0
+    missing: list[int] = []
+
+    def write(i: int, text: str | None) -> None:
+        nonlocal done
+        if not text:
+            missing.append(i)
+            return
+        if strip:
+            text = strip_pg_boilerplate(text)
+        t = target(i)
+        t.parent.mkdir(parents=True, exist_ok=True)
+        t.write_text(text, encoding="utf-8")
+        done += 1
+        if done % 500 == 0:
+            log.info("... сохранено %d/%d", done, total)
+
+    src = resolver.source
+    remaining = set(wanted)
+
+    # 1) локальные файлы {id}.txt — просто копия с диска
+    for i in list(remaining):
+        if i in src.file_index:
+            write(i, src.file_index[i].read_text(encoding="utf-8", errors="replace"))
+            remaining.discard(i)
+
+    # 2) колонка таблицы — один потоковый проход
+    if remaining and src.has_table:
+        for i, text in _iter_table_texts(src, remaining):
+            if i in remaining:
+                write(i, text)
+                remaining.discard(i)
+
+    # 3) остаток — загрузка с gutenberg.org (только если тексты не в датасете)
+    if remaining and download:
+        log.warning("%d текстов нет локально — качаю с gutenberg.org в %d потоков "
+                    "(медленно; для полного корпуса лучше иметь тексты в датасете)",
+                    len(remaining), workers)
+        rem_list = list(remaining)
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            for i, text in zip(rem_list, ex.map(_download_pg, rem_list)):
+                write(i, text)
+    elif remaining:
+        missing.extend(remaining)
+
+    log.info("ГОТОВО: записано %d, не найдено %d (из %d к выгрузке)", done, len(missing), total)
+    if missing:
+        miss_file = out_dir / "_missing_ids.txt"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        miss_file.write_text("\n".join(map(str, sorted(missing))), encoding="utf-8")
+        log.info("Список ненайденных id → %s", miss_file)
 
 
 # ---------------------------------------------------------------------------
@@ -289,6 +400,12 @@ def main() -> None:
     p.add_argument("--cluster", default=None, help="выгрузить тексты книг этого кластера")
     p.add_argument("--clusters-json", default=str(SCRIPT_DIR / "outputs" / "clusters.json"))
     p.add_argument("--out", default=None, help="папка для сохранения текстов (для --cluster)")
+    p.add_argument("--dump-all", action="store_true",
+                   help="выгрузить тексты ВСЕХ книг из clusters.json")
+    p.add_argument("--by-cluster", action="store_true",
+                   help="раскладывать по подпапкам кластеров (для --dump-all/--cluster)")
+    p.add_argument("--limit", type=int, default=None, help="ограничить число книг (тест)")
+    p.add_argument("--workers", type=int, default=8, help="потоков на загрузку с gutenberg.org")
     p.add_argument("--no-download", action="store_true", help="не ходить в gutenberg.org")
     p.add_argument("--strip-headers", action="store_true", help="убрать шапку/подвал Gutenberg")
     args = p.parse_args()
@@ -303,6 +420,18 @@ def main() -> None:
         data_dir, allow_download=not args.no_download,
         cache_dir=SCRIPT_DIR / "outputs" / "text_cache",
     )
+
+    if args.dump_all:
+        clusters = json.loads(Path(args.clusters_json).read_text(encoding="utf-8"))
+        cluster_of = {int(i): c["cluster_name"] for c in clusters for i in c["ids"]}
+        ids = list(cluster_of.keys())
+        if args.limit:
+            ids = ids[:args.limit]
+        out_dir = Path(args.out or (SCRIPT_DIR / "outputs" / "texts"))
+        dump_all(resolver, ids, out_dir,
+                 cluster_of=cluster_of if args.by_cluster else None,
+                 strip=args.strip_headers, download=not args.no_download, workers=args.workers)
+        return
 
     if args.id is not None:
         text = resolver.get_text(args.id)

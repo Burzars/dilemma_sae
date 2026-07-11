@@ -1,6 +1,6 @@
 [
   {
-    "cluster_name": "Children & Young Adult Reading (Life Juvenile)",
+    "cluster_name": "Children's Classic Fiction",
     "size": 1814,
     "top_keywords": [
       "juvenile fiction",
@@ -42,14 +42,14 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Juvenile Fiction)",
+    "cluster_name": "Children's Adventure Fiction",
     "size": 1725,
     "top_keywords": [
       "juvenile fiction",
       "juvenile",
       "fiction children",
-      "adult reading",
       "children young",
+      "adult reading",
       "young adult",
       "adult",
       "reading",
@@ -84,7 +84,7 @@
     ]
   },
   {
-    "cluster_name": "Biographies",
+    "cluster_name": "Literary Biographies",
     "size": 1251,
     "top_keywords": [
       "biographies",
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Western)",
+    "cluster_name": "American Western Fiction",
     "size": 1244,
     "top_keywords": [
       "western",
@@ -136,8 +136,8 @@
       "stories culture",
       "american fiction",
       "society literature",
-      "culture civilization",
       "civilization society",
+      "culture civilization",
       "literature fiction"
     ],
     "top_shelves": [
@@ -168,7 +168,7 @@
     ]
   },
   {
-    "cluster_name": "Religion/Spirituality/Paranormal (Philosophy)",
+    "cluster_name": "Spirituality and Philosophy",
     "size": 1243,
     "top_keywords": [
       "philosophy",
@@ -210,7 +210,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Fiction Fiction)",
+    "cluster_name": "Short Story Collections",
     "size": 1188,
     "top_keywords": [
       "fiction fiction",
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "cluster_name": "Crime/Mystery",
+    "cluster_name": "Detective Mystery Fiction",
     "size": 1185,
     "top_keywords": [
       "mystery",
@@ -294,7 +294,7 @@
     ]
   },
   {
-    "cluster_name": "Religion/Spirituality/Paranormal",
+    "cluster_name": "Christian Sermons and Doctrine",
     "size": 1110,
     "top_keywords": [
       "church",
@@ -336,15 +336,15 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Society Literature)",
+    "cluster_name": "Romantic Adventure Fiction",
     "size": 1069,
     "top_keywords": [
       "fiction culture",
       "society literature",
       "fiction",
       "culture",
-      "culture civilization",
       "civilization society",
+      "culture civilization",
       "civilization",
       "literature fiction",
       "society",
@@ -378,7 +378,7 @@
     ]
   },
   {
-    "cluster_name": "Science-Fiction & Fantasy (Science)",
+    "cluster_name": "Science Fiction Short Stories",
     "size": 1007,
     "top_keywords": [
       "science fiction",
@@ -420,7 +420,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (England)",
+    "cluster_name": "19th Century English Fiction (England)",
     "size": 995,
     "top_keywords": [
       "england",
@@ -462,7 +462,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (English Fiction)",
+    "cluster_name": "19th Century English Fiction",
     "size": 977,
     "top_keywords": [
       "english fiction",
@@ -504,7 +504,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Juvenile Literature)",
+    "cluster_name": "Children's Short Stories",
     "size": 940,
     "top_keywords": [
       "juvenile literature",
@@ -513,8 +513,8 @@
       "reading",
       "young adult",
       "adult",
-      "children young",
       "adult reading",
+      "children young",
       "reading literature",
       "young"
     ],
@@ -546,7 +546,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Fiction Culture)",
+    "cluster_name": "Romantic Domestic Fiction",
     "size": 889,
     "top_keywords": [
       "fiction culture",
@@ -588,7 +588,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Sea)",
+    "cluster_name": "Seafaring Adventure Fiction",
     "size": 863,
     "top_keywords": [
       "sea",
@@ -599,8 +599,8 @@
       "geography fiction",
       "sailors",
       "fiction sailors",
-      "seafaring",
-      "seafaring life"
+      "seafaring life",
+      "seafaring"
     ],
     "top_shelves": [
       "Fiction",
@@ -630,7 +630,7 @@
     ]
   },
   {
-    "cluster_name": "Art & Photography",
+    "cluster_name": "Art and Photography",
     "size": 811,
     "top_keywords": [
       "art",
@@ -672,7 +672,7 @@
     ]
   },
   {
-    "cluster_name": "History - Warfare (World War)",
+    "cluster_name": "World War I Narratives",
     "size": 800,
     "top_keywords": [
       "world war",
@@ -714,7 +714,7 @@
     ]
   },
   {
-    "cluster_name": "Science-Fiction & Fantasy",
+    "cluster_name": "Science Fiction Adventure",
     "size": 790,
     "top_keywords": [
       "science fiction",
@@ -756,7 +756,7 @@
     ]
   },
   {
-    "cluster_name": "History - American (History American)",
+    "cluster_name": "Early American History",
     "size": 774,
     "top_keywords": [
       "history american",
@@ -798,13 +798,13 @@
     ]
   },
   {
-    "cluster_name": "Literature (Drama)",
+    "cluster_name": "English Comedy Plays",
     "size": 772,
     "top_keywords": [
       "drama",
       "literature performing",
-      "performing",
       "performing arts",
+      "performing",
       "arts film",
       "film",
       "arts",
@@ -840,7 +840,7 @@
     ]
   },
   {
-    "cluster_name": "Travel & Geography",
+    "cluster_name": "American Travel Narratives",
     "size": 767,
     "top_keywords": [
       "travel",
@@ -882,7 +882,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society (Sociology)",
+    "cluster_name": "Social and Political Theory",
     "size": 743,
     "top_keywords": [
       "sociology",
@@ -924,7 +924,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (English Poetry)",
+    "cluster_name": "English Poetry Anthologies",
     "size": 740,
     "top_keywords": [
       "poetry",
@@ -966,7 +966,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading",
+    "cluster_name": "Children's Animal Stories",
     "size": 721,
     "top_keywords": [
       "animals juvenile",
@@ -974,8 +974,8 @@
       "fiction animals",
       "fiction children",
       "juvenile",
-      "children young",
       "adult reading",
+      "children young",
       "young adult",
       "adult",
       "reading"
@@ -1008,7 +1008,7 @@
     ]
   },
   {
-    "cluster_name": "History - American (United States)",
+    "cluster_name": "American Political Documents",
     "size": 718,
     "top_keywords": [
       "united states",
@@ -1050,7 +1050,7 @@
     ]
   },
   {
-    "cluster_name": "History - General",
+    "cluster_name": "Exploration and Travel Narratives",
     "size": 718,
     "top_keywords": [
       "travel",
@@ -1092,7 +1092,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Periodicals)",
+    "cluster_name": "Literary Periodicals",
     "size": 710,
     "top_keywords": [
       "periodicals",
@@ -1134,7 +1134,7 @@
     ]
   },
   {
-    "cluster_name": "Engineering & Construction",
+    "cluster_name": "Technology and Engineering",
     "size": 707,
     "top_keywords": [
       "engineering",
@@ -1176,7 +1176,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Translations)",
+    "cluster_name": "European Fiction in Translation",
     "size": 691,
     "top_keywords": [
       "translations",
@@ -1218,7 +1218,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Science Fiction)",
+    "cluster_name": "Science Fiction Stories",
     "size": 684,
     "top_keywords": [
       "science fiction",
@@ -1228,8 +1228,8 @@
       "fiction fantasy",
       "fantasy",
       "encounters fiction",
-      "alien encounters",
       "alien",
+      "alien encounters",
       "human alien"
     ],
     "top_shelves": [
@@ -1260,13 +1260,13 @@
     ]
   },
   {
-    "cluster_name": "Religion/Spirituality/Paranormal (Bible)",
+    "cluster_name": "Biblical Studies",
     "size": 675,
     "top_keywords": [
       "bible",
       "paranormal bible",
-      "religion spirituality",
       "spirituality paranormal",
+      "religion spirituality",
       "spirituality",
       "paranormal",
       "religion",
@@ -1302,7 +1302,7 @@
     ]
   },
   {
-    "cluster_name": "Poetry",
+    "cluster_name": "English Poetry Collections",
     "size": 675,
     "top_keywords": [
       "poetry",
@@ -1344,7 +1344,7 @@
     ]
   },
   {
-    "cluster_name": "Humour (Humor)",
+    "cluster_name": "Humorous Literature",
     "size": 669,
     "top_keywords": [
       "humor",
@@ -1386,7 +1386,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Adventure)",
+    "cluster_name": "Adventure Fiction",
     "size": 660,
     "top_keywords": [
       "society literature",
@@ -1428,11 +1428,11 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Man Woman)",
+    "cluster_name": "Romantic Women's Fiction",
     "size": 656,
     "top_keywords": [
-      "man woman",
       "woman relationships",
+      "man woman",
       "woman",
       "man",
       "relationships fiction",
@@ -1440,7 +1440,7 @@
       "studies literature",
       "sexuality",
       "fiction man",
-      "gender sexuality"
+      "sexuality studies"
     ],
     "top_shelves": [
       "Fiction",
@@ -1470,7 +1470,7 @@
     ]
   },
   {
-    "cluster_name": "History - General (Travel)",
+    "cluster_name": "Middle Eastern Travel and History",
     "size": 650,
     "top_keywords": [
       "travel",
@@ -1512,7 +1512,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Historical Fiction)",
+    "cluster_name": "Historical Adventure Fiction",
     "size": 644,
     "top_keywords": [
       "historical fiction",
@@ -1554,7 +1554,7 @@
     ]
   },
   {
-    "cluster_name": "History - European (European)",
+    "cluster_name": "European Travel and History",
     "size": 637,
     "top_keywords": [
       "european",
@@ -1596,7 +1596,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Literature Fiction)",
+    "cluster_name": "19th Century Literary Fiction",
     "size": 632,
     "top_keywords": [
       "literature fiction",
@@ -1638,7 +1638,7 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference (Dictionaries)",
+    "cluster_name": "Reference Works",
     "size": 629,
     "top_keywords": [
       "dictionaries",
@@ -1680,7 +1680,7 @@
     ]
   },
   {
-    "cluster_name": "History - British (Great Britain)",
+    "cluster_name": "British Historical Diaries",
     "size": 624,
     "top_keywords": [
       "great britain",
@@ -1722,7 +1722,7 @@
     ]
   },
   {
-    "cluster_name": "Health & Medicine",
+    "cluster_name": "Medical Science",
     "size": 619,
     "top_keywords": [
       "medicine",
@@ -1764,7 +1764,7 @@
     ]
   },
   {
-    "cluster_name": "Science-Fiction & Fantasy (Science Fiction)",
+    "cluster_name": "Science Fiction & Fantasy",
     "size": 608,
     "top_keywords": [
       "science fiction",
@@ -1806,7 +1806,7 @@
     ]
   },
   {
-    "cluster_name": "Humour",
+    "cluster_name": "Humor Periodicals",
     "size": 599,
     "top_keywords": [
       "humor periodicals",
@@ -1848,7 +1848,7 @@
     ]
   },
   {
-    "cluster_name": "Nature/Gardening/Animals (Animals)",
+    "cluster_name": "Animal Behavior and Natural History",
     "size": 598,
     "top_keywords": [
       "animals",
@@ -1890,7 +1890,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Poetry)",
+    "cluster_name": "American and Canadian Poetry",
     "size": 595,
     "top_keywords": [
       "poetry",
@@ -1932,7 +1932,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Paranormal Fiction)",
+    "cluster_name": "Christian Paranormal Fiction",
     "size": 588,
     "top_keywords": [
       "paranormal fiction",
@@ -1974,7 +1974,7 @@
     ]
   },
   {
-    "cluster_name": "History - American (Civil War)",
+    "cluster_name": "American Civil War Literature",
     "size": 585,
     "top_keywords": [
       "civil war",
@@ -2016,7 +2016,7 @@
     ]
   },
   {
-    "cluster_name": "Philosophy & Ethics",
+    "cluster_name": "Philosophy and Ethics",
     "size": 578,
     "top_keywords": [
       "psychology",
@@ -2058,7 +2058,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society (Indians)",
+    "cluster_name": "Native American Stories",
     "size": 541,
     "top_keywords": [
       "indians",
@@ -2100,13 +2100,13 @@
     ]
   },
   {
-    "cluster_name": "Science - Earth/Agricultural/Farming",
+    "cluster_name": "Agriculture and Gardening",
     "size": 537,
     "top_keywords": [
       "agricultural",
       "farming",
-      "earth agricultural",
       "science earth",
+      "earth agricultural",
       "agricultural farming",
       "earth",
       "gardening",
@@ -2142,7 +2142,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Fiction World)",
+    "cluster_name": "World War I Fiction",
     "size": 535,
     "top_keywords": [
       "fiction world",
@@ -2184,7 +2184,7 @@
     ]
   },
   {
-    "cluster_name": "History - Warfare (Warfare)",
+    "cluster_name": "Military History",
     "size": 535,
     "top_keywords": [
       "warfare",
@@ -2226,7 +2226,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (New York)",
+    "cluster_name": "New York City Fiction",
     "size": 533,
     "top_keywords": [
       "new york",
@@ -2268,7 +2268,7 @@
     ]
   },
   {
-    "cluster_name": "Travel & Geography (England Description)",
+    "cluster_name": "British Travel Writing",
     "size": 513,
     "top_keywords": [
       "england description",
@@ -2310,7 +2310,7 @@
     ]
   },
   {
-    "cluster_name": "Science - General (Physics)",
+    "cluster_name": "Mathematics and Physical Sciences",
     "size": 507,
     "top_keywords": [
       "physics",
@@ -2352,7 +2352,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Italy)",
+    "cluster_name": "Romantic Historical Fiction",
     "size": 504,
     "top_keywords": [
       "italy",
@@ -2361,8 +2361,8 @@
       "society literature",
       "fiction italy",
       "literature fiction",
-      "civilization society",
       "culture civilization",
+      "civilization society",
       "society",
       "culture"
     ],
@@ -2394,13 +2394,13 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Juvenile)",
+    "cluster_name": "Juvenile Adventure Fiction",
     "size": 497,
     "top_keywords": [
       "juvenile fiction",
       "juvenile",
-      "adult reading",
       "children young",
+      "adult reading",
       "young adult",
       "adult",
       "reading",
@@ -2436,7 +2436,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society (Folklore)",
+    "cluster_name": "Arabian Folktales",
     "size": 492,
     "top_keywords": [
       "folklore",
@@ -2448,7 +2448,7 @@
       "countries",
       "mythology",
       "tales arab",
-      "civilization society"
+      "culture civilization"
     ],
     "top_shelves": [
       "Culture/Civilization/Society",
@@ -2478,7 +2478,7 @@
     ]
   },
   {
-    "cluster_name": "History - American",
+    "cluster_name": "American Essays and History",
     "size": 489,
     "top_keywords": [
       "american literature",
@@ -2520,7 +2520,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction",
+    "cluster_name": "French Historical Fiction",
     "size": 484,
     "top_keywords": [
       "france",
@@ -2562,7 +2562,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Children Periodicals)",
+    "cluster_name": "Children's Magazines",
     "size": 481,
     "top_keywords": [
       "children periodicals",
@@ -2604,7 +2604,7 @@
     ]
   },
   {
-    "cluster_name": "History - General (France)",
+    "cluster_name": "French Historical Fiction (France)",
     "size": 479,
     "top_keywords": [
       "france",
@@ -2646,15 +2646,15 @@
     ]
   },
   {
-    "cluster_name": "Biographies (Biographies)",
+    "cluster_name": "Historical Biographies",
     "size": 479,
     "top_keywords": [
       "biographies",
       "biography",
       "photography biographies",
       "biographies history",
-      "casanova",
       "casanova giacomo",
+      "casanova",
       "giacomo",
       "history european",
       "european",
@@ -2688,7 +2688,7 @@
     ]
   },
   {
-    "cluster_name": "Teaching & Education",
+    "cluster_name": "Education and Language Studies",
     "size": 475,
     "top_keywords": [
       "education",
@@ -2730,7 +2730,7 @@
     ]
   },
   {
-    "cluster_name": "History - British",
+    "cluster_name": "Victorian Social History",
     "size": 470,
     "top_keywords": [
       "great britain",
@@ -2772,7 +2772,7 @@
     ]
   },
   {
-    "cluster_name": "History - American (Slavery)",
+    "cluster_name": "African American History",
     "size": 465,
     "top_keywords": [
       "slavery",
@@ -2814,12 +2814,12 @@
     ]
   },
   {
-    "cluster_name": "Literature (Medieval)",
+    "cluster_name": "Medieval Historical Drama",
     "size": 462,
     "top_keywords": [
       "medieval",
-      "ages",
       "middle ages",
+      "ages",
       "middle",
       "history medieval",
       "medieval middle",
@@ -2856,7 +2856,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Greek)",
+    "cluster_name": "Classical Greek and Roman Literature",
     "size": 445,
     "top_keywords": [
       "greek",
@@ -2898,7 +2898,7 @@
     ]
   },
   {
-    "cluster_name": "Gender & Sexuality Studies",
+    "cluster_name": "Gender and Sexuality Studies",
     "size": 443,
     "top_keywords": [
       "sexuality",
@@ -2940,7 +2940,7 @@
     ]
   },
   {
-    "cluster_name": "Nature/Gardening/Animals",
+    "cluster_name": "Birds and Nature Writing",
     "size": 425,
     "top_keywords": [
       "birds",
@@ -2982,13 +2982,13 @@
     ]
   },
   {
-    "cluster_name": "Sports/Hobbies/Motoring",
+    "cluster_name": "Sports and Hobbies",
     "size": 423,
     "top_keywords": [
       "sports",
-      "hobbies",
-      "motoring",
       "sports hobbies",
+      "motoring",
+      "hobbies",
       "hobbies motoring",
       "patterns",
       "motoring travel",
@@ -3024,15 +3024,15 @@
     ]
   },
   {
-    "cluster_name": "History - American (National)",
+    "cluster_name": "Geology and Natural Landmarks",
     "size": 414,
     "top_keywords": [
       "national",
       "park",
       "national park",
       "antiquities",
-      "earth agricultural",
       "agricultural farming",
+      "earth agricultural",
       "science earth",
       "farming",
       "geology",
@@ -3066,7 +3066,7 @@
     ]
   },
   {
-    "cluster_name": "Children & Young Adult Reading (Poetry Children)",
+    "cluster_name": "Children's Poetry and Rhymes",
     "size": 403,
     "top_keywords": [
       "poetry children",
@@ -3108,7 +3108,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Canada)",
+    "cluster_name": "Canadian Fiction",
     "size": 386,
     "top_keywords": [
       "canada",
@@ -3150,7 +3150,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society",
+    "cluster_name": "Cultural Anthropology and Travel",
     "size": 384,
     "top_keywords": [
       "travel",
@@ -3192,7 +3192,7 @@
     ]
   },
   {
-    "cluster_name": "Music",
+    "cluster_name": "Classical Music Criticism",
     "size": 364,
     "top_keywords": [
       "music",
@@ -3203,8 +3203,8 @@
       "music performing",
       "biographies",
       "music history",
-      "wagner richard",
-      "wagner"
+      "wagner",
+      "wagner richard"
     ],
     "top_shelves": [
       "Music",
@@ -3234,7 +3234,7 @@
     ]
   },
   {
-    "cluster_name": "History - Warfare",
+    "cluster_name": "British Military History",
     "size": 337,
     "top_keywords": [
       "britain army",
@@ -3276,7 +3276,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Rome)",
+    "cluster_name": "Ancient Roman Historical Fiction",
     "size": 337,
     "top_keywords": [
       "rome",
@@ -3318,7 +3318,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Spain)",
+    "cluster_name": "Spanish Picaresque Fiction",
     "size": 336,
     "top_keywords": [
       "spain",
@@ -3360,7 +3360,7 @@
     ]
   },
   {
-    "cluster_name": "Fiction (Christmas)",
+    "cluster_name": "Christmas Stories",
     "size": 332,
     "top_keywords": [
       "christmas",
@@ -3402,7 +3402,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Scotland)",
+    "cluster_name": "Scottish Literature",
     "size": 331,
     "top_keywords": [
       "scotland",
@@ -3444,7 +3444,7 @@
     ]
   },
   {
-    "cluster_name": "Cooking & Drinking (Cooking)",
+    "cluster_name": "Cookbooks and Recipes",
     "size": 330,
     "top_keywords": [
       "cooking",
@@ -3486,7 +3486,7 @@
     ]
   },
   {
-    "cluster_name": "Art & Photography (Architecture)",
+    "cluster_name": "British Art and Culture",
     "size": 329,
     "top_keywords": [
       "architecture",
@@ -3528,7 +3528,7 @@
     ]
   },
   {
-    "cluster_name": "Culture/Civilization/Society (Ireland)",
+    "cluster_name": "Irish Literature and Folklore",
     "size": 321,
     "top_keywords": [
       "ireland",
@@ -3570,7 +3570,7 @@
     ]
   },
   {
-    "cluster_name": "Literature (Russia)",
+    "cluster_name": "Russian Literature in Translation",
     "size": 320,
     "top_keywords": [
       "russia",
@@ -3612,7 +3612,7 @@
     ]
   },
   {
-    "cluster_name": "Science - General (Evolution)",
+    "cluster_name": "Evolutionary Biology",
     "size": 292,
     "top_keywords": [
       "evolution",
@@ -3654,11 +3654,11 @@
     ]
   },
   {
-    "cluster_name": "History - European (Napoleon)",
+    "cluster_name": "Napoleonic Era Biographies",
     "size": 254,
     "top_keywords": [
-      "napoleon",
       "emperor french",
+      "napoleon",
       "napoleon emperor",
       "emperor",
       "french",
@@ -3696,15 +3696,15 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference (Answers Periodicals)",
+    "cluster_name": "Literary Reference Periodicals",
     "size": 228,
     "top_keywords": [
       "answers periodicals",
       "answers",
       "questions answers",
       "ag questions",
-      "queries",
       "notes queries",
+      "queries",
       "notes",
       "periodicals notes",
       "ag",
@@ -3736,7 +3736,7 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference (Reference Periodicals)",
+    "cluster_name": "Literary and Scientific Periodicals",
     "size": 222,
     "top_keywords": [
       "reference periodicals",
@@ -3775,7 +3775,7 @@
     ]
   },
   {
-    "cluster_name": "Cooking & Drinking",
+    "cluster_name": "Food and Nutrition",
     "size": 218,
     "top_keywords": [
       "cooking",
@@ -3817,14 +3817,14 @@
     ]
   },
   {
-    "cluster_name": "Literature (Mirror)",
+    "cluster_name": "Victorian Literary Periodicals",
     "size": 208,
     "top_keywords": [
-      "mirror",
       "periodicals mirror",
-      "mirror literature",
-      "literature amusement",
+      "mirror",
       "amusement instruction",
+      "literature amusement",
+      "mirror literature",
       "amusement",
       "literature popular",
       "britain periodicals",
@@ -3855,7 +3855,7 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference (Indexes Encyclopedias)",
+    "cluster_name": "Literary Reference Works",
     "size": 203,
     "top_keywords": [
       "indexes encyclopedias",
@@ -3897,7 +3897,7 @@
     ]
   },
   {
-    "cluster_name": "History - General (Prussia)",
+    "cluster_name": "European Historical Biographies",
     "size": 181,
     "top_keywords": [
       "prussia",
@@ -3909,7 +3909,7 @@
       "germany history",
       "history european",
       "european",
-      "history frederick"
+      "king prussia"
     ],
     "top_shelves": [
       "History - General",
@@ -3939,7 +3939,7 @@
     ]
   },
   {
-    "cluster_name": "Encyclopedias/Dictionaries/Reference",
+    "cluster_name": "British Literary Magazines",
     "size": 178,
     "top_keywords": [
       "edinburgh",
@@ -3981,7 +3981,7 @@
     ]
   },
   {
-    "cluster_name": "Religion/Spirituality/Paranormal (Missions Periodicals)",
+    "cluster_name": "Christian Missionary Periodicals",
     "size": 150,
     "top_keywords": [
       "missions periodicals",
@@ -4021,7 +4021,7 @@
     ]
   },
   {
-    "cluster_name": "Science - General",
+    "cluster_name": "Science and Technology Periodicals",
     "size": 139,
     "top_keywords": [
       "science periodicals",
@@ -4063,7 +4063,7 @@
     ]
   },
   {
-    "cluster_name": "History - European",
+    "cluster_name": "Dutch and Thirty Years' Wars",
     "size": 134,
     "top_keywords": [
       "netherlands",
@@ -4071,9 +4071,9 @@
       "years",
       "dh",
       "netherlands history",
-      "eighty",
-      "eighty years",
       "history eighty",
+      "eighty years",
+      "eighty",
       "dh netherlands",
       "war history"
     ],
@@ -4105,7 +4105,7 @@
     ]
   },
   {
-    "cluster_name": "History - European (Ireland Periodicals)",
+    "cluster_name": "Irish Catholic Periodicals",
     "size": 74,
     "top_keywords": [
       "ireland periodicals",
@@ -4147,7 +4147,7 @@
     ]
   },
   {
-    "cluster_name": "Literature",
+    "cluster_name": "Italian Poetry in Translation",
     "size": 5,
     "top_keywords": [
       "petrarca francesco",
