@@ -29,8 +29,8 @@ log = logging.getLogger(__name__)
 
 # Кандидаты нормализованных имён по порядку предпочтения (первое найденное — берём).
 _COLUMN_CANDIDATES: dict[str, list[str]] = {
-    "id":        ["text", "textno", "etextno", "etext", "ebookno", "ebook",
-                  "gutenbergid", "bookid", "id", "no"],
+    "id":        ["etextnumber", "text", "textno", "etextno", "etext", "ebookno",
+                  "ebook", "gutenbergid", "bookid", "id", "no"],
     "title":     ["title", "booktitle", "name"],
     "author":    ["authors", "author", "creator"],
     "language":  ["language", "languages", "lang"],

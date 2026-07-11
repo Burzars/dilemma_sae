@@ -24,7 +24,7 @@ embed:
 # Кластеризация.
 cluster:
   algo: "kmeans"              # kmeans | hdbscan
-  k: 60                       # число кластеров для kmeans (гранулярность)
+  k: 100                      # число кластеров для kmeans (гранулярность)
   reduce: "none"              # none | umap (umap требует umap-learn)
   umap_components: 10
   min_cluster_size: 50        # для hdbscan
@@ -33,7 +33,7 @@ cluster:
 # Наименование кластеров.
 name:
   use_llm: true               # false → имена из c-TF-IDF ключевых слов (офлайн)
-  judge_model: "openai/gpt-4o-mini"
+  judge_model: "openai/gpt-4.1"
   api_base: "https://openrouter.ai/api/v1"
   concurrency: 8
   top_keywords: 10            # сколько c-TF-IDF слов брать в сводку кластера
