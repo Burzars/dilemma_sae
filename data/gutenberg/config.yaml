@@ -1,0 +1,43 @@
+# =====================================================================
+# Конфиг кластеризации книг Project Gutenberg по метаданным.
+# Переопределение из CLI: --set cluster.k=100 embed.batch_size=512
+# =====================================================================
+
+# Источник данных.
+data:
+  # null → скачать с Kaggle через kagglehub (kaggle-id ниже).
+  # Либо путь к уже скачанной папке/CSV (на сервере удобнее скачать заранее).
+  data_dir: null
+  kaggle_id: "lokeshparab/gutenberg-books-and-metadata-2025"
+  # Языки для кластеризации (ISO-коды). null → все языки (имена/эмбеддинги всё
+  # равно заточены под английский, не-англ. книги соберутся в свои кластеры).
+  languages: ["en"]
+  # Ограничить число книг (для отладки/smoke). null → все.
+  limit: null
+
+# Текст-эмбеддинг метаданных.
+embed:
+  model: "all-MiniLM-L6-v2"   # быстрый 384d; качество ↑: "BAAI/bge-base-en-v1.5"
+  batch_size: 256
+  device: "auto"              # auto|cuda|cpu
+
+# Кластеризация.
+cluster:
+  algo: "kmeans"              # kmeans | hdbscan
+  k: 60                       # число кластеров для kmeans (гранулярность)
+  reduce: "none"              # none | umap (umap требует umap-learn)
+  umap_components: 10
+  min_cluster_size: 50        # для hdbscan
+  seed: 0
+
+# Наименование кластеров.
+name:
+  use_llm: true               # false → имена из c-TF-IDF ключевых слов (офлайн)
+  judge_model: "openai/gpt-4o-mini"
+  api_base: "https://openrouter.ai/api/v1"
+  concurrency: 8
+  top_keywords: 10            # сколько c-TF-IDF слов брать в сводку кластера
+  examples: 5                 # сколько заголовков-примеров в сводку
+
+paths:
+  outputs_dir: "outputs"      # относительно data/gutenberg/

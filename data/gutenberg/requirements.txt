@@ -1,0 +1,12 @@
+# Зависимости для кластеризации книг Gutenberg (data/gutenberg/cluster_books.py).
+# Устанавливать поверх окружения проекта (там уже есть torch/transformers/pandas/
+# numpy/pyyaml/tqdm/openai — см. ../../requirements.txt).
+
+kagglehub>=0.3            # скачивание датасета с Kaggle
+sentence-transformers>=2.2  # эмбеддинги метаданных (тянет torch/transformers)
+scikit-learn>=1.3         # MiniBatchKMeans, CountVectorizer (c-TF-IDF)
+# промежуточные артефакты — pickle/npy/csv, доп. зависимостей не требуют
+
+# Опционально — только если cluster.reduce=umap или cluster.algo=hdbscan:
+# umap-learn>=0.5
+# hdbscan>=0.8
