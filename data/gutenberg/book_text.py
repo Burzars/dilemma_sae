@@ -26,7 +26,9 @@ import json
 import logging
 import re
 import sys
+import tarfile
 import urllib.request
+import zipfile
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -62,6 +64,8 @@ class TextSource:
     table_path: Path | None = None                              # CSV/parquet с текстом
     table_id_col: str | None = None
     table_text_col: str | None = None
+    archive_path: Path | None = None                            # zip/tar с текстами
+    archive_index: dict[int, str] = field(default_factory=dict) # id → имя файла внутри архива
 
     @property
     def has_files(self) -> bool:
@@ -70,6 +74,10 @@ class TextSource:
     @property
     def has_table(self) -> bool:
         return self.table_path is not None
+
+    @property
+    def has_archive(self) -> bool:
+        return self.archive_path is not None and bool(self.archive_index)
 
 
 def _norm(name: str) -> str:
@@ -100,8 +108,45 @@ def _find_text_table(data_dir: Path) -> tuple[Path, str, str] | None:
     return None
 
 
+def _archive_member_names(path: Path) -> list[str]:
+    """Имена файлов внутри архива (zip — быстро, из оглавления; tar — сканом)."""
+    if zipfile.is_zipfile(path):
+        with zipfile.ZipFile(path) as z:
+            return [i.filename for i in z.infolist() if not i.is_dir()]
+    if tarfile.is_tarfile(path):
+        with tarfile.open(path) as t:
+            return [m.name for m in t.getmembers() if m.isfile()]
+    return []
+
+
+def _index_archive_members(names: list[str]) -> dict[int, str]:
+    """id → имя файла внутри архива (id из имени файла; приоритет .txt)."""
+    txt = [n for n in names if n.lower().endswith(".txt")]
+    pool = txt if txt else names
+    idx: dict[int, str] = {}
+    for n in pool:
+        m = _INT.search(n.rsplit("/", 1)[-1])
+        if m:
+            idx.setdefault(int(m.group()), n)
+    return idx
+
+
+def _find_text_archive(data_dir: Path, min_files: int) -> tuple[Path, dict[int, str]] | None:
+    """Ищет zip/tar с текстами книг (файлы с id в имени)."""
+    globs = ["*.zip", "*.tar", "*.tar.gz", "*.tgz", "*.tar.bz2"]
+    for path in sorted(p for g in globs for p in data_dir.rglob(g)):
+        try:
+            idx = _index_archive_members(_archive_member_names(path))
+        except Exception as e:  # noqa: BLE001
+            log.debug("skip archive %s: %s", path.name, e)
+            continue
+        if len(idx) >= min_files:
+            return path, idx
+    return None
+
+
 def discover_text_source(data_dir: Path, min_files: int = 20) -> TextSource:
-    """Автоопределение, как хранятся тексты: отдельные файлы и/или колонка таблицы."""
+    """Автоопределение раскладки текстов: файлы / колонка таблицы / архив zip-tar."""
     data_dir = Path(data_dir)
     src = TextSource()
 
@@ -120,7 +165,14 @@ def discover_text_source(data_dir: Path, min_files: int = 20) -> TextSource:
         log.info("Найдена таблица с текстом: %s (id=%s, text=%s)",
                  src.table_path.name, src.table_id_col, src.table_text_col)
 
-    if not src.has_files and not src.has_table:
+    if not src.has_files:
+        archive = _find_text_archive(data_dir, min_files)
+        if archive:
+            src.archive_path, src.archive_index = archive
+            log.info("Найден архив с текстами: %s (%d файлов по id, без распаковки на диск)",
+                     src.archive_path.name, len(src.archive_index))
+
+    if not src.has_files and not src.has_table and not src.has_archive:
         log.info("Локальных текстов не найдено — будет загрузка с gutenberg.org по id")
     return src
 
@@ -198,6 +250,46 @@ def _iter_table_texts(src: TextSource, wanted: set[int]):
                     yield int(m.group()), "" if _txt is None else str(_txt)
 
 
+def _open_archive(path: Path):
+    """Открывает архив на чтение; отдаёт ('zip'|'tar', handle) для random-access."""
+    if zipfile.is_zipfile(path):
+        return "zip", zipfile.ZipFile(path)
+    return "tar", tarfile.open(path)
+
+
+def _read_member(kind: str, handle, member: str) -> str:
+    """Читает один файл внутри архива по имени (без распаковки остального)."""
+    if kind == "zip":
+        return handle.read(member).decode("utf-8", errors="replace")
+    f = handle.extractfile(member)
+    return f.read().decode("utf-8", errors="replace") if f else ""
+
+
+def _read_archive_texts(src: TextSource, ids: set[int]) -> dict[int, str]:
+    """Тексты нужных id из архива; архив открывается один раз."""
+    out: dict[int, str] = {}
+    kind, handle = _open_archive(src.archive_path)
+    try:
+        for i in ids:
+            member = src.archive_index.get(i)
+            if member is not None:
+                out[i] = _read_member(kind, handle, member)
+    finally:
+        handle.close()
+    return out
+
+
+def _iter_archive_texts(src: TextSource, wanted: set[int]):
+    """Стриминговый обход архива: (id, text) по одному, архив открыт один раз."""
+    kind, handle = _open_archive(src.archive_path)
+    try:
+        for i, member in src.archive_index.items():
+            if i in wanted:
+                yield i, _read_member(kind, handle, member)
+    finally:
+        handle.close()
+
+
 def _download_pg(book_id: int, timeout: float = 30.0) -> str | None:
     """Скачивает текст книги с gutenberg.org, перебирая известные шаблоны URL."""
     for tmpl in _PG_URLS:
@@ -234,6 +326,10 @@ class BookTextResolver:
 
         if remaining and self.source.has_table:
             out.update(_read_table_texts(self.source, remaining))
+            remaining = wanted - out.keys()
+
+        if remaining and self.source.has_archive:
+            out.update(_read_archive_texts(self.source, remaining))
             remaining = wanted - out.keys()
 
         if remaining and self.allow_download:
@@ -320,7 +416,14 @@ def dump_all(resolver: BookTextResolver, ids, out_dir: Path,
                 write(i, text)
                 remaining.discard(i)
 
-    # 3) остаток — загрузка с gutenberg.org (только если тексты не в датасете)
+    # 3) архив zip/tar — random-access по id, без распаковки на диск
+    if remaining and src.has_archive:
+        for i, text in _iter_archive_texts(src, remaining):
+            if i in remaining:
+                write(i, text)
+                remaining.discard(i)
+
+    # 4) остаток — загрузка с gutenberg.org (только если тексты не в датасете)
     if remaining and download:
         log.warning("%d текстов нет локально — качаю с gutenberg.org в %d потоков "
                     "(медленно; для полного корпуса лучше иметь тексты в датасете)",
@@ -372,6 +475,8 @@ def _inspect(data_dir: Path | None) -> None:
     data_dir = Path(data_dir)
     txts = list(data_dir.rglob("*.txt"))
     tables = sorted(data_dir.rglob("*.csv")) + sorted(data_dir.rglob("*.parquet"))
+    archives = sorted(p for g in ("*.zip", "*.tar", "*.tar.gz", "*.tgz", "*.tar.bz2")
+                      for p in data_dir.rglob(g))
     print(f"\nДатасет: {data_dir}")
     print(f"  .txt файлов: {len(txts)}")
     for p in txts[:3]:
@@ -379,6 +484,9 @@ def _inspect(data_dir: Path | None) -> None:
     print(f"  таблиц (csv/parquet): {len(tables)}")
     for p in tables:
         print(f"    {p.relative_to(data_dir)}  ({p.stat().st_size // 1024} КБ)")
+    print(f"  архивов (zip/tar): {len(archives)}")
+    for p in archives:
+        print(f"    {p.relative_to(data_dir)}  ({p.stat().st_size // 1024 // 1024} МБ)")
     src = discover_text_source(data_dir)
     print("\nВывод:")
     if src.has_files:
@@ -386,7 +494,10 @@ def _inspect(data_dir: Path | None) -> None:
     if src.has_table:
         print(f"  → тексты в КОЛОНКЕ '{src.table_text_col}' файла {src.table_path.name} "
               f"(id-колонка '{src.table_id_col}')")
-    if not src.has_files and not src.has_table:
+    if src.has_archive:
+        print(f"  → тексты в АРХИВЕ {src.archive_path.name}, {len(src.archive_index)} файлов; "
+              f"читаются по id без распаковки")
+    if not src.has_files and not src.has_table and not src.has_archive:
         print("  → локальных текстов нет; book_text.py скачает по id с gutenberg.org")
     print()
 
